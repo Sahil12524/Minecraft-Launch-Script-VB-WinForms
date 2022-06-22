@@ -1,0 +1,246 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="RichTextBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="RichTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14pt</value>
+  </data>
+  <data name="RichTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="RichTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>822, 538</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RichTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>Version 1.6 (Experimental Release)
+1. Added the functionality to check wether the minecraft is installed or not. if not installed the Run button will not be visible. Even if some user bypasses the install detection and some how the Run button got visible, if the minecraft is not installed the script will not crash instead it will show error and redirect user to download page.
+2. Added the functionality to check wether the mincraft is running or not. Basically Added the  Minecraft running status at bottom left.
+3. Removed the dynamic resize functionality as it was creating problems wile moving the window or minimizing the window.
+4. Minor UI Improvements.
+
+Version 1.5
+1. Added Button to reset the form.
+2. Added Button to reset the Clip Services Status.
+3. Error Handling in scripts where:
+  i. start.bat: Checks wether the minecraft is installed or not, if not install it will throw an error.
+  ii. stop.bat: Checks wether the minecraft is running or not, if not running the svc will not start nor stop minecraft process and throw an error.
+  iii. restart.bat: Checks wether the minecraft is running or not, if not running the minecraft will not restart and throw an error.
+4. Fixed Minecraft gets freezed upon loading and never starts.
+5. Minor UI Changes and Bugs Fixes. (recommended, Stable, LTS Update)
+
+Version 1.4.6
+1. Fixed Various Bugs.
+2. Removed the ability of resize and maximize the form again due to some problems.
+3. Reduced the size of the form.
+4. Tried to make the UI as Simple as Possible :P
+5. This is an Important update for fixing those bugs from Version 1.4
+
+Version 1.4 (Experimental Release)
+1. Added support to resize the form.
+2. Restored the minimize button again earlier it was removed.
+3. Added the dynamic resize class to make all the elements in the form resize as the form resize.
+4. Added the auto hide button on 2 buttons to avoid unexpected problems.
+5. Added sound on buttons on click.
+6. Added the button color changing effect upon mouse hover on buttons.
+7. Reduced the time of restart to 4 sec for faster restarting.
+8. Added Easter Egg (if you found it please do the necessary things its too easy).
+9. Cleaned the file structure of the installed directory.
+10. MAJOR UI Improvement :P
+
+Version 1.3
+1. Start Menu was getting freezed on Windows 11 (Fixed).
+2. Added the restart button to restart the game quickly if the game is showing trial period Hours.
+3. Increased the timeout to 15 sec for slower computers.
+4. Added new What's New Form.
+5. Minor UI Changes.
+
+Version 1.2
+1. Added the command in start.bat to kill the Runtime Broker.exe automatically
+2. Added 10 sec cool down to make the process smooth while killing the Runtime Broker.exe
+3. Picture Box was remove and the background is added.
+4. Added the Install Now Button to make people install the correct Minecraft Version.
+5. Added The Button What's New to see the changes of every new released version changes.
+6. Added the Confirmation dialoug while closing the game.
+7. Added the Version Lable on the top of the software.
+8. Added the icon on the Software.
+9. Minor UI changes :P
+
+Initial Release
+1. Use TaskManager to kill "Runtime Broker.exe" (Manually)
+2. Only Run button was implimented
+3. Added a picture box to display the background image
+4. Added the Close button to close the game and start the ClipSVC service</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox1.Name" xml:space="preserve">
+    <value>RichTextBox1</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>846, 562</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAEAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAA
+        AAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAA
+        AAEAAAAAAAAAAAAAAAAAAAAADxYfHh0rPEIaJjdFGCQzRRMcKUUTHClFGCQzRRsoOEUmOE5FKTlNRS4w
+        M0UsLS5FFR0oRRMcKUUYJDNFGCQzRRMcKEUVHyxFJTZMRSY4TkUbKDhFGCQzRRMcKUUTHClFGCQzRRso
+        OUUjM0hCExwnHgAAAAAAAAAALUJcACk9VApAXoOZRWWM5jpVeec2T3HnKT1Z5yk9Wec1T3HnO1h951R7
+        rOdafarnZ2tx52BiZecvP1fnKT1Z5zZPcec2T3HnKTxY5y1CYOdSeKjnVXus5zxYfec2T3HnKT1Z5yk9
+        Wec1T3HnO1h951R7q+ZRdaSZNUxrCjlTdABJbJYASWyWHEtumd1Ja5X/OVV5/zZPcf8tRGH/LURi/zdR
+        dP89WoD/V36x/12BsP9mbnn/YGZt/zNHYf8tQ2H/Nk9y/zZPcf8rQV7/MEdn/1V8rf9XfrH/O1d8/zVO
+        cf8rQV//LEFf/zdRdP89WX//U3mq/1d/sN1Ue6scVHqrAFmBtABZgbQeWYK14FN5qf8vR2b/LUNh/0Jh
+        iP9EY4z/OlZ6/z1agP9XfrH/WoG0/09ulf9Mao//RmaP/0JgiP8tQ2L/K0Ff/zVOcf87V3z/V36x/1V8
+        rf8wR2f/K0Fe/zVPcf83UnX/OVR3/zlVef89WX//PVqA4D1agB49WoAAWYG0AFmBtB5ZgrXgU3mp/y9H
+        Zv8tRGL/RWaO/0dpkv87Vnv/PFl//1N5qf9WfK7/THCd/0tumf9JbJb/RWWO/yxBX/8qP1z/OlZ7/0Bf
+        hv9Ueqv/Unam/y1EYv8qP1z/O1Z7/z1af/85VXn/OlR4/z5Wdv8/VnbgP1Z2Hj9WdgBLbpoAS26aHktu
+        muBJa5X/OVR4/zlUeP9HaJH/R2iS/ztXe/85VXn/PFl//0Bfhv9Wfa//V4Cy/0tumf9FZY3/LEFf/y1E
+        Yv9Sd6f/VHus/0Bfhv86Vnv/Kj5b/y1DYv9Sdqf/VHmr/zxZf/8+Vnb/YGZt/2VobOBlaGweZWhsAEVl
+        jQBFZY0eRWWN4ERjiv86Vnr/O1d8/0lrlf9Ja5X/OVR4/zhRdP8+VXX/Qlt9/1J4p/9Ue6v/THCc/0dp
+        kv8vR2X/MUlo/1B1pP9Sd6f/O1Z7/zZPcv8vRmX/M0xu/1R6q/9VfK3/O1d8/z1UdP9ja3T/aW504Glu
+        dB5pbnQALEFfACxBXx4sQV/gLkNi/zdRdf89Wn//Vnyt/1R5qv8vR2b/MUNd/15jav9fZGv/NEhj/zNL
+        bf9Ueqv/V36w/0hpkv9CYYj/MUlp/y1EY/8qPlv/L0Vl/1B1o/9Ue6v/THCc/0dokf8uRGP/MEdm/1d5
+        pf9dgrDgXYGvHl2BrwAsQV8ALEFfHixBX+AuQ2L/N1F1/z1af/9WfK3/VHmq/y9HZv8xQ13/XmNq/19k
+        a/80SGP/M0ts/1J3qP9Wfa//TXCd/0dokv8sQV//KDxY/y1CYf8zS2z/Unio/1Z9r/9NcJz/R2iR/yxB
+        X/8uRGP/U3mp/1mCteBZgbQeWYG0AEVmjgBFZo4eRWaO4ERki/86Vnr/O1d8/0lrlv9Ja5b/OVR5/zhR
+        dP8+Vnb/Qlx+/1N4p/9SeKj/QF6F/0Bfhv9Wfq//U3qq/y5EY/8tQ2H/UHSi/1J4p/9AXoT/QF+F/1Z+
+        r/9Teqr/LkNi/yxBXv9HaJL/S26b4Etumh5LbpoARWaOAEVmjh5FZo7gRGSL/0BZef9AWXn/RGOK/0Rj
+        i/86Vnv/OVR3/zdRdP87V3v/U3qq/1N6qv87Vnv/OlZ6/1J3p/9QdaT/L0Zl/zBHZ/9Vfa7/WICy/z9b
+        gv8+WoH/Unio/1F2pf8zS2z/MEho/0JhiP9FZY3gRWWNHkVljQAsQV8ALEFfHitBX+AzRmH/X2Rr/19k
+        a/8zRmD/LURi/zhSdf83UnX/LEFe/yxCX/87V3z/O1d8/yxCX/8qP1z/LUNi/y9GZf82T3H/O1d8/1d+
+        sP9ZgbT/SmyX/0RjjP8xSGj/M0ps/1F2pf9QdaT/MEho/ytAXuArQV8eK0FfAC5EYwAuRGMeLURj4DVJ
+        Zf9hZ2//YGZt/y9BW/8qP13/O1d7/ztXfP8uRGP/LUNi/zhSdf84UnX/LkNi/yxAXv8qPlv/LEFe/zdR
+        dP89WoD/V36x/1mBtP9KbJf/RGOM/zFIaP8zS2z/Unio/1N4p/81SGT/MEBZ4DBBWh4wQVoAVXytAFV8
+        rR5VfK3gVHqq/05tlP9IZYn/LEFe/y1EYv9Rdqf/VXyt/0dpkv9DZIv/OlZ6/zpWev9EZIz/Q2SL/zlU
+        d/83UXT/OFN3/z1agP9Xf7H/V3+x/z9cg/8+W4H/Unin/1J4qP9AXob/QVt9/15ka/9jZWjgY2VoHmNl
+        aABZgrUAWYK1HlmCteBXgLL/TXGe/0dokv8uRGP/MEdm/1d5pf9bfqz/SGmS/0Rki/9AWXn/QFl5/0Rk
+        i/9EZIz/OlZ7/zlTd/83UXT/O1Z7/1N5qf9Tean/O1Z7/ztXe/9VfK7/VXyu/ztXfP89VHP/ZGt0/2pu
+        dOBqbnQeam50AEtumQBLbpkeS26Z4E1wnP9Yf7H/VXut/ztXfP89VHT/Y2t0/2Jpcf8zRmH/MkVg/19k
+        a/9fZGv/M0Zg/y1DYv84UnX/N1J1/yxBX/8sQmD/O1d8/ztXfP8sQmD/LkRj/0dpkv9HaZL/LkRj/zBH
+        Zv9XeaX/XYKw4F2Brx5dga8ASWuVAElrlR5Ja5XgS22Y/1Z8rv9Ueav/PlyD/0BZev9gZm7/XmNq/zFE
+        Xf8xRF7/Ymlx/2Jpcf8xRF7/LEJf/ztXfP87V3v/Kj9d/yo/XP83UXT/N1F0/yo/W/8sQmD/R2iS/0dp
+        kv8uRGP/L0Zm/1J2p/9Xf7LgV36xHld+sQBJa5UASWuVHklrleBIaZL/PlyC/z5cgv9GZ5D/RmeP/0BZ
+        ev8+Vnb/OFF0/zxXe/9ZfKj/WXyo/ztWe/87Vnv/VHmp/1J2pv8uRGL/Kj5b/zdRdP83UXT/Kj5b/y5E
+        Y/9Tean/VXyt/ztXfP83UnX/PFh+/z1Zf+A9WX8ePVl/AEVljgBFZY4eRWWO4ERji/86Vnr/OlZ6/0Rk
+        jP9DZIv/OVR3/zdRdP85U3f/PVl//1R5q/9Ueqz/QF6F/0Bfhv9Yf7L/Vnyu/zJKav8tRGH/OFJ1/zhS
+        df8tRGH/Mkpq/1Z8rv9XfrH/O1d8/zdSdf88WH7/PVl/4D1Zfx49WX8ALEFfACxBXx4sQV/gLkNi/zhS
+        df84UnX/LkNi/yxBXv8qP1z/LEJf/zdRdf86VXn/PFl//0Behv9Ueqv/WH+y/1uEuP9YgLT/SGmT/0Nj
+        i/86VXr/OlV6/0Njiv9IaZL/WYG0/1V8rv8wR2f/L0Zm/1J2p/9Xf7LgV36xHld+sQAsSlsALEpbHixK
+        W+AtS17/NlBx/zVQcf8qR1r/KEVX/yg9WP8qPlv/NU5x/zdSdf85U3f/PVl//1V8rf9agbT/XYGw/1uA
+        rP9PeJn/SnSS/zlfeP85Xnj/SWyV/0xxnP9UhKr/UH6j/y9HZf8vR2X/UX6j/1aIruBWh60eVoetAESk
+        bwBEpG8eRKVv4EGYbf8tSl7/KkZb/yuCV/8rglb/KEVY/yg7WP8qPVv/LEFf/zdRdP87V3z/SWqV/09t
+        lf9lbXj/aXh4/2i2l/9gupP/NJRh/zKMZP9Ugqv/VYOs/zaSbP8xjGT/Nlly/zZZcv8yjGT/MZVi4DGU
+        Yh4xlGIARrFwAEaxcB5GsnDgQ6Rt/y1UXP8qUVn/LpFZ/y6RWf8rUln/KkdZ/ypIWf8sSVz/NVBw/zpW
+        eP9KcpH/UHWR/2Rsc/9ndnP/Z72S/2DDj/81oGD/M5dj/1GIo/9RiKP/NJhj/zCRXP82WXH/Nllx/zCR
+        XP8vm1ngL5pZHi+aWQA4omIAOKJiHjiiYuA4oGL/NJVf/zaXYf9DrG3/Q6xt/zaXYf80lF//NJVf/zOK
+        X/8rR1z/MU1k/2Cwk/9ktpr/UHWS/01zjf9MrHr/S7V2/0awcP9DrG3/M5dj/zOXY/9DrW7/QqJt/y1L
+        Xv8tS17/QqFt/0Wwb+BFr28eRa9vADiiYgA4omIeOKJi4DiiYv81oF//N6Jh/0Subv9Er27/OqVk/zij
+        Yv82omD/NJZf/ylRWP8vVl//YLmP/2O+lv9Jeo//RXeK/0aodP9GsXD/SLJy/0Wvb/8ynVz/Mpxc/0Ou
+        bf9DpG3/K1Nb/yxTW/9EpW//SLNy4Eiych5IsnIARrBwAEawcB5GsHDgQ61t/zCaWv8umFj/N6Fh/zqk
+        ZP9Erm7/RK5u/ziiYv81nV//LI1X/y+QWv9IsHP/SbF0/zKVYP8wk13/N6Bh/zqkZP9GsHD/SLJy/0Wv
+        b/9DrW3/OqRk/zafYP8sjVf/LpBZ/0Wtb/9IsnLgSLJyHkiycgBHsHEAR7BxHkWvb+BCrGz/Mpxc/y+a
+        Wv8znl7/NqFh/0Subv9Erm7/N6Fh/zSeXv8wmlr/MZxb/0KsbP9CrGz/MZxb/y+aWv8znl7/NqFh/0aw
+        cP9IsnL/RrBw/0Subv84omL/NZ9f/zCbWv8xnFv/Qaxr/0Wvb+BHsHAeR7BwAD+hZwBAomccOJ1g3TWe
+        X/9Frm7/RK1t/zObXP8xmVr/OqJj/zqiY/8xmVr/M5tc/0Stbf9Frm7/NJ1e/zSdXv9Frm7/RK1t/zOb
+        XP8zm1z/R7Bx/0ixcv89pWb/O6Nk/zmhYv87o2T/Ra5u/0Wubv81nl//OJ1g3UCiZxw/oWcAPp5kAD6e
+        ZAY/n2WIQaJo3lW2e+BVtnvgQaJo4D+gZuBGp23gRqdt4D+gZuBBomjgVbZ74FW2e+BBoWfgQaFn4FW2
+        e+BVtnvgQaJo4EGiaOBVtnvgVrd84EmqcOBHqG7gR6hu4EmqcOBWt3zgVbZ74EGiaN4/n2WIP55lBj6e
+        ZAAAAAAAQ6FoAECfZgZGpGsbWLh+Hli4fh5FpGseQ6JpHkqpcB5KqXAeQ6JpHkWkax5YuH4eWLh+HkWk
+        ax5FpGseWLh+Hli4fh5FpGseRaRrHli4fh5ZuX8eTaxzHkuqcR5LqnEeTaxzHlm5fx5YuH4eRqRrG0Cf
+        ZgdCoWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAwAAAA8AAAAOAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAA
+        AAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAA
+        AAGAAAABgAAAAYAAAAGAAAABwAAAA/////8=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>What's New</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form2</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

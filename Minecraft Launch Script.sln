@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Minecraft Launch Script", "Minecraft Launch Script\Minecraft Launch Script.vbproj", "{AB81E8D7-897C-419A-8CDC-9D84BDE06187}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Minecraft Launch Script 1.3", "Minecraft Launch Script 1.3\Minecraft Launch Script 1.3.vdproj", "{EAD64F03-7D3F-4DAB-90C0-A58822D131DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{28290688-AF23-4FCD-97E4-934F1689A1B0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Minecraft Launch Script 1.4.6", "Minecraft Launch Script 1.4.6\Minecraft Launch Script 1.4.6.vdproj", "{154A2CD0-E4EA-4676-A565-723D57C4131E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Minecraft Launch Script 1.5", "Minecraft Launch Script 1.5\Minecraft Launch Script 1.5.vdproj", "{0E5B21B3-11DD-4E71-80C1-452D1EC3C704}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Minecraft Launch Script 1.6", "Minecraft Launch Script 1.6\Minecraft Launch Script 1.6.vdproj", "{3F3909F5-1C36-4C69-8B67-8D26C8840AD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB81E8D7-897C-419A-8CDC-9D84BDE06187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB81E8D7-897C-419A-8CDC-9D84BDE06187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB81E8D7-897C-419A-8CDC-9D84BDE06187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB81E8D7-897C-419A-8CDC-9D84BDE06187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD64F03-7D3F-4DAB-90C0-A58822D131DA}.Debug|Any CPU.ActiveCfg = Debug
+		{EAD64F03-7D3F-4DAB-90C0-A58822D131DA}.Debug|Any CPU.Build.0 = Debug
+		{EAD64F03-7D3F-4DAB-90C0-A58822D131DA}.Release|Any CPU.ActiveCfg = Release
+		{EAD64F03-7D3F-4DAB-90C0-A58822D131DA}.Release|Any CPU.Build.0 = Release
+		{154A2CD0-E4EA-4676-A565-723D57C4131E}.Debug|Any CPU.ActiveCfg = Debug
+		{154A2CD0-E4EA-4676-A565-723D57C4131E}.Debug|Any CPU.Build.0 = Debug
+		{154A2CD0-E4EA-4676-A565-723D57C4131E}.Release|Any CPU.ActiveCfg = Release
+		{154A2CD0-E4EA-4676-A565-723D57C4131E}.Release|Any CPU.Build.0 = Release
+		{0E5B21B3-11DD-4E71-80C1-452D1EC3C704}.Debug|Any CPU.ActiveCfg = Debug
+		{0E5B21B3-11DD-4E71-80C1-452D1EC3C704}.Debug|Any CPU.Build.0 = Debug
+		{0E5B21B3-11DD-4E71-80C1-452D1EC3C704}.Release|Any CPU.ActiveCfg = Release
+		{0E5B21B3-11DD-4E71-80C1-452D1EC3C704}.Release|Any CPU.Build.0 = Release
+		{3F3909F5-1C36-4C69-8B67-8D26C8840AD2}.Debug|Any CPU.ActiveCfg = Debug
+		{3F3909F5-1C36-4C69-8B67-8D26C8840AD2}.Debug|Any CPU.Build.0 = Debug
+		{3F3909F5-1C36-4C69-8B67-8D26C8840AD2}.Release|Any CPU.ActiveCfg = Release
+		{3F3909F5-1C36-4C69-8B67-8D26C8840AD2}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE56D7E3-211F-492E-9F80-17811D6C726A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,763 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="Button1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt</value>
+  </data>
+  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 248</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 80</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Button1.Text" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <metadata name="ToolTipForRun.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="Button1.ToolTip" xml:space="preserve">
+    <value>Start the game</value>
+  </data>
+  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="Button2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 18pt</value>
+  </data>
+  <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 248</value>
+  </data>
+  <data name="Button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 80</value>
+  </data>
+  <data name="Button2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Button2.Text" xml:space="preserve">
+    <value>Close Game</value>
+  </data>
+  <metadata name="ToolTipForCloseGame.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>463, 17</value>
+  </metadata>
+  <data name="Button2.ToolTip" xml:space="preserve">
+    <value>Close the game after playing (Very Important).
+It will cause problems with the windows store if you close the game directly.</value>
+  </data>
+  <data name="Button2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Button2.Name" xml:space="preserve">
+    <value>Button2</value>
+  </data>
+  <data name="&gt;&gt;Button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <metadata name="Button3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Button3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt</value>
+  </data>
+  <data name="Button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 246</value>
+  </data>
+  <data name="Button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="Button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 80</value>
+  </data>
+  <data name="Button3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Button3.Text" xml:space="preserve">
+    <value>Install Now</value>
+  </data>
+  <data name="&gt;&gt;Button3.Name" xml:space="preserve">
+    <value>Button3</value>
+  </data>
+  <data name="&gt;&gt;Button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button3.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <metadata name="Button4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Button4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt</value>
+  </data>
+  <data name="Button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 338</value>
+  </data>
+  <data name="Button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="Button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 80</value>
+  </data>
+  <data name="Button4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Button4.Text" xml:space="preserve">
+    <value>What's New</value>
+  </data>
+  <metadata name="ToolTipForWhatsNew.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>634, 17</value>
+  </metadata>
+  <data name="Button4.ToolTip" xml:space="preserve">
+    <value>See what is new in this build</value>
+  </data>
+  <data name="&gt;&gt;Button4.Name" xml:space="preserve">
+    <value>Button4</value>
+  </data>
+  <data name="&gt;&gt;Button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="Button5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Button5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt</value>
+  </data>
+  <data name="Button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 248</value>
+  </data>
+  <data name="Button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="Button5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 80</value>
+  </data>
+  <data name="Button5.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Button5.Text" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <metadata name="ToolTipForRestart.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>315, 17</value>
+  </metadata>
+  <data name="Button5.ToolTip" xml:space="preserve">
+    <value>Restart the game</value>
+  </data>
+  <data name="Button5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Button5.Name" xml:space="preserve">
+    <value>Button5</value>
+  </data>
+  <data name="&gt;&gt;Button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button5.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="Label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15pt</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 50</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 28</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Version 1.6.2</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="Button6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Button6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13pt</value>
+  </data>
+  <data name="Button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>597, 12</value>
+  </data>
+  <data name="Button6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 32</value>
+  </data>
+  <data name="Button6.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Button6.Text" xml:space="preserve">
+    <value>Reset Clip Service</value>
+  </data>
+  <metadata name="ToolTipForResetClipService.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1317, 17</value>
+  </metadata>
+  <data name="Button6.ToolTip" xml:space="preserve">
+    <value>If you accidently closed the game directly without using close game button,
+use this button to fix the windows store not working related issues.</value>
+  </data>
+  <data name="&gt;&gt;Button6.Name" xml:space="preserve">
+    <value>Button6</value>
+  </data>
+  <data name="&gt;&gt;Button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="Button7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Button7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13pt</value>
+  </data>
+  <data name="Button7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>597, 50</value>
+  </data>
+  <data name="Button7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 32</value>
+  </data>
+  <data name="Button7.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="Button7.Text" xml:space="preserve">
+    <value>Reset Form</value>
+  </data>
+  <metadata name="ToolTipForResetForm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1149, 17</value>
+  </metadata>
+  <data name="Button7.ToolTip" xml:space="preserve">
+    <value>Reset the form to get the hidden buttons back</value>
+  </data>
+  <data name="&gt;&gt;Button7.Name" xml:space="preserve">
+    <value>Button7</value>
+  </data>
+  <data name="&gt;&gt;Button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="Label2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 515</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 37</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Not Running</value>
+  </data>
+  <data name="Label2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="Label3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 469</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 37</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Installed</value>
+  </data>
+  <data name="Label3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="Label4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15pt</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 28</value>
+  </data>
+  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>Experimental</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="GroupBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="PictureBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 30</value>
+  </data>
+  <data name="PictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 38</value>
+  </data>
+  <data name="PictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <metadata name="ToolTipForNightTheme.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>971, 17</value>
+  </metadata>
+  <data name="PictureBox2.ToolTip" xml:space="preserve">
+    <value>Changes the background image to night theme</value>
+  </data>
+  <data name="&gt;&gt;PictureBox2.Name" xml:space="preserve">
+    <value>PictureBox2</value>
+  </data>
+  <data name="&gt;&gt;PictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox2.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="PictureBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
+  </data>
+  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 38</value>
+  </data>
+  <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="ToolTipForDayTheme.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>803, 17</value>
+  </metadata>
+  <data name="PictureBox1.ToolTip" xml:space="preserve">
+    <value>Changes the background image to day theme</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
+    <value>PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13pt</value>
+  </data>
+  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 90</value>
+  </data>
+  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 76</value>
+  </data>
+  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="ToolTipForInstallNow.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>148, 17</value>
+  </metadata>
+  <metadata name="Button8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Button8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13pt</value>
+  </data>
+  <data name="Button8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>597, 88</value>
+  </data>
+  <data name="Button8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 32</value>
+  </data>
+  <data name="Button8.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="Button8.Text" xml:space="preserve">
+    <value>Restart Launcher</value>
+  </data>
+  <data name="&gt;&gt;Button8.Name" xml:space="preserve">
+    <value>Button8</value>
+  </data>
+  <data name="&gt;&gt;Button8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>784, 561</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAEAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAA
+        AAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAA
+        AAEAAAAAAAAAAAAAAAAAAAAADxYfHh0rPEIaJjdFGCQzRRMcKUUTHClFGCQzRRsoOEUmOE5FKTlNRS4w
+        M0UsLS5FFR0oRRMcKUUYJDNFGCQzRRMcKEUVHyxFJTZMRSY4TkUbKDhFGCQzRRMcKUUTHClFGCQzRRso
+        OUUjM0hCExwnHgAAAAAAAAAALUJcACk9VApAXoOZRWWM5jpVeec2T3HnKT1Z5yk9Wec1T3HnO1h951R7
+        rOdafarnZ2tx52BiZecvP1fnKT1Z5zZPcec2T3HnKTxY5y1CYOdSeKjnVXus5zxYfec2T3HnKT1Z5yk9
+        Wec1T3HnO1h951R7q+ZRdaSZNUxrCjlTdABJbJYASWyWHEtumd1Ja5X/OVV5/zZPcf8tRGH/LURi/zdR
+        dP89WoD/V36x/12BsP9mbnn/YGZt/zNHYf8tQ2H/Nk9y/zZPcf8rQV7/MEdn/1V8rf9XfrH/O1d8/zVO
+        cf8rQV//LEFf/zdRdP89WX//U3mq/1d/sN1Ue6scVHqrAFmBtABZgbQeWYK14FN5qf8vR2b/LUNh/0Jh
+        iP9EY4z/OlZ6/z1agP9XfrH/WoG0/09ulf9Mao//RmaP/0JgiP8tQ2L/K0Ff/zVOcf87V3z/V36x/1V8
+        rf8wR2f/K0Fe/zVPcf83UnX/OVR3/zlVef89WX//PVqA4D1agB49WoAAWYG0AFmBtB5ZgrXgU3mp/y9H
+        Zv8tRGL/RWaO/0dpkv87Vnv/PFl//1N5qf9WfK7/THCd/0tumf9JbJb/RWWO/yxBX/8qP1z/OlZ7/0Bf
+        hv9Ueqv/Unam/y1EYv8qP1z/O1Z7/z1af/85VXn/OlR4/z5Wdv8/VnbgP1Z2Hj9WdgBLbpoAS26aHktu
+        muBJa5X/OVR4/zlUeP9HaJH/R2iS/ztXe/85VXn/PFl//0Bfhv9Wfa//V4Cy/0tumf9FZY3/LEFf/y1E
+        Yv9Sd6f/VHus/0Bfhv86Vnv/Kj5b/y1DYv9Sdqf/VHmr/zxZf/8+Vnb/YGZt/2VobOBlaGweZWhsAEVl
+        jQBFZY0eRWWN4ERjiv86Vnr/O1d8/0lrlf9Ja5X/OVR4/zhRdP8+VXX/Qlt9/1J4p/9Ue6v/THCc/0dp
+        kv8vR2X/MUlo/1B1pP9Sd6f/O1Z7/zZPcv8vRmX/M0xu/1R6q/9VfK3/O1d8/z1UdP9ja3T/aW504Glu
+        dB5pbnQALEFfACxBXx4sQV/gLkNi/zdRdf89Wn//Vnyt/1R5qv8vR2b/MUNd/15jav9fZGv/NEhj/zNL
+        bf9Ueqv/V36w/0hpkv9CYYj/MUlp/y1EY/8qPlv/L0Vl/1B1o/9Ue6v/THCc/0dokf8uRGP/MEdm/1d5
+        pf9dgrDgXYGvHl2BrwAsQV8ALEFfHixBX+AuQ2L/N1F1/z1af/9WfK3/VHmq/y9HZv8xQ13/XmNq/19k
+        a/80SGP/M0ts/1J3qP9Wfa//TXCd/0dokv8sQV//KDxY/y1CYf8zS2z/Unio/1Z9r/9NcJz/R2iR/yxB
+        X/8uRGP/U3mp/1mCteBZgbQeWYG0AEVmjgBFZo4eRWaO4ERki/86Vnr/O1d8/0lrlv9Ja5b/OVR5/zhR
+        dP8+Vnb/Qlx+/1N4p/9SeKj/QF6F/0Bfhv9Wfq//U3qq/y5EY/8tQ2H/UHSi/1J4p/9AXoT/QF+F/1Z+
+        r/9Teqr/LkNi/yxBXv9HaJL/S26b4Etumh5LbpoARWaOAEVmjh5FZo7gRGSL/0BZef9AWXn/RGOK/0Rj
+        i/86Vnv/OVR3/zdRdP87V3v/U3qq/1N6qv87Vnv/OlZ6/1J3p/9QdaT/L0Zl/zBHZ/9Vfa7/WICy/z9b
+        gv8+WoH/Unio/1F2pf8zS2z/MEho/0JhiP9FZY3gRWWNHkVljQAsQV8ALEFfHitBX+AzRmH/X2Rr/19k
+        a/8zRmD/LURi/zhSdf83UnX/LEFe/yxCX/87V3z/O1d8/yxCX/8qP1z/LUNi/y9GZf82T3H/O1d8/1d+
+        sP9ZgbT/SmyX/0RjjP8xSGj/M0ps/1F2pf9QdaT/MEho/ytAXuArQV8eK0FfAC5EYwAuRGMeLURj4DVJ
+        Zf9hZ2//YGZt/y9BW/8qP13/O1d7/ztXfP8uRGP/LUNi/zhSdf84UnX/LkNi/yxAXv8qPlv/LEFe/zdR
+        dP89WoD/V36x/1mBtP9KbJf/RGOM/zFIaP8zS2z/Unio/1N4p/81SGT/MEBZ4DBBWh4wQVoAVXytAFV8
+        rR5VfK3gVHqq/05tlP9IZYn/LEFe/y1EYv9Rdqf/VXyt/0dpkv9DZIv/OlZ6/zpWev9EZIz/Q2SL/zlU
+        d/83UXT/OFN3/z1agP9Xf7H/V3+x/z9cg/8+W4H/Unin/1J4qP9AXob/QVt9/15ka/9jZWjgY2VoHmNl
+        aABZgrUAWYK1HlmCteBXgLL/TXGe/0dokv8uRGP/MEdm/1d5pf9bfqz/SGmS/0Rki/9AWXn/QFl5/0Rk
+        i/9EZIz/OlZ7/zlTd/83UXT/O1Z7/1N5qf9Tean/O1Z7/ztXe/9VfK7/VXyu/ztXfP89VHP/ZGt0/2pu
+        dOBqbnQeam50AEtumQBLbpkeS26Z4E1wnP9Yf7H/VXut/ztXfP89VHT/Y2t0/2Jpcf8zRmH/MkVg/19k
+        a/9fZGv/M0Zg/y1DYv84UnX/N1J1/yxBX/8sQmD/O1d8/ztXfP8sQmD/LkRj/0dpkv9HaZL/LkRj/zBH
+        Zv9XeaX/XYKw4F2Brx5dga8ASWuVAElrlR5Ja5XgS22Y/1Z8rv9Ueav/PlyD/0BZev9gZm7/XmNq/zFE
+        Xf8xRF7/Ymlx/2Jpcf8xRF7/LEJf/ztXfP87V3v/Kj9d/yo/XP83UXT/N1F0/yo/W/8sQmD/R2iS/0dp
+        kv8uRGP/L0Zm/1J2p/9Xf7LgV36xHld+sQBJa5UASWuVHklrleBIaZL/PlyC/z5cgv9GZ5D/RmeP/0BZ
+        ev8+Vnb/OFF0/zxXe/9ZfKj/WXyo/ztWe/87Vnv/VHmp/1J2pv8uRGL/Kj5b/zdRdP83UXT/Kj5b/y5E
+        Y/9Tean/VXyt/ztXfP83UnX/PFh+/z1Zf+A9WX8ePVl/AEVljgBFZY4eRWWO4ERji/86Vnr/OlZ6/0Rk
+        jP9DZIv/OVR3/zdRdP85U3f/PVl//1R5q/9Ueqz/QF6F/0Bfhv9Yf7L/Vnyu/zJKav8tRGH/OFJ1/zhS
+        df8tRGH/Mkpq/1Z8rv9XfrH/O1d8/zdSdf88WH7/PVl/4D1Zfx49WX8ALEFfACxBXx4sQV/gLkNi/zhS
+        df84UnX/LkNi/yxBXv8qP1z/LEJf/zdRdf86VXn/PFl//0Behv9Ueqv/WH+y/1uEuP9YgLT/SGmT/0Nj
+        i/86VXr/OlV6/0Njiv9IaZL/WYG0/1V8rv8wR2f/L0Zm/1J2p/9Xf7LgV36xHld+sQAsSlsALEpbHixK
+        W+AtS17/NlBx/zVQcf8qR1r/KEVX/yg9WP8qPlv/NU5x/zdSdf85U3f/PVl//1V8rf9agbT/XYGw/1uA
+        rP9PeJn/SnSS/zlfeP85Xnj/SWyV/0xxnP9UhKr/UH6j/y9HZf8vR2X/UX6j/1aIruBWh60eVoetAESk
+        bwBEpG8eRKVv4EGYbf8tSl7/KkZb/yuCV/8rglb/KEVY/yg7WP8qPVv/LEFf/zdRdP87V3z/SWqV/09t
+        lf9lbXj/aXh4/2i2l/9gupP/NJRh/zKMZP9Ugqv/VYOs/zaSbP8xjGT/Nlly/zZZcv8yjGT/MZVi4DGU
+        Yh4xlGIARrFwAEaxcB5GsnDgQ6Rt/y1UXP8qUVn/LpFZ/y6RWf8rUln/KkdZ/ypIWf8sSVz/NVBw/zpW
+        eP9KcpH/UHWR/2Rsc/9ndnP/Z72S/2DDj/81oGD/M5dj/1GIo/9RiKP/NJhj/zCRXP82WXH/Nllx/zCR
+        XP8vm1ngL5pZHi+aWQA4omIAOKJiHjiiYuA4oGL/NJVf/zaXYf9DrG3/Q6xt/zaXYf80lF//NJVf/zOK
+        X/8rR1z/MU1k/2Cwk/9ktpr/UHWS/01zjf9MrHr/S7V2/0awcP9DrG3/M5dj/zOXY/9DrW7/QqJt/y1L
+        Xv8tS17/QqFt/0Wwb+BFr28eRa9vADiiYgA4omIeOKJi4DiiYv81oF//N6Jh/0Subv9Er27/OqVk/zij
+        Yv82omD/NJZf/ylRWP8vVl//YLmP/2O+lv9Jeo//RXeK/0aodP9GsXD/SLJy/0Wvb/8ynVz/Mpxc/0Ou
+        bf9DpG3/K1Nb/yxTW/9EpW//SLNy4Eiych5IsnIARrBwAEawcB5GsHDgQ61t/zCaWv8umFj/N6Fh/zqk
+        ZP9Erm7/RK5u/ziiYv81nV//LI1X/y+QWv9IsHP/SbF0/zKVYP8wk13/N6Bh/zqkZP9GsHD/SLJy/0Wv
+        b/9DrW3/OqRk/zafYP8sjVf/LpBZ/0Wtb/9IsnLgSLJyHkiycgBHsHEAR7BxHkWvb+BCrGz/Mpxc/y+a
+        Wv8znl7/NqFh/0Subv9Erm7/N6Fh/zSeXv8wmlr/MZxb/0KsbP9CrGz/MZxb/y+aWv8znl7/NqFh/0aw
+        cP9IsnL/RrBw/0Subv84omL/NZ9f/zCbWv8xnFv/Qaxr/0Wvb+BHsHAeR7BwAD+hZwBAomccOJ1g3TWe
+        X/9Frm7/RK1t/zObXP8xmVr/OqJj/zqiY/8xmVr/M5tc/0Stbf9Frm7/NJ1e/zSdXv9Frm7/RK1t/zOb
+        XP8zm1z/R7Bx/0ixcv89pWb/O6Nk/zmhYv87o2T/Ra5u/0Wubv81nl//OJ1g3UCiZxw/oWcAPp5kAD6e
+        ZAY/n2WIQaJo3lW2e+BVtnvgQaJo4D+gZuBGp23gRqdt4D+gZuBBomjgVbZ74FW2e+BBoWfgQaFn4FW2
+        e+BVtnvgQaJo4EGiaOBVtnvgVrd84EmqcOBHqG7gR6hu4EmqcOBWt3zgVbZ74EGiaN4/n2WIP55lBj6e
+        ZAAAAAAAQ6FoAECfZgZGpGsbWLh+Hli4fh5FpGseQ6JpHkqpcB5KqXAeQ6JpHkWkax5YuH4eWLh+HkWk
+        ax5FpGseWLh+Hli4fh5FpGseRaRrHli4fh5ZuX8eTaxzHkuqcR5LqnEeTaxzHlm5fx5YuH4eRqRrG0Cf
+        ZgdCoWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAwAAAA8AAAAOAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAA
+        AAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAA
+        AAGAAAABgAAAAYAAAAGAAAABwAAAA/////8=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Minecraft BedRock Edition Launcher</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForRun.Name" xml:space="preserve">
+    <value>ToolTipForRun</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForRun.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForInstallNow.Name" xml:space="preserve">
+    <value>ToolTipForInstallNow</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForInstallNow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForRestart.Name" xml:space="preserve">
+    <value>ToolTipForRestart</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForRestart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForCloseGame.Name" xml:space="preserve">
+    <value>ToolTipForCloseGame</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForCloseGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForWhatsNew.Name" xml:space="preserve">
+    <value>ToolTipForWhatsNew</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForWhatsNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForDayTheme.Name" xml:space="preserve">
+    <value>ToolTipForDayTheme</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForDayTheme.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForNightTheme.Name" xml:space="preserve">
+    <value>ToolTipForNightTheme</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForNightTheme.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForResetForm.Name" xml:space="preserve">
+    <value>ToolTipForResetForm</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForResetForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForResetClipService.Name" xml:space="preserve">
+    <value>ToolTipForResetClipService</value>
+  </data>
+  <data name="&gt;&gt;ToolTipForResetClipService.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
