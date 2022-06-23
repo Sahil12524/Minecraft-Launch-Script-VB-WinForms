@@ -75,7 +75,15 @@
     <value>0</value>
   </data>
   <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>Version 1.6 (Experimental Release)
+    <value>Version 1.6.2
+1. Added the day and night theme to make the user feel more comfortable while using the launcher in darker room or in night time.
+2. Fixed the memory leak issue while changing background picture.
+3. Added the restart form button to restart the form quickly if user wants to restart the launcher. (Note: Restarting the laucher will cause the game to force close too. Do not restart the launcher if the minecraft is already running!).
+4. Added the tool tip on the buttons to make the laucher more easy to use.
+5. Added the on hover and on leave mouse event on rest of the newly added buttons.
+6. Minor UI Improvements.
+
+Version 1.6 (Experimental Release)
 1. Added the functionality to check wether the minecraft is installed or not. if not installed the Run button will not be visible. Even if some user bypasses the install detection and some how the Run button got visible, if the minecraft is not installed the script will not crash instead it will show error and redirect user to download page.
 2. Added the functionality to check wether the mincraft is running or not. Basically Added the  Minecraft running status at bottom left.
 3. Removed the dynamic resize functionality as it was creating problems wile moving the window or minimizing the window.

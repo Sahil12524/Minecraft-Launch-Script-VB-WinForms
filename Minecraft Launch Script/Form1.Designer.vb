@@ -55,102 +55,172 @@ Partial Class Form1
         '
         'Button1
         '
-        resources.ApplyResources(Me.Button1, "Button1")
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Location = New System.Drawing.Point(83, 248)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(5)
         Me.Button1.Name = "Button1"
-        Me.ToolTipForRun.SetToolTip(Me.Button1, resources.GetString("Button1.ToolTip"))
+        Me.Button1.Size = New System.Drawing.Size(200, 80)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Run"
+        Me.ToolTipForRun.SetToolTip(Me.Button1, "Start the game")
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        resources.ApplyResources(Me.Button2, "Button2")
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.Location = New System.Drawing.Point(503, 248)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(5)
         Me.Button2.Name = "Button2"
-        Me.ToolTipForCloseGame.SetToolTip(Me.Button2, resources.GetString("Button2.ToolTip"))
+        Me.Button2.Size = New System.Drawing.Size(200, 80)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "Close Game"
+        Me.ToolTipForCloseGame.SetToolTip(Me.Button2, "Close the game after playing (Very Important)." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "It will cause problems with the w" &
+        "indows store if you close the game directly.")
         Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.Visible = False
         '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.Control
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        resources.ApplyResources(Me.Button3, "Button3")
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button3.Location = New System.Drawing.Point(241, 246)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(5)
         Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(300, 80)
+        Me.Button3.TabIndex = 3
+        Me.Button3.Text = "Install Now"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
-        resources.ApplyResources(Me.Button4, "Button4")
+        Me.Button4.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button4.Location = New System.Drawing.Point(241, 338)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(5)
         Me.Button4.Name = "Button4"
-        Me.ToolTipForWhatsNew.SetToolTip(Me.Button4, resources.GetString("Button4.ToolTip"))
+        Me.Button4.Size = New System.Drawing.Size(300, 80)
+        Me.Button4.TabIndex = 4
+        Me.Button4.Text = "What's New"
+        Me.ToolTipForWhatsNew.SetToolTip(Me.Button4, "See what is new in this build")
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        resources.ApplyResources(Me.Button5, "Button5")
+        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button5.Location = New System.Drawing.Point(293, 248)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(5)
         Me.Button5.Name = "Button5"
-        Me.ToolTipForRestart.SetToolTip(Me.Button5, resources.GetString("Button5.ToolTip"))
+        Me.Button5.Size = New System.Drawing.Size(200, 80)
+        Me.Button5.TabIndex = 6
+        Me.Button5.Text = "Restart"
+        Me.ToolTipForRestart.SetToolTip(Me.Button5, "Restart the game")
         Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.Visible = False
         '
         'Label1
         '
-        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.White
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(12, 50)
         Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(122, 28)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Version 1.6.2"
         '
         'Button6
         '
-        resources.ApplyResources(Me.Button6, "Button6")
+        Me.Button6.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button6.Location = New System.Drawing.Point(597, 50)
         Me.Button6.Name = "Button6"
-        Me.ToolTipForResetClipService.SetToolTip(Me.Button6, resources.GetString("Button6.ToolTip"))
+        Me.Button6.Size = New System.Drawing.Size(175, 32)
+        Me.Button6.TabIndex = 8
+        Me.Button6.Text = "Reset Clip Service"
+        Me.ToolTipForResetClipService.SetToolTip(Me.Button6, "If you accidently closed the game directly without using close game button," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "use " &
+        "this button to fix the windows store not working related issues.")
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        resources.ApplyResources(Me.Button7, "Button7")
+        Me.Button7.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button7.Location = New System.Drawing.Point(597, 12)
         Me.Button7.Name = "Button7"
-        Me.ToolTipForResetForm.SetToolTip(Me.Button7, resources.GetString("Button7.ToolTip"))
+        Me.Button7.Size = New System.Drawing.Size(175, 32)
+        Me.Button7.TabIndex = 9
+        Me.Button7.Text = "Reset Form"
+        Me.ToolTipForResetForm.SetToolTip(Me.Button7, "Reset the form to get the hidden buttons back")
         Me.Button7.UseVisualStyleBackColor = True
         '
         'Label2
         '
-        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.Color.Red
+        Me.Label2.Location = New System.Drawing.Point(12, 515)
         Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(168, 37)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "Not Running"
+        Me.Label2.Visible = False
         '
         'Label3
         '
-        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(12, 469)
         Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(117, 37)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "Installed"
+        Me.Label3.Visible = False
         '
         'Label4
         '
-        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(12, 12)
         Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(125, 28)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Experimental"
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.PictureBox2)
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
-        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox1.ForeColor = System.Drawing.Color.Red
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 90)
         Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(113, 76)
+        Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Theme"
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.Minecraft_Launch_Script.My.Resources.Resources.nightIco
-        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
+        Me.PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.PictureBox2.Location = New System.Drawing.Point(63, 30)
         Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(44, 38)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
-        Me.ToolTipForNightTheme.SetToolTip(Me.PictureBox2, resources.GetString("PictureBox2.ToolTip"))
+        Me.ToolTipForNightTheme.SetToolTip(Me.PictureBox2, "Changes the background image to night theme")
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Minecraft_Launch_Script.My.Resources.Resources.dayIco
-        resources.ApplyResources(Me.PictureBox1, "PictureBox1")
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 30)
         Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(44, 38)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        Me.ToolTipForDayTheme.SetToolTip(Me.PictureBox1, resources.GetString("PictureBox1.ToolTip"))
+        Me.ToolTipForDayTheme.SetToolTip(Me.PictureBox1, "Changes the background image to day theme")
         '
         'ToolTipForRun
         '
@@ -199,15 +269,23 @@ Partial Class Form1
         '
         'Button8
         '
-        resources.ApplyResources(Me.Button8, "Button8")
+        Me.Button8.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button8.Location = New System.Drawing.Point(597, 88)
         Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(175, 32)
+        Me.Button8.TabIndex = 16
+        Me.Button8.Text = "Restart Launcher"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        resources.ApplyResources(Me, "$this")
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
+        Me.AutoSize = True
         Me.BackgroundImage = Global.Minecraft_Launch_Script.My.Resources.Resources.mcbackGndDay
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
@@ -224,8 +302,10 @@ Partial Class Form1
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.HelpButton = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Form1"
+        Me.Text = "Minecraft BedRock Edition Launcher"
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

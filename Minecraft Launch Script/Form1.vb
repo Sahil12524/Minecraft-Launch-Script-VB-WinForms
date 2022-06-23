@@ -1,5 +1,4 @@
-﻿'This is Debug Version
-Public Class Form1
+﻿Public Class Form1
 
     Dim rs As New Resizer
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -26,7 +25,6 @@ Public Class Form1
             Label3.Text = "Not Installed"
             Label3.ForeColor = Color.Red
         End If
-        Me.Refresh()
     End Sub
 
     Private Sub Form1_Resize(sender As Object, e As EventArgs)
@@ -63,6 +61,8 @@ Public Class Form1
         Label2.Visible = True
         Label2.Text = "Running"
         Label2.ForeColor = Color.Green
+        Button6.Enabled = False
+        Button8.Enabled = False
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -79,7 +79,8 @@ Public Class Form1
             Label2.Visible = True
             Label2.Text = "Not Running"
             Label2.ForeColor = Color.Red
-            'Me.Close()
+            Button6.Enabled = True
+            Button8.Enabled = True
         End If
     End Sub
 
@@ -118,12 +119,10 @@ Public Class Form1
 
     Private Sub Button1_MouseHover(sender As Object, e As EventArgs) Handles Button1.MouseHover
         Me.Button1.BackColor = Color.LimeGreen
-        'Me.Refresh()
     End Sub
 
     Private Sub Button1_MouseLeave(sender As Object, e As EventArgs) Handles Button1.MouseLeave
         Me.Button1.BackColor = Control.DefaultBackColor
-        'Me.Refresh()
     End Sub
 
     Private Sub Button5_MouseHover(sender As Object, e As EventArgs) Handles Button5.MouseHover
@@ -152,33 +151,56 @@ Public Class Form1
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Process.Start("bin/resetsvcstatus.bat")
+        Button6.Enabled = False
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         'Button3.Visible = True
         Button4.Visible = True
-        'Me.Refresh()
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.BackgroundImage.Dispose()
         Me.BackgroundImage = Nothing
         Me.BackgroundImage = System.Drawing.Image.FromFile("background/mcbackGndDay.jpg")
-        'Me.Refresh()
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Me.BackgroundImage.Dispose()
         Me.BackgroundImage = Nothing
         Me.BackgroundImage = System.Drawing.Image.FromFile("background/mcbackGndNight.jpg")
-        'Me.Refresh()
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        'Button8.Enabled = False
         Dim result As DialogResult = MessageBox.Show("Are You Sure That You Want To Restart The Launcher?
 Note: If You Restart The Launcher The Game Will Also Close Along With The Launcher.", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
             Application.Restart()
         End If
+    End Sub
+
+    Private Sub Button6_MouseHover(sender As Object, e As EventArgs) Handles Button6.MouseHover
+        Me.Button6.BackColor = Color.LimeGreen
+    End Sub
+
+    Private Sub Button6_MouseLeave(sender As Object, e As EventArgs) Handles Button6.MouseLeave
+        Me.Button6.BackColor = Control.DefaultBackColor
+    End Sub
+
+    Private Sub Button7_MouseHover(sender As Object, e As EventArgs) Handles Button7.MouseHover
+        Me.Button7.BackColor = Color.LimeGreen
+    End Sub
+
+    Private Sub Button7_MouseLeave(sender As Object, e As EventArgs) Handles Button7.MouseLeave
+        Me.Button7.BackColor = Control.DefaultBackColor
+    End Sub
+
+    Private Sub Button8_MouseHover(sender As Object, e As EventArgs) Handles Button8.MouseHover
+        Me.Button8.BackColor = Color.LimeGreen
+    End Sub
+
+    Private Sub Button8_MouseLeave(sender As Object, e As EventArgs) Handles Button8.MouseLeave
+        Me.Button8.BackColor = Control.DefaultBackColor
     End Sub
 End Class
