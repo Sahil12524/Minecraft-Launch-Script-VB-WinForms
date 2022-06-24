@@ -4,22 +4,28 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
         mediaPlayer.Play()
-        Button1.Location = New Point(293, 248)
+        'Button1.Location = New Point(293, 248)
+        Button5.Enabled = False
+        Button2.Enabled = False
         Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App")
         Threading.Thread.Sleep(3000) 'This basically slows down our program, and the main windows gets time to load after 3 sec after the minecraft gets loaded, if this lines is removed the program does'nt works correctly.
         Dim myProcess() As Process = Process.GetProcessesByName("Minecraft.Windows")
         If myProcess.Length > 0 Then
             'Process is running
-            Button3.Visible = False
+            'Button3.Visible = False
+            Button3.Enabled = False
             Shell("taskkill /F /IM Minecraft.Windows.exe")
             'Label3.Font = New Font("Segoe UI", 20)
             Label3.Visible = True
             Label3.Text = "Installed"
-            Label3.ForeColor = Color.Green
+            Label3.ForeColor = Color.Lime
         Else
             'Process is not running
-            Button3.Visible = True
-            Button1.Visible = False
+            'Button3.Visible = True
+            'Button1.Visible = False
+            Button5.Enabled = False
+            Button2.Enabled = False
+            Button1.Enabled = False
             Label3.Font = New Font("Segoe UI", 20)
             Label3.Visible = True
             Label3.Text = "Not Installed"
@@ -29,9 +35,12 @@
 
     Private Sub Form1_Resize(sender As Object, e As EventArgs)
         rs.ResizeAllControls(Me)
-        Button1.Location = New Point(293, 248)
-        Button5.Location = New Point(116, 248)
-        Button2.Location = New Point(464, 248)
+        'Me.Refresh()
+        'Button1.Location = New Point(293, 248)
+        'Button5.Location = New Point(116, 248)
+        'Button2.Location = New Point(464, 248)
+        Label3.Font = New Font("Segoe UI", 20)
+        Label2.Font = New Font("Segoe UI", 20)
     End Sub
 
     Private Declare Function ShellExecute _
@@ -50,17 +59,22 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         mediaPlayer.Play()
         Process.Start("bin/start.bat")
-        Button5.Visible = True
-        Button2.Visible = True
-        Button3.Visible = False
-        Button1.Visible = False
-        Button4.Visible = False
-        Button5.Location = New Point(116, 248)
-        Button2.Location = New Point(464, 248)
-        'Label2.Font = New Font("Segoe UI", 20)
+        'Button5.Visible = True
+        Button5.Enabled = True
+        'Button2.Visible = True
+        Button2.Enabled = True
+        'Button3.Visible = False
+        Button3.Enabled = False
+        'Button1.Visible = False
+        Button1.Enabled = False
+        'Button4.Visible = False
+
+        'Button5.Location = New Point(116, 248)
+        'Button2.Location = New Point(464, 248)
+        Label2.Font = New Font("Segoe UI", 20)
         Label2.Visible = True
         Label2.Text = "Running"
-        Label2.ForeColor = Color.Green
+        Label2.ForeColor = Color.Lime
         Button6.Enabled = False
         Button8.Enabled = False
     End Sub
@@ -71,11 +85,14 @@
         If result = DialogResult.Yes Then
             mediaPlayer.Play()
             Process.Start("bin/stop.bat")
-            Button5.Visible = False
-            Button2.Visible = False
-            Button1.Visible = True
-            Button1.Location = New Point(293, 248)
-            'Label2.Font = New Font("Segoe UI", 20)
+            'Button5.Visible = False
+            Button5.Enabled = False
+            'Button2.Visible = False
+            Button2.Enabled = False
+            'Button1.Visible = True
+            Button1.Enabled = True
+            'Button1.Location = New Point(293, 248)
+            Label2.Font = New Font("Segoe UI", 20)
             Label2.Visible = True
             Label2.Text = "Not Running"
             Label2.ForeColor = Color.Red
@@ -154,21 +171,18 @@
         Button6.Enabled = False
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        'Button3.Visible = True
-        Button4.Visible = True
-    End Sub
-
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Me.BackgroundImage.Dispose()
-        Me.BackgroundImage = Nothing
-        Me.BackgroundImage = System.Drawing.Image.FromFile("background/mcbackGndDay.jpg")
+        'Me.BackgroundImage.Dispose()
+        'Me.BackgroundImage = Nothing
+        'Me.BackgroundImage = System.Drawing.Image.FromFile("background/mcbackGndDay.jpg")
+        Me.BackColor = DefaultBackColor
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        Me.BackgroundImage.Dispose()
-        Me.BackgroundImage = Nothing
-        Me.BackgroundImage = System.Drawing.Image.FromFile("background/mcbackGndNight.jpg")
+        'Me.BackgroundImage.Dispose()
+        'Me.BackgroundImage = Nothing
+        'Me.BackgroundImage = System.Drawing.Image.FromFile("background/mcbackGndNight.jpg")
+        Me.BackColor = Color.Black
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
@@ -186,14 +200,6 @@ Note: If You Restart The Launcher The Game Will Also Close Along With The Launch
 
     Private Sub Button6_MouseLeave(sender As Object, e As EventArgs) Handles Button6.MouseLeave
         Me.Button6.BackColor = Control.DefaultBackColor
-    End Sub
-
-    Private Sub Button7_MouseHover(sender As Object, e As EventArgs) Handles Button7.MouseHover
-        Me.Button7.BackColor = Color.LimeGreen
-    End Sub
-
-    Private Sub Button7_MouseLeave(sender As Object, e As EventArgs) Handles Button7.MouseLeave
-        Me.Button7.BackColor = Control.DefaultBackColor
     End Sub
 
     Private Sub Button8_MouseHover(sender As Object, e As EventArgs) Handles Button8.MouseHover

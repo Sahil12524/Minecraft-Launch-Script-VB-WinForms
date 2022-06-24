@@ -31,7 +31,6 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -45,7 +44,6 @@ Partial Class Form1
         Me.ToolTipForWhatsNew = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTipForDayTheme = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTipForNightTheme = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ToolTipForResetForm = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTipForResetClipService = New System.Windows.Forms.ToolTip(Me.components)
         Me.Button8 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
@@ -56,7 +54,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(83, 248)
+        Me.Button1.Location = New System.Drawing.Point(82, 259)
         Me.Button1.Margin = New System.Windows.Forms.Padding(5)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(200, 80)
@@ -68,7 +66,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(503, 248)
+        Me.Button2.Location = New System.Drawing.Point(502, 259)
         Me.Button2.Margin = New System.Windows.Forms.Padding(5)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(200, 80)
@@ -77,14 +75,13 @@ Partial Class Form1
         Me.ToolTipForCloseGame.SetToolTip(Me.Button2, "Close the game after playing (Very Important)." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "It will cause problems with the w" &
         "indows store if you close the game directly.")
         Me.Button2.UseVisualStyleBackColor = True
-        Me.Button2.Visible = False
         '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.Control
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button3.Location = New System.Drawing.Point(241, 246)
+        Me.Button3.Location = New System.Drawing.Point(240, 169)
         Me.Button3.Margin = New System.Windows.Forms.Padding(5)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(300, 80)
@@ -95,7 +92,7 @@ Partial Class Form1
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button4.Location = New System.Drawing.Point(241, 338)
+        Me.Button4.Location = New System.Drawing.Point(240, 349)
         Me.Button4.Margin = New System.Windows.Forms.Padding(5)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(300, 80)
@@ -107,7 +104,7 @@ Partial Class Form1
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button5.Location = New System.Drawing.Point(293, 248)
+        Me.Button5.Location = New System.Drawing.Point(292, 259)
         Me.Button5.Margin = New System.Windows.Forms.Padding(5)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(200, 80)
@@ -115,24 +112,24 @@ Partial Class Form1
         Me.Button5.Text = "Restart"
         Me.ToolTipForRestart.SetToolTip(Me.Button5, "Restart the game")
         Me.Button5.UseVisualStyleBackColor = True
-        Me.Button5.Visible = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.White
+        Me.Label1.BackColor = System.Drawing.Color.Black
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.Color.Lime
         Me.Label1.Location = New System.Drawing.Point(12, 50)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(122, 28)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Version 1.6.2"
+        Me.Label1.Text = "Version 1.6.3"
         '
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button6.Location = New System.Drawing.Point(597, 50)
+        Me.Button6.Location = New System.Drawing.Point(597, 12)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(175, 32)
         Me.Button6.TabIndex = 8
@@ -140,17 +137,6 @@ Partial Class Form1
         Me.ToolTipForResetClipService.SetToolTip(Me.Button6, "If you accidently closed the game directly without using close game button," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "use " &
         "this button to fix the windows store not working related issues.")
         Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button7.Location = New System.Drawing.Point(597, 12)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(175, 32)
-        Me.Button7.TabIndex = 9
-        Me.Button7.Text = "Reset Form"
-        Me.ToolTipForResetForm.SetToolTip(Me.Button7, "Reset the form to get the hidden buttons back")
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -168,7 +154,8 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(12, 469)
+        Me.Label3.ForeColor = System.Drawing.Color.Lime
+        Me.Label3.Location = New System.Drawing.Point(12, 478)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(117, 37)
         Me.Label3.TabIndex = 11
@@ -179,6 +166,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.ForeColor = System.Drawing.Color.Red
         Me.Label4.Location = New System.Drawing.Point(12, 12)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(125, 28)
@@ -191,7 +179,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.PictureBox2)
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.GroupBox1.ForeColor = System.Drawing.Color.Red
+        Me.GroupBox1.ForeColor = System.Drawing.Color.Cyan
         Me.GroupBox1.Location = New System.Drawing.Point(16, 90)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(113, 76)
@@ -257,11 +245,6 @@ Partial Class Form1
         Me.ToolTipForNightTheme.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
         Me.ToolTipForNightTheme.ToolTipTitle = "Night Theme"
         '
-        'ToolTipForResetForm
-        '
-        Me.ToolTipForResetForm.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
-        Me.ToolTipForResetForm.ToolTipTitle = "Reset Form"
-        '
         'ToolTipForResetClipService
         '
         Me.ToolTipForResetClipService.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
@@ -270,7 +253,7 @@ Partial Class Form1
         'Button8
         '
         Me.Button8.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button8.Location = New System.Drawing.Point(597, 88)
+        Me.Button8.Location = New System.Drawing.Point(597, 50)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(175, 32)
         Me.Button8.TabIndex = 16
@@ -283,7 +266,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoSize = True
-        Me.BackgroundImage = Global.Minecraft_Launch_Script.My.Resources.Resources.mcbackGndDay
+        Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.Button8)
@@ -292,7 +275,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button4)
@@ -320,7 +302,6 @@ Partial Class Form1
     Friend WithEvents Button5 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
@@ -334,7 +315,6 @@ Partial Class Form1
     Friend WithEvents ToolTipForInstallNow As ToolTip
     Friend WithEvents ToolTipForDayTheme As ToolTip
     Friend WithEvents ToolTipForNightTheme As ToolTip
-    Friend WithEvents ToolTipForResetForm As ToolTip
     Friend WithEvents ToolTipForResetClipService As ToolTip
     Friend WithEvents Button8 As Button
 End Class

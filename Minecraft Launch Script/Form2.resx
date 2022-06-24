@@ -75,7 +75,15 @@
     <value>0</value>
   </data>
   <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>Version 1.6.2
+    <value>Version 1.7
+1. Optimized the program (Uses less memory as compared to previous version)
+2. Removed the Background picture and added the the Black and White color for day and night theme.
+3. Using new method of disabling buttons instead of hiding them (Makes the program look good).
+4. Used multiple Bright Color for text to make text more attractive.
+5. Removed the button of Resetting Form.
+6. Major UI Changes and Improvements.
+
+Version 1.6.2
 1. Added the day and night theme to make the user feel more comfortable while using the launcher in darker room or in night time.
 2. Fixed the memory leak issue while changing background picture.
 3. Added the restart form button to restart the form quickly if user wants to restart the launcher. (Note: Restarting the laucher will cause the game to force close too. Do not restart the launcher if the minecraft is already running!).
