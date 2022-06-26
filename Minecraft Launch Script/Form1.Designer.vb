@@ -53,6 +53,7 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.SystemColors.Control
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button1.Location = New System.Drawing.Point(82, 259)
         Me.Button1.Margin = New System.Windows.Forms.Padding(5)
@@ -61,10 +62,11 @@ Partial Class Form1
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Run"
         Me.ToolTipForRun.SetToolTip(Me.Button1, "Start the game")
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.SystemColors.Control
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button2.Location = New System.Drawing.Point(502, 259)
         Me.Button2.Margin = New System.Windows.Forms.Padding(5)
@@ -74,7 +76,7 @@ Partial Class Form1
         Me.Button2.Text = "Close Game"
         Me.ToolTipForCloseGame.SetToolTip(Me.Button2, "Close the game after playing (Very Important)." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "It will cause problems with the w" &
         "indows store if you close the game directly.")
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -103,6 +105,7 @@ Partial Class Form1
         '
         'Button5
         '
+        Me.Button5.BackColor = System.Drawing.SystemColors.Control
         Me.Button5.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button5.Location = New System.Drawing.Point(292, 259)
         Me.Button5.Margin = New System.Windows.Forms.Padding(5)
@@ -111,7 +114,7 @@ Partial Class Form1
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "Restart"
         Me.ToolTipForRestart.SetToolTip(Me.Button5, "Restart the game")
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -122,9 +125,9 @@ Partial Class Form1
         Me.Label1.ForeColor = System.Drawing.Color.Lime
         Me.Label1.Location = New System.Drawing.Point(12, 50)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(122, 28)
+        Me.Label1.Size = New System.Drawing.Size(107, 28)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Version 1.6.3"
+        Me.Label1.Text = "Version 1.7"
         '
         'Button6
         '
@@ -166,12 +169,12 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.ForeColor = System.Drawing.Color.Red
+        Me.Label4.ForeColor = System.Drawing.Color.Lime
         Me.Label4.Location = New System.Drawing.Point(12, 12)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(125, 28)
+        Me.Label4.Size = New System.Drawing.Size(66, 28)
         Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Experimental"
+        Me.Label4.Text = "Stable"
         '
         'GroupBox1
         '

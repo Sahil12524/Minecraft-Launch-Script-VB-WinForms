@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>Minecraft_Launch_Script</RootNamespace>
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
@@ -10,7 +10,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
     <ApplicationIcon>minecraft_94415.ico</ApplicationIcon>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>sahilsign.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>sahilbhandari.pfx</AssemblyOriginatorKeyFile>
     <Version>1.0.0</Version>
     <Authors>Sahil Bhandari</Authors>
     <Description>Minecraft For Windows Trial Bypass.</Description>

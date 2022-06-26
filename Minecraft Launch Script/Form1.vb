@@ -4,8 +4,6 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
         mediaPlayer.Play()
-        Button5.Enabled = False
-        Button2.Enabled = False
         Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App")
         Threading.Thread.Sleep(3000) 'This basically slows down our program, and the main windows gets time to load after 3 sec after the minecraft gets loaded, if this lines is removed the program does'nt works correctly.
         Dim myProcess() As Process = Process.GetProcessesByName("Minecraft.Windows")
@@ -15,8 +13,11 @@
             Shell("taskkill /F /IM Minecraft.Windows.exe")
             Label3.Font = New Font("Segoe UI", 20)
             Label3.Visible = True
+            Button5.Enabled = False
+            Button2.Enabled = False
             Label3.Text = "Installed"
             Label3.ForeColor = Color.Lime
+            Me.Refresh()
         Else
             'Process is not running
             Button5.Enabled = False
@@ -26,6 +27,7 @@
             Label3.Visible = True
             Label3.Text = "Not Installed"
             Label3.ForeColor = Color.Red
+            Me.Refresh()
         End If
     End Sub
 
@@ -61,6 +63,7 @@
         Label2.ForeColor = Color.Lime
         Button6.Enabled = False
         Button8.Enabled = False
+        Me.Refresh()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -78,6 +81,7 @@
             Label2.ForeColor = Color.Red
             Button6.Enabled = True
             Button8.Enabled = True
+            Me.Refresh()
         End If
     End Sub
 
@@ -147,6 +151,7 @@
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Process.Start("bin/resetsvcstatus.bat")
         Button6.Enabled = False
+        Me.Refresh()
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -180,4 +185,5 @@ Note: If You Restart The Launcher The Game Will Also Close Along With The Launch
     Private Sub Button8_MouseLeave(sender As Object, e As EventArgs) Handles Button8.MouseLeave
         Me.Button8.BackColor = Control.DefaultBackColor
     End Sub
+
 End Class
