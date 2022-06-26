@@ -4,7 +4,6 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
         mediaPlayer.Play()
-        'Button1.Location = New Point(293, 248)
         Button5.Enabled = False
         Button2.Enabled = False
         Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App")
@@ -12,17 +11,14 @@
         Dim myProcess() As Process = Process.GetProcessesByName("Minecraft.Windows")
         If myProcess.Length > 0 Then
             'Process is running
-            'Button3.Visible = False
             Button3.Enabled = False
             Shell("taskkill /F /IM Minecraft.Windows.exe")
-            'Label3.Font = New Font("Segoe UI", 20)
+            Label3.Font = New Font("Segoe UI", 20)
             Label3.Visible = True
             Label3.Text = "Installed"
             Label3.ForeColor = Color.Lime
         Else
             'Process is not running
-            'Button3.Visible = True
-            'Button1.Visible = False
             Button5.Enabled = False
             Button2.Enabled = False
             Button1.Enabled = False
@@ -35,10 +31,6 @@
 
     Private Sub Form1_Resize(sender As Object, e As EventArgs)
         rs.ResizeAllControls(Me)
-        'Me.Refresh()
-        'Button1.Location = New Point(293, 248)
-        'Button5.Location = New Point(116, 248)
-        'Button2.Location = New Point(464, 248)
         Label3.Font = New Font("Segoe UI", 20)
         Label2.Font = New Font("Segoe UI", 20)
     End Sub
@@ -59,18 +51,10 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         mediaPlayer.Play()
         Process.Start("bin/start.bat")
-        'Button5.Visible = True
         Button5.Enabled = True
-        'Button2.Visible = True
         Button2.Enabled = True
-        'Button3.Visible = False
         Button3.Enabled = False
-        'Button1.Visible = False
         Button1.Enabled = False
-        'Button4.Visible = False
-
-        'Button5.Location = New Point(116, 248)
-        'Button2.Location = New Point(464, 248)
         Label2.Font = New Font("Segoe UI", 20)
         Label2.Visible = True
         Label2.Text = "Running"
@@ -85,13 +69,9 @@
         If result = DialogResult.Yes Then
             mediaPlayer.Play()
             Process.Start("bin/stop.bat")
-            'Button5.Visible = False
             Button5.Enabled = False
-            'Button2.Visible = False
             Button2.Enabled = False
-            'Button1.Visible = True
             Button1.Enabled = True
-            'Button1.Location = New Point(293, 248)
             Label2.Font = New Font("Segoe UI", 20)
             Label2.Visible = True
             Label2.Text = "Not Running"
@@ -102,7 +82,6 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        'Process.Start("https://www.youtube.com/channel/UCJaYH5KX_21lWfX2Ag3-ocg")
         mediaPlayer.Play()
         MessageBox.Show("Download only Minecraft Pocket Edition (Trial)", "Install Instruction", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         Dim r As Long
@@ -110,7 +89,6 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        'Process.Start("notepad.exe", "What's New.txt")
         mediaPlayer.Play()
         Form2.Show()
     End Sub
@@ -172,16 +150,10 @@
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        'Me.BackgroundImage.Dispose()
-        'Me.BackgroundImage = Nothing
-        'Me.BackgroundImage = System.Drawing.Image.FromFile("background/mcbackGndDay.jpg")
         Me.BackColor = DefaultBackColor
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        'Me.BackgroundImage.Dispose()
-        'Me.BackgroundImage = Nothing
-        'Me.BackgroundImage = System.Drawing.Image.FromFile("background/mcbackGndNight.jpg")
         Me.BackColor = Color.Black
     End Sub
 
