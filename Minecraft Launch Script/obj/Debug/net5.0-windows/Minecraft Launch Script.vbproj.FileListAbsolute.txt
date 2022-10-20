@@ -1,0 +1,13 @@
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft Launch Script.vbproj.AssemblyReference.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft_Launch_Script.Form1.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft_Launch_Script.Form2.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft_Launch_Script.Resources.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft_Launch_Script.Form2.ar.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft Launch Script.vbproj.GenerateResource.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft Launch Script.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft Launch Script.AssemblyInfoInputs.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft Launch Script.AssemblyInfo.vb
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft Launch Script.vbproj.CoreCompileInputs.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft Launch Script.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\refint\Minecraft Launch Script.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net5.0-windows\Minecraft Launch Script.pdb

@@ -131,6 +131,7 @@ Partial Class Form1
         '
         'Button6
         '
+        Me.Button6.BackColor = System.Drawing.SystemColors.Control
         Me.Button6.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button6.Location = New System.Drawing.Point(597, 12)
         Me.Button6.Name = "Button6"
@@ -139,7 +140,7 @@ Partial Class Form1
         Me.Button6.Text = "Reset Clip Service"
         Me.ToolTipForResetClipService.SetToolTip(Me.Button6, "If you accidently closed the game directly without using close game button," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "use " &
         "this button to fix the windows store not working related issues.")
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -255,13 +256,14 @@ Partial Class Form1
         '
         'Button8
         '
+        Me.Button8.BackColor = System.Drawing.SystemColors.Control
         Me.Button8.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button8.Location = New System.Drawing.Point(597, 50)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(175, 32)
         Me.Button8.TabIndex = 16
         Me.Button8.Text = "Restart Launcher"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Button8.UseVisualStyleBackColor = False
         '
         'Form1
         '

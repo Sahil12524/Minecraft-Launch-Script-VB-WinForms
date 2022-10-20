@@ -1,0 +1,49 @@
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.exe
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.dll.config
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.deps.json
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.runtimeconfig.json
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.dll
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.pdb
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\ar\Minecraft Launch Script.resources.dll
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.vbproj.AssemblyReference.cache
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.Form1.resources
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.Form2.resources
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.Resources.resources
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.Form2.ar.resources
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.vbproj.GenerateResource.cache
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.AssemblyInfoInputs.cache
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.AssemblyInfo.vb
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.vbproj.CoreCompileInputs.cache
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\ar\Minecraft Launch Script.resources.dll
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.dll
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\refint\Minecraft Launch Script.dll
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.pdb
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.genruntimeconfig.cache
+E:\Users\sahil\Desktop\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\ref\Minecraft Launch Script.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.exe
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.dll.config
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.deps.json
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.runtimeconfig.json
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\Minecraft Launch Script.pdb
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\ar\Minecraft Launch Script.resources.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\System.Management.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.vbproj.AssemblyReference.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.Form1.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.Form2.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.Resources.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.Form2.ar.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.vbproj.GenerateResource.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.AssemblyInfoInputs.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.AssemblyInfo.vb
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.vbproj.CoreCompileInputs.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\ar\Minecraft Launch Script.resources.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.vbproj.CopyComplete
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\refint\Minecraft Launch Script.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.pdb
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.genruntimeconfig.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\ref\Minecraft Launch Script.dll

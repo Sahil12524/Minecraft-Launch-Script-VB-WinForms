@@ -1,0 +1,9 @@
+is_global = true
+build_property.ApplicationManifest = My Project\app.manifest
+build_property.StartupObject = Sub Main
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
+build_property.RootNamespace = Minecraft_Launch_Script
+build_property.ProjectDir = E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\

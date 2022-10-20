@@ -1,9 +1,11 @@
 ﻿Public Class Form1
 
     Dim rs As New Resizer
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
         mediaPlayer.Play()
+
         Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App")
         Threading.Thread.Sleep(3000) 'This basically slows down our program, and the main windows gets time to load after 3 sec after the minecraft gets loaded, if this lines is removed the program does'nt works correctly.
         Dim myProcess() As Process = Process.GetProcessesByName("Minecraft.Windows")
@@ -53,6 +55,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         mediaPlayer.Play()
         Process.Start("bin/start.bat")
+        Threading.Thread.Sleep(3000)
         Button5.Enabled = True
         Button2.Enabled = True
         Button3.Enabled = False

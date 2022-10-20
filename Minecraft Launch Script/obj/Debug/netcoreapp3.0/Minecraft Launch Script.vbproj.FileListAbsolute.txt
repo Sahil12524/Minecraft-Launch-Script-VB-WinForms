@@ -1,0 +1,10 @@
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\netcoreapp3.0\Minecraft Launch Script.vbproj.AssemblyReference.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\netcoreapp3.0\Minecraft_Launch_Script.Form1.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\netcoreapp3.0\Minecraft_Launch_Script.Form2.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\netcoreapp3.0\Minecraft_Launch_Script.Resources.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\netcoreapp3.0\Minecraft_Launch_Script.Form2.ar.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\netcoreapp3.0\Minecraft Launch Script.vbproj.GenerateResource.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\netcoreapp3.0\Minecraft Launch Script.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\netcoreapp3.0\Minecraft Launch Script.AssemblyInfoInputs.cache
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\netcoreapp3.0\Minecraft Launch Script.AssemblyInfo.vb
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\netcoreapp3.0\Minecraft Launch Script.vbproj.CoreCompileInputs.cache
