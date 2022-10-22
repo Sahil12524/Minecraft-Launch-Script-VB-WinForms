@@ -6,31 +6,35 @@
         rs.FindAllControls(Me)
         mediaPlayer.Play()
 
-        Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App")
-        Threading.Thread.Sleep(3000) 'This basically slows down our program, and the main windows gets time to load after 3 sec after the minecraft gets loaded, if this lines is removed the program does'nt works correctly.
-        Dim myProcess() As Process = Process.GetProcessesByName("Minecraft.Windows")
-        If myProcess.Length > 0 Then
-            'Process is running
-            Button3.Enabled = False
-            Shell("taskkill /F /IM Minecraft.Windows.exe")
-            Label3.Font = New Font("Segoe UI", 20)
-            Label3.Visible = True
-            Button5.Enabled = False
-            Button2.Enabled = False
-            Label3.Text = "Installed"
-            Label3.ForeColor = Color.Lime
-            Me.Refresh()
-        Else
-            'Process is not running
-            Button5.Enabled = False
-            Button2.Enabled = False
-            Button1.Enabled = False
-            Label3.Font = New Font("Segoe UI", 20)
-            Label3.Visible = True
-            Label3.Text = "Not Installed"
-            Label3.ForeColor = Color.Red
-            Me.Refresh()
-        End If
+        'Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App")
+        'Threading.Thread.Sleep(3000) 'This basically slows down our program, and the main windows gets time to load after 3 sec after the minecraft gets loaded, if this lines is removed the program does'nt works correctly.
+        'Dim myProcess() As Process = Process.GetProcessesByName("Minecraft.Windows")
+        'If myProcess.Length > 0 Then
+        ''Process is running
+        'Button3.Enabled = False
+        'Shell("taskkill /F /IM Minecraft.Windows.exe")
+        'Label3.Font = New Font("Segoe UI", 20)
+        'Label3.Visible = True
+        'Button5.Enabled = False
+        'Button2.Enabled = False
+        'Label3.Text = "Installed"
+        'Label3.ForeColor = Color.Lime
+        'Me.Refresh()
+        'Else
+        ''Process is not running
+        'Button5.Enabled = False
+        'Button2.Enabled = False
+        'Button1.Enabled = False
+        'Label3.Font = New Font("Segoe UI", 20)
+        'Label3.Visible = True
+        'Label3.Text = "Not Installed"
+        'Label3.ForeColor = Color.Red
+        'Me.Refresh()
+        'End If
+
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 
     Private Sub Form1_Resize(sender As Object, e As EventArgs)
@@ -189,4 +193,8 @@ Note: If You Restart The Launcher The Game Will Also Close Along With The Launch
         Me.Button8.BackColor = Control.DefaultBackColor
     End Sub
 
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Me.Hide()
+        New_Method_Bypass.Show()
+    End Sub
 End Class
