@@ -62,4 +62,9 @@
             Shell("logoff")
         End If
     End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Dim r As Long
+        r = ShellExecute(0, "open", "https://www.youtube.com/watch?v=go_npKhqGiA", 0, 0, 1)
+    End Sub
 End Class
