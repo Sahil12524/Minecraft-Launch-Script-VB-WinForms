@@ -150,7 +150,7 @@ Partial Class Form1
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(194, 28)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Version 1.8"
+        Me.Label1.Text = "Version 1.8.7"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button6
