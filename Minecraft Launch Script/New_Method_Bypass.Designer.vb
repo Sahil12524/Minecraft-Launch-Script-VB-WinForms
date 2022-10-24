@@ -120,7 +120,7 @@ Partial Class New_Method_Bypass
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(194, 56)
         Me.Button4.TabIndex = 0
-        Me.Button4.Text = "Latest Release Check!"
+        Me.Button4.Text = "Latest Update Check!"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button7
