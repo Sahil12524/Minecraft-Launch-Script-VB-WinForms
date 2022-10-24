@@ -101,7 +101,6 @@ Partial Class Form1
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.Control
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.Enabled = False
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button3.Location = New System.Drawing.Point(230, 5)
         Me.Button3.Margin = New System.Windows.Forms.Padding(5)
