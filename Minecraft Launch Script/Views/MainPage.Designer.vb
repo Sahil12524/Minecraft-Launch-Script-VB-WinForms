@@ -22,6 +22,7 @@ Partial Class MainPage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainPage))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -42,7 +43,7 @@ Partial Class MainPage
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1106, 610)
+        Me.Panel1.Size = New System.Drawing.Size(1087, 642)
         Me.Panel1.TabIndex = 0
         '
         'Panel3
@@ -50,7 +51,8 @@ Partial Class MainPage
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(215, 30)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(891, 580)
+        Me.Panel3.Padding = New System.Windows.Forms.Padding(20)
+        Me.Panel3.Size = New System.Drawing.Size(872, 612)
         Me.Panel3.TabIndex = 1
         '
         'Panel4
@@ -58,7 +60,7 @@ Partial Class MainPage
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(215, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(891, 30)
+        Me.Panel4.Size = New System.Drawing.Size(872, 30)
         Me.Panel4.TabIndex = 2
         '
         'Panel2
@@ -70,12 +72,13 @@ Partial Class MainPage
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(215, 610)
+        Me.Panel2.Size = New System.Drawing.Size(215, 642)
         Me.Panel2.TabIndex = 0
         '
         'btnOldMethod
         '
         Me.btnOldMethod.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnOldMethod.Enabled = False
         Me.btnOldMethod.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnOldMethod.Location = New System.Drawing.Point(0, 70)
         Me.btnOldMethod.Name = "btnOldMethod"
@@ -109,7 +112,7 @@ Partial Class MainPage
         '
         Me.btnAbout.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnAbout.Location = New System.Drawing.Point(0, 560)
+        Me.btnAbout.Location = New System.Drawing.Point(0, 592)
         Me.btnAbout.Name = "btnAbout"
         Me.btnAbout.Size = New System.Drawing.Size(215, 50)
         Me.btnAbout.TabIndex = 0
@@ -121,10 +124,12 @@ Partial Class MainPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1106, 610)
+        Me.ClientSize = New System.Drawing.Size(1087, 642)
         Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MainPage"
-        Me.Text = "MainPage"
+        Me.Text = "Minecraft Bedrock Edition Launcher"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)

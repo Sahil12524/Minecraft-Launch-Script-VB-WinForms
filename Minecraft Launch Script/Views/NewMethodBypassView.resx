@@ -57,21 +57,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>Hello there,
+  <data name="RichTextBox2.Text" xml:space="preserve">
+    <value>Use this button if you are not able to restore the origial DLL.
+Error: Sharing Violation or some other possible errors.
 
-1. If you like my work please comment me in youtube, and if this helped you it, share it with others.
+Most of the time it is not required to restart the Windows, but if you required then you may!</value>
+  </data>
+  <data name="RichTextBox3.Text" xml:space="preserve">
+    <value>This button will replace the modified DLL with stock DLL, after which your minecraft will work.
 
-2. This is the new method of Minecraft Bedrock Edition Bypass.
+Note: Do not use this button without doing stock DLL backup, if already done at the beginning do not touch the Backup button.
 
-3. Please do not use this software without watching tutorial of this software on my Youtube Channel.
+How to know if the Bypass loaded successfully?:
+If your cmd outputs you:
+System32\Windows.ApplicationModel.Store.dll
+1 File(s) copied
+sysWOW64\Windows.ApplicationModel.Store.dll
+1 File(s) copied
+This means that the Bypass loaded successfully!
 
-4. If you do not watch the video you will end up destroying your Windows.
+Else it will outputs you: Sharing violation or Other possible Error!
 
-5. So be careful you have been warned, I am not responsible for it.
+</value>
+  </data>
+  <data name="RichTextBox4.Text" xml:space="preserve">
+    <value>Note: Backup should be done only one time if you are a new user! 
+Do not use this button more than once!
+Doing so will backup modified DLL if not restored properly.
+Only use this button after a New Windows Update (a new windows update may update those DLLs, please verify that manually!).
 
-6. If you see the video on youtube it will not harm your computer, but if you dont you know what will happen, I know you people are smart.
+Warning: If you messed up something you will notice that your MS Store will not download any app or update any app.
 
--Good Luck :)</value>
+Fix: Only a full Windows RE Install.
+
+⚠️ procedure to do a proper backup of DLLS:
+1. Click the button on the new method (Backup Stock DLL) Button.
+2. Press yes to backup
+3. Press any key to continue.
+4. Wait for 5 seconds
+5. Press y 2 times.
+6. Close the Cmd or it will close automatically.</value>
   </data>
 </root>

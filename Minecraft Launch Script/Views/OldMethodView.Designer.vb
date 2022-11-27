@@ -70,6 +70,7 @@ Partial Class OldMethodView
         '
         'Button1
         '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button1.BackColor = System.Drawing.SystemColors.Control
         Me.Button1.Enabled = False
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
@@ -84,10 +85,11 @@ Partial Class OldMethodView
         '
         'Button2
         '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button2.BackColor = System.Drawing.SystemColors.Control
         Me.Button2.Enabled = False
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(491, 95)
+        Me.Button2.Location = New System.Drawing.Point(488, 95)
         Me.Button2.Margin = New System.Windows.Forms.Padding(5)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(200, 80)
@@ -99,26 +101,28 @@ Partial Class OldMethodView
         '
         'Button3
         '
+        Me.Button3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button3.BackColor = System.Drawing.SystemColors.Control
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button3.Location = New System.Drawing.Point(230, 5)
         Me.Button3.Margin = New System.Windows.Forms.Padding(5)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(300, 80)
+        Me.Button3.Size = New System.Drawing.Size(297, 80)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "Install Now"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
+        Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button4.BackColor = System.Drawing.SystemColors.Control
         Me.Button4.Enabled = False
         Me.Button4.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button4.Location = New System.Drawing.Point(230, 185)
         Me.Button4.Margin = New System.Windows.Forms.Padding(5)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(300, 80)
+        Me.Button4.Size = New System.Drawing.Size(297, 80)
         Me.Button4.TabIndex = 4
         Me.Button4.Text = "What's New"
         Me.ToolTipForWhatsNew.SetToolTip(Me.Button4, "See what is new in this build")
@@ -126,13 +130,14 @@ Partial Class OldMethodView
         '
         'Button5
         '
+        Me.Button5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button5.BackColor = System.Drawing.SystemColors.Control
         Me.Button5.Enabled = False
         Me.Button5.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button5.Location = New System.Drawing.Point(281, 95)
         Me.Button5.Margin = New System.Windows.Forms.Padding(5)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(200, 80)
+        Me.Button5.Size = New System.Drawing.Size(197, 80)
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "Restart"
         Me.ToolTipForRestart.SetToolTip(Me.Button5, "Restart the game")
@@ -425,7 +430,7 @@ Partial Class OldMethodView
         Me.Panel3.Size = New System.Drawing.Size(760, 268)
         Me.Panel3.TabIndex = 22
         '
-        'Form1
+        'OldMethodView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -442,8 +447,8 @@ Partial Class OldMethodView
         Me.HelpButton = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.Name = "Form1"
-        Me.Text = "Minecraft BedRock Edition Launcher"
+        Me.Name = "OldMethodView"
+        Me.Text = "Old Method"
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

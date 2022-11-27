@@ -36,7 +36,7 @@
         Process.Start("bin/new_Stop.bat")
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
         Dim r As Long
         r = ShellExecute(0, "open", "https://github.com/Sahil12524/Minecraft-Launch-Script", 0, 0, 1)
     End Sub
@@ -51,11 +51,11 @@
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
         Me.BackColor = DefaultBackColor
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs)
         Me.BackColor = Color.Black
     End Sub
 
@@ -66,7 +66,7 @@
         End If
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
         Dim r As Long
         r = ShellExecute(0, "open", "https://www.youtube.com/watch?v=go_npKhqGiA", 0, 0, 1)
     End Sub
