@@ -1,4 +1,4 @@
-﻿Public Class Form2
+﻿Public Class AboutView
     Dim rs As New Resizer
 
     Private mediaPlayer As System.Media.SoundPlayer = New System.Media.SoundPlayer("audio/mc_klic.wav")

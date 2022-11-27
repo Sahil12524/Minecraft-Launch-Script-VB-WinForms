@@ -24,12 +24,12 @@ Partial Class MainPage
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnOldMethod = New System.Windows.Forms.Button()
         Me.btnNewMethodBypass = New System.Windows.Forms.Button()
-        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.btnAbout = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -53,6 +53,14 @@ Partial Class MainPage
         Me.Panel3.Size = New System.Drawing.Size(891, 580)
         Me.Panel3.TabIndex = 1
         '
+        'Panel4
+        '
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel4.Location = New System.Drawing.Point(215, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(891, 30)
+        Me.Panel4.TabIndex = 2
+        '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.btnOldMethod)
@@ -64,18 +72,6 @@ Partial Class MainPage
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(215, 610)
         Me.Panel2.TabIndex = 0
-        '
-        'btnAbout
-        '
-        Me.btnAbout.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnAbout.Location = New System.Drawing.Point(0, 560)
-        Me.btnAbout.Name = "btnAbout"
-        Me.btnAbout.Size = New System.Drawing.Size(215, 50)
-        Me.btnAbout.TabIndex = 0
-        Me.btnAbout.Text = "About"
-        Me.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAbout.UseVisualStyleBackColor = True
         '
         'btnOldMethod
         '
@@ -101,14 +97,6 @@ Partial Class MainPage
         Me.btnNewMethodBypass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnNewMethodBypass.UseVisualStyleBackColor = True
         '
-        'Panel4
-        '
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel4.Location = New System.Drawing.Point(215, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(891, 30)
-        Me.Panel4.TabIndex = 2
-        '
         'Panel5
         '
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
@@ -116,6 +104,18 @@ Partial Class MainPage
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(215, 30)
         Me.Panel5.TabIndex = 2
+        '
+        'btnAbout
+        '
+        Me.btnAbout.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnAbout.Location = New System.Drawing.Point(0, 560)
+        Me.btnAbout.Name = "btnAbout"
+        Me.btnAbout.Size = New System.Drawing.Size(215, 50)
+        Me.btnAbout.TabIndex = 0
+        Me.btnAbout.Text = "About"
+        Me.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAbout.UseVisualStyleBackColor = True
         '
         'MainPage
         '

@@ -1,9 +1,9 @@
-﻿Public Class Form1
+﻿Public Class OldMethodView
 
     Dim rs As New Resizer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        rs.FindAllControls(Me)
+        'rs.FindAllControls(Me)
         mediaPlayer.Play()
 
         'Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App")
@@ -38,7 +38,7 @@
     End Sub
 
     Private Sub Form1_Resize(sender As Object, e As EventArgs)
-        rs.ResizeAllControls(Me)
+        'rs.ResizeAllControls(Me)
         Label3.Font = New Font("Segoe UI", 20)
         Label2.Font = New Font("Segoe UI", 20)
     End Sub
@@ -101,7 +101,7 @@
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         mediaPlayer.Play()
-        Form2.Show()
+        AboutView.Show()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -195,6 +195,6 @@ Note: If You Restart The Launcher The Game Will Also Close Along With The Launch
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Me.Hide()
-        New_Method_Bypass.Show()
+        NewMethodBypassView.Show()
     End Sub
 End Class

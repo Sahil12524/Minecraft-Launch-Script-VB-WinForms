@@ -1,4 +1,4 @@
-﻿Public Class New_Method_Bypass
+﻿Public Class NewMethodBypassView
 
     Private Declare Function ShellExecute _
                             Lib "shell32.dll" _
@@ -17,11 +17,11 @@
     End Sub
 
     Private Sub New_Method_Bypass_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Form1.Close()
+        OldMethodView.Close()
     End Sub
 
     Private Sub New_Method_Bypass_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Form1.Close()
+        OldMethodView.Close()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
