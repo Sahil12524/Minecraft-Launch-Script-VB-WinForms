@@ -39,7 +39,7 @@ Partial Class MainPage
         Me.Panel3.Location = New System.Drawing.Point(236, 30)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Padding = New System.Windows.Forms.Padding(20)
-        Me.Panel3.Size = New System.Drawing.Size(851, 612)
+        Me.Panel3.Size = New System.Drawing.Size(851, 720)
         Me.Panel3.TabIndex = 1
         '
         'Panel4
@@ -59,7 +59,7 @@ Partial Class MainPage
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(236, 642)
+        Me.Panel2.Size = New System.Drawing.Size(236, 750)
         Me.Panel2.TabIndex = 0
         '
         'btnOldMethod
@@ -99,7 +99,7 @@ Partial Class MainPage
         '
         Me.btnAbout.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnAbout.Location = New System.Drawing.Point(0, 592)
+        Me.btnAbout.Location = New System.Drawing.Point(0, 700)
         Me.btnAbout.Name = "btnAbout"
         Me.btnAbout.Size = New System.Drawing.Size(236, 50)
         Me.btnAbout.TabIndex = 0
@@ -111,7 +111,7 @@ Partial Class MainPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1087, 642)
+        Me.ClientSize = New System.Drawing.Size(1087, 750)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel2)

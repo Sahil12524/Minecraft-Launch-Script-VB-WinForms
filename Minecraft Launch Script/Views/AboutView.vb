@@ -22,7 +22,7 @@
     End Sub
 
     Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        mediaPlayer.Play()
+        'mediaPlayer.Play()
     End Sub
 
     Private Sub btnLatestUpdateCheck_Click(sender As Object, e As EventArgs) Handles btnLatestUpdateCheck.Click
