@@ -27,7 +27,7 @@
 
     Private Sub btnLatestUpdateCheck_Click(sender As Object, e As EventArgs) Handles btnLatestUpdateCheck.Click
         Dim r As Long
-        r = ShellExecute(0, "open", "https://github.com/Sahil12524/Minecraft-Launch-Script", 0, 0, 1)
+        r = ShellExecute(0, "open", "https://github.com/Sahil12524/Minecraft-Launch-Script/releases/latest", 0, 0, 1)
     End Sub
 
     Private Sub btnHowToUseLauncher_Click(sender As Object, e As EventArgs) Handles btnHowToUseLauncher.Click
