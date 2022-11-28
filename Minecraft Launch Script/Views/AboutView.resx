@@ -285,16 +285,16 @@
     <value>Segoe UI, 15pt</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>951, 461</value>
+    <value>966, 461</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 28</value>
+    <value>107, 28</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
-    <value>Version 1.8.7</value>
+    <value>Version 1.9</value>
   </data>
   <data name="Label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
