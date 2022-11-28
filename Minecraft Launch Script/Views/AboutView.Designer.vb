@@ -177,7 +177,7 @@ Partial Class AboutView
         'Label4
         '
         resources.ApplyResources(Me.Label4, "Label4")
-        Me.Label4.ForeColor = System.Drawing.Color.Red
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label4.Name = "Label4"
         '
         'AboutView
