@@ -46,14 +46,6 @@
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-        Me.BackColor = DefaultBackColor
-    End Sub
-
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs)
-        Me.BackColor = Color.Black
-    End Sub
-
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Dim result As DialogResult = MessageBox.Show("Are You Sure That You Want To Quick Restart your PC?, Use This Button Only If The System32's DLL Says 'Sharing Violation' Error.", "Quick Restart Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
