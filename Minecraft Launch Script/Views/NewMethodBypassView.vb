@@ -36,11 +36,6 @@
         Process.Start("bin/new_Stop.bat")
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
-        Dim r As Long
-        r = ShellExecute(0, "open", "https://github.com/Sahil12524/Minecraft-Launch-Script", 0, 0, 1)
-    End Sub
-
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim result As DialogResult = MessageBox.Show("Are You Sure That You Never Used This Button Before, Note: Backup Should Be Done Only One Time If You Are A New User?, Press Yes to Make a Backup If Not Made Before Or Press No To Cancel The Backup Process", "Backup DLL Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
@@ -64,10 +59,5 @@
         If result = DialogResult.Yes Then
             Shell("logoff")
         End If
-    End Sub
-
-    Private Sub Button7_Click(sender As Object, e As EventArgs)
-        Dim r As Long
-        r = ShellExecute(0, "open", "https://www.youtube.com/watch?v=go_npKhqGiA", 0, 0, 1)
     End Sub
 End Class

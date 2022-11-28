@@ -23,38 +23,37 @@ Partial Class AboutView
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AboutView))
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.btnHowToUseLauncher = New System.Windows.Forms.Button()
+        Me.Panel8 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.RichTextBox4 = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.btnLatestUpdateCheck = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Panel5.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        Me.Panel8.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'RichTextBox1
-        '
-        resources.ApplyResources(Me.RichTextBox1, "RichTextBox1")
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.ReadOnly = True
         '
         'Panel1
         '
@@ -66,54 +65,55 @@ Partial Class AboutView
         'Panel2
         '
         resources.ApplyResources(Me.Panel2, "Panel2")
-        Me.Panel2.Controls.Add(Me.RichTextBox2)
-        Me.Panel2.Controls.Add(Me.RichTextBox1)
+        Me.Panel2.Controls.Add(Me.Panel7)
+        Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.Panel5)
         Me.Panel2.Name = "Panel2"
         '
-        'RichTextBox2
+        'Panel7
         '
-        resources.ApplyResources(Me.RichTextBox2, "RichTextBox2")
-        Me.RichTextBox2.Name = "RichTextBox2"
+        Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel7.Controls.Add(Me.Panel9)
+        Me.Panel7.Controls.Add(Me.Panel8)
+        resources.ApplyResources(Me.Panel7, "Panel7")
+        Me.Panel7.Name = "Panel7"
         '
-        'Panel5
+        'Panel9
         '
-        Me.Panel5.Controls.Add(Me.TableLayoutPanel3)
-        Me.Panel5.Controls.Add(Me.TableLayoutPanel2)
-        Me.Panel5.Controls.Add(Me.TableLayoutPanel1)
-        resources.ApplyResources(Me.Panel5, "Panel5")
-        Me.Panel5.Name = "Panel5"
+        Me.Panel9.Controls.Add(Me.btnHowToUseLauncher)
+        resources.ApplyResources(Me.Panel9, "Panel9")
+        Me.Panel9.Name = "Panel9"
         '
-        'TableLayoutPanel3
+        'btnHowToUseLauncher
         '
-        resources.ApplyResources(Me.TableLayoutPanel3, "TableLayoutPanel3")
-        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        resources.ApplyResources(Me.btnHowToUseLauncher, "btnHowToUseLauncher")
+        Me.btnHowToUseLauncher.Name = "btnHowToUseLauncher"
+        Me.btnHowToUseLauncher.UseVisualStyleBackColor = True
+        '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.TableLayoutPanel2)
+        resources.ApplyResources(Me.Panel8, "Panel8")
+        Me.Panel8.Name = "Panel8"
         '
         'TableLayoutPanel2
         '
         resources.ApplyResources(Me.TableLayoutPanel2, "TableLayoutPanel2")
-        Me.TableLayoutPanel2.Controls.Add(Me.Button4, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button7, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label3, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.RichTextBox4, 0, 1)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         '
-        'Button4
+        'Label3
         '
-        resources.ApplyResources(Me.Button4, "Button4")
-        Me.Button4.Name = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.Name = "Label3"
         '
-        'Button7
+        'RichTextBox4
         '
-        resources.ApplyResources(Me.Button7, "Button7")
-        Me.Button7.Name = "Button7"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'TableLayoutPanel1
-        '
-        resources.ApplyResources(Me.TableLayoutPanel1, "TableLayoutPanel1")
-        Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 1)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.RichTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        resources.ApplyResources(Me.RichTextBox4, "RichTextBox4")
+        Me.RichTextBox4.Name = "RichTextBox4"
+        Me.RichTextBox4.ReadOnly = True
         '
         'Label1
         '
@@ -123,29 +123,50 @@ Partial Class AboutView
         Me.Label1.ForeColor = System.Drawing.Color.Lime
         Me.Label1.Name = "Label1"
         '
-        'GroupBox1
+        'Panel5
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox1.Controls.Add(Me.PictureBox2)
-        Me.GroupBox1.Controls.Add(Me.PictureBox1)
-        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
-        Me.GroupBox1.ForeColor = System.Drawing.Color.Cyan
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.TabStop = False
+        Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel5.Controls.Add(Me.Panel4)
+        Me.Panel5.Controls.Add(Me.Panel3)
+        resources.ApplyResources(Me.Panel5, "Panel5")
+        Me.Panel5.Name = "Panel5"
         '
-        'PictureBox2
+        'Panel4
         '
-        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
-        Me.PictureBox2.Image = Global.Minecraft_Launch_Script.My.Resources.Resources.nightIco
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.TabStop = False
+        Me.Panel4.Controls.Add(Me.btnLatestUpdateCheck)
+        resources.ApplyResources(Me.Panel4, "Panel4")
+        Me.Panel4.Name = "Panel4"
         '
-        'PictureBox1
+        'btnLatestUpdateCheck
         '
-        resources.ApplyResources(Me.PictureBox1, "PictureBox1")
-        Me.PictureBox1.Image = Global.Minecraft_Launch_Script.My.Resources.Resources.dayIco
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.TabStop = False
+        resources.ApplyResources(Me.btnLatestUpdateCheck, "btnLatestUpdateCheck")
+        Me.btnLatestUpdateCheck.Name = "btnLatestUpdateCheck"
+        Me.btnLatestUpdateCheck.UseVisualStyleBackColor = True
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.TableLayoutPanel1)
+        resources.ApplyResources(Me.Panel3, "Panel3")
+        Me.Panel3.Name = "Panel3"
+        '
+        'TableLayoutPanel1
+        '
+        resources.ApplyResources(Me.TableLayoutPanel1, "TableLayoutPanel1")
+        Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.RichTextBox3, 0, 1)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        '
+        'Label2
+        '
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Name = "Label2"
+        '
+        'RichTextBox3
+        '
+        Me.RichTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        resources.ApplyResources(Me.RichTextBox3, "RichTextBox3")
+        Me.RichTextBox3.Name = "RichTextBox3"
+        Me.RichTextBox3.ReadOnly = True
         '
         'Panel6
         '
@@ -171,33 +192,39 @@ Partial Class AboutView
         Me.ShowIcon = False
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel2.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
-    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents btnLatestUpdateCheck As Button
+    Friend WithEvents btnHowToUseLauncher As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label4 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents Label2 As Label
+    Friend WithEvents RichTextBox3 As RichTextBox
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents Label3 As Label
+    Friend WithEvents RichTextBox4 As RichTextBox
+    Friend WithEvents Panel9 As Panel
 End Class

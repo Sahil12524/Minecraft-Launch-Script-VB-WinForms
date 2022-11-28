@@ -57,124 +57,118 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="RichTextBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14pt</value>
-  </data>
-  <data name="RichTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 213</value>
-  </data>
-  <data name="RichTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>468, 315</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="RichTextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>Version 1.7
-1. Optimized the program (Uses less memory as compared to previous version)
-2. Removed the Background picture and added the the Black and White color for day and night theme.
-3. Using new method of disabling buttons instead of hiding them (Makes the program look good).
-4. Used multiple Bright Color for text to make text more attractive.
-5. Removed the button of Resetting Form.
-6. Major UI Changes and Improvements.
-
-Version 1.6.2
-1. Added the day and night theme to make the user feel more comfortable while using the launcher in darker room or in night time.
-2. Fixed the memory leak issue while changing background picture.
-3. Added the restart form button to restart the form quickly if user wants to restart the launcher. (Note: Restarting the laucher will cause the game to force close too. Do not restart the launcher if the minecraft is already running!).
-4. Added the tool tip on the buttons to make the laucher more easy to use.
-5. Added the on hover and on leave mouse event on rest of the newly added buttons.
-6. Minor UI Improvements.
-
-Version 1.6 (Experimental Release)
-1. Added the functionality to check wether the minecraft is installed or not. if not installed the Run button will not be visible. Even if some user bypasses the install detection and some how the Run button got visible, if the minecraft is not installed the script will not crash instead it will show error and redirect user to download page.
-2. Added the functionality to check wether the mincraft is running or not. Basically Added the  Minecraft running status at bottom left.
-3. Removed the dynamic resize functionality as it was creating problems wile moving the window or minimizing the window.
-4. Minor UI Improvements.
-
-Version 1.5
-1. Added Button to reset the form.
-2. Added Button to reset the Clip Services Status.
-3. Error Handling in scripts where:
-  i. start.bat: Checks wether the minecraft is installed or not, if not install it will throw an error.
-  ii. stop.bat: Checks wether the minecraft is running or not, if not running the svc will not start nor stop minecraft process and throw an error.
-  iii. restart.bat: Checks wether the minecraft is running or not, if not running the minecraft will not restart and throw an error.
-4. Fixed Minecraft gets freezed upon loading and never starts.
-5. Minor UI Changes and Bugs Fixes. (recommended, Stable, LTS Update)
-
-Version 1.4.6
-1. Fixed Various Bugs.
-2. Removed the ability of resize and maximize the form again due to some problems.
-3. Reduced the size of the form.
-4. Tried to make the UI as Simple as Possible :P
-5. This is an Important update for fixing those bugs from Version 1.4
-
-Version 1.4 (Experimental Release)
-1. Added support to resize the form.
-2. Restored the minimize button again earlier it was removed.
-3. Added the dynamic resize class to make all the elements in the form resize as the form resize.
-4. Added the auto hide button on 2 buttons to avoid unexpected problems.
-5. Added sound on buttons on click.
-6. Added the button color changing effect upon mouse hover on buttons.
-7. Reduced the time of restart to 4 sec for faster restarting.
-8. Added Easter Egg (if you found it please do the necessary things its too easy).
-9. Cleaned the file structure of the installed directory.
-10. MAJOR UI Improvement :P
-
-Version 1.3
-1. Start Menu was getting freezed on Windows 11 (Fixed).
-2. Added the restart button to restart the game quickly if the game is showing trial period Hours.
-3. Increased the timeout to 15 sec for slower computers.
-4. Added new What's New Form.
-5. Minor UI Changes.
-
-Version 1.2
-1. Added the command in start.bat to kill the Runtime Broker.exe automatically
-2. Added 10 sec cool down to make the process smooth while killing the Runtime Broker.exe
-3. Picture Box was remove and the background is added.
-4. Added the Install Now Button to make people install the correct Minecraft Version.
-5. Added The Button What's New to see the changes of every new released version changes.
-6. Added the Confirmation dialoug while closing the game.
-7. Added the Version Lable on the top of the software.
-8. Added the icon on the Software.
-9. Minor UI changes :P
-
-Initial Release
-1. Use TaskManager to kill "Runtime Broker.exe" (Manually)
-2. Only Run button was implimented
-3. Added a picture box to display the background image
-4. Added the Close button to close the game and start the ClipSVC service</value>
-  </data>
-  <data name="&gt;&gt;RichTextBox1.Name" xml:space="preserve">
-    <value>RichTextBox1</value>
-  </data>
-  <data name="&gt;&gt;RichTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RichTextBox1.Parent" xml:space="preserve">
-    <value>Panel2</value>
-  </data>
-  <data name="&gt;&gt;RichTextBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="Panel2.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="RichTextBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 20pt</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnHowToUseLauncher.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <data name="RichTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 203</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnHowToUseLauncher.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
-  <data name="RichTextBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>513, 343</value>
+  <data name="btnHowToUseLauncher.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 0</value>
   </data>
-  <data name="RichTextBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnHowToUseLauncher.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 123</value>
+  </data>
+  <data name="btnHowToUseLauncher.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="RichTextBox2.Text" xml:space="preserve">
+  <data name="btnHowToUseLauncher.Text" xml:space="preserve">
+    <value>How To Use This Launcher?</value>
+  </data>
+  <data name="&gt;&gt;btnHowToUseLauncher.Name" xml:space="preserve">
+    <value>btnHowToUseLauncher</value>
+  </data>
+  <data name="&gt;&gt;btnHowToUseLauncher.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHowToUseLauncher.Parent" xml:space="preserve">
+    <value>Panel9</value>
+  </data>
+  <data name="&gt;&gt;btnHowToUseLauncher.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Panel9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Panel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 0</value>
+  </data>
+  <data name="Panel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 123</value>
+  </data>
+  <data name="Panel9.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Panel9.Name" xml:space="preserve">
+    <value>Panel9</value>
+  </data>
+  <data name="&gt;&gt;Panel9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel9.Parent" xml:space="preserve">
+    <value>Panel7</value>
+  </data>
+  <data name="&gt;&gt;Panel9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16pt</value>
+  </data>
+  <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 28</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>How to Use This Launcher?</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RichTextBox4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="RichTextBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 31</value>
+  </data>
+  <data name="RichTextBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 89</value>
+  </data>
+  <data name="RichTextBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="RichTextBox4.Text" xml:space="preserve">
     <value>Hello there,
 
 1. If you like my work please comment me in youtube, and if this helped you it, share it with others.
@@ -191,129 +185,32 @@ Initial Release
 
 -Good Luck :)</value>
   </data>
-  <data name="&gt;&gt;RichTextBox2.Name" xml:space="preserve">
-    <value>RichTextBox2</value>
+  <data name="&gt;&gt;RichTextBox4.Name" xml:space="preserve">
+    <value>RichTextBox4</value>
   </data>
-  <data name="&gt;&gt;RichTextBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;RichTextBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RichTextBox2.Parent" xml:space="preserve">
-    <value>Panel2</value>
-  </data>
-  <data name="&gt;&gt;RichTextBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="TableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 0</value>
-  </data>
-  <data name="TableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="TableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 124</value>
-  </data>
-  <data name="TableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel3.Name" xml:space="preserve">
-    <value>TableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel3.Parent" xml:space="preserve">
-    <value>Panel5</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="TableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Button4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="Button4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 13pt</value>
-  </data>
-  <data name="Button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="Button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 56</value>
-  </data>
-  <data name="Button4.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Button4.Text" xml:space="preserve">
-    <value>Latest Update Check!</value>
-  </data>
-  <data name="&gt;&gt;Button4.Name" xml:space="preserve">
-    <value>Button4</value>
-  </data>
-  <data name="&gt;&gt;Button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RichTextBox4.Parent" xml:space="preserve">
     <value>TableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;Button4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Button7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="Button7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="Button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 65</value>
-  </data>
-  <data name="Button7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 56</value>
-  </data>
-  <data name="Button7.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Button7.Text" xml:space="preserve">
-    <value>How To Use This Launcher?</value>
-  </data>
-  <data name="&gt;&gt;Button7.Name" xml:space="preserve">
-    <value>Button7</value>
-  </data>
-  <data name="&gt;&gt;Button7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button7.Parent" xml:space="preserve">
-    <value>TableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;Button7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RichTextBox4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="TableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
+    <value>Left</value>
   </data>
   <data name="TableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>600, 0</value>
+    <value>0, 0</value>
   </data>
   <data name="TableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="TableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 124</value>
+    <value>436, 123</value>
   </data>
   <data name="TableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;TableLayoutPanel2.Name" xml:space="preserve">
     <value>TableLayoutPanel2</value>
@@ -322,31 +219,76 @@ Initial Release
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TableLayoutPanel2.Parent" xml:space="preserve">
-    <value>Panel5</value>
+    <value>Panel8</value>
   </data>
   <data name="&gt;&gt;TableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="TableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Button4" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Button7" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Label3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="RichTextBox4" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,22.764227,Percent,77.23577" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="TableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+  <data name="Panel8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="Panel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>459, 123</value>
+  </data>
+  <data name="Panel8.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Panel8.Name" xml:space="preserve">
+    <value>Panel8</value>
+  </data>
+  <data name="&gt;&gt;Panel8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel8.Parent" xml:space="preserve">
+    <value>Panel7</value>
+  </data>
+  <data name="&gt;&gt;Panel8.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="Panel7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="Panel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 125</value>
+  </data>
+  <data name="Panel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1074, 125</value>
+  </data>
+  <data name="Panel7.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Panel7.Name" xml:space="preserve">
+    <value>Panel7</value>
+  </data>
+  <data name="&gt;&gt;Panel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel7.Parent" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;Panel7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="Label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
   </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 15pt</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
+    <value>951, 461</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 28</value>
+    <value>122, 28</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -364,96 +306,128 @@ Initial Release
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
+    <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <data name="PictureBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnLatestUpdateCheck.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
   </data>
-  <data name="PictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 27</value>
-  </data>
-  <data name="PictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 60</value>
-  </data>
-  <data name="PictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="PictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;PictureBox2.Name" xml:space="preserve">
-    <value>PictureBox2</value>
-  </data>
-  <data name="&gt;&gt;PictureBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PictureBox2.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="&gt;&gt;PictureBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 27</value>
-  </data>
-  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 60</value>
-  </data>
-  <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
-    <value>PictureBox1</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="GroupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="GroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnLatestUpdateCheck.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 13pt</value>
   </data>
-  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 31</value>
+  <data name="btnLatestUpdateCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 0</value>
   </data>
-  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 90</value>
+  <data name="btnLatestUpdateCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 123</value>
   </data>
-  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="btnLatestUpdateCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="GroupBox1.Text" xml:space="preserve">
-    <value>Theme</value>
+  <data name="btnLatestUpdateCheck.Text" xml:space="preserve">
+    <value>Latest Update Check!</value>
   </data>
-  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
-    <value>GroupBox1</value>
+  <data name="&gt;&gt;btnLatestUpdateCheck.Name" xml:space="preserve">
+    <value>btnLatestUpdateCheck</value>
   </data>
-  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnLatestUpdateCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnLatestUpdateCheck.Parent" xml:space="preserve">
+    <value>Panel4</value>
+  </data>
+  <data name="&gt;&gt;btnLatestUpdateCheck.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Panel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 0</value>
+  </data>
+  <data name="Panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 123</value>
+  </data>
+  <data name="Panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Panel4.Name" xml:space="preserve">
+    <value>Panel4</value>
+  </data>
+  <data name="&gt;&gt;Panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel4.Parent" xml:space="preserve">
+    <value>Panel5</value>
+  </data>
+  <data name="&gt;&gt;Panel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16pt</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 29</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Latest Update Check</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
     <value>TableLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RichTextBox3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="RichTextBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 32</value>
+  </data>
+  <data name="RichTextBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 88</value>
+  </data>
+  <data name="RichTextBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="RichTextBox3.Text" xml:space="preserve">
+    <value>Check the latest update of the launcher.
+This button will redirect you to my github releases page.
+If there is a higher version available download it as it contains some fixes and improvements.</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox3.Name" xml:space="preserve">
+    <value>RichTextBox3</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox3.Parent" xml:space="preserve">
+    <value>TableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="TableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -466,10 +440,10 @@ Initial Release
     <value>2</value>
   </data>
   <data name="TableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 124</value>
+    <value>436, 123</value>
   </data>
   <data name="TableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;TableLayoutPanel1.Name" xml:space="preserve">
     <value>TableLayoutPanel1</value>
@@ -478,19 +452,46 @@ Initial Release
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TableLayoutPanel1.Parent" xml:space="preserve">
-    <value>Panel5</value>
+    <value>Panel3</value>
   </data>
   <data name="&gt;&gt;TableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="TableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="GroupBox1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Label2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="RichTextBox3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,23.577236,Percent,76.42277" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="Panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="Panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>459, 123</value>
+  </data>
+  <data name="Panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Panel3.Name" xml:space="preserve">
+    <value>Panel3</value>
+  </data>
+  <data name="&gt;&gt;Panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel3.Parent" xml:space="preserve">
+    <value>Panel5</value>
+  </data>
+  <data name="&gt;&gt;Panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="Panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 30</value>
+    <value>0, 0</value>
   </data>
   <data name="Panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 124</value>
+    <value>1074, 125</value>
   </data>
   <data name="Panel5.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -514,7 +515,7 @@ Initial Release
     <value>0, 55</value>
   </data>
   <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1186, 748</value>
+    <value>1074, 489</value>
   </data>
   <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -574,7 +575,7 @@ Initial Release
     <value>0, 0</value>
   </data>
   <data name="Panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1186, 55</value>
+    <value>1074, 55</value>
   </data>
   <data name="Panel6.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -598,7 +599,7 @@ Initial Release
     <value>0, 0</value>
   </data>
   <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1186, 803</value>
+    <value>1074, 544</value>
   </data>
   <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -622,7 +623,7 @@ Initial Release
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1186, 803</value>
+    <value>1074, 544</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
