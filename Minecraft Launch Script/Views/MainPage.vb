@@ -20,7 +20,6 @@ Public Class MainPage
         GC.WaitForPendingFinalizers()
         GC.Collect()
         switchPanel(NewMethodBypassView)
-        AboutView.Close()
     End Sub
 
     Private Sub btnOldMethod_Click(sender As Object, e As EventArgs) Handles btnOldMethod.Click
@@ -35,6 +34,12 @@ Public Class MainPage
         GC.WaitForPendingFinalizers()
         GC.Collect()
         switchPanel(AboutView)
-        NewMethodBypassView.Close()
+    End Sub
+
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
+        switchPanel(HomeView)
     End Sub
 End Class

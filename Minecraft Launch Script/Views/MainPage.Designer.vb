@@ -28,6 +28,7 @@ Partial Class MainPage
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnOldMethod = New System.Windows.Forms.Button()
         Me.btnNewMethodBypass = New System.Windows.Forms.Button()
+        Me.btnHome = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
@@ -54,6 +55,7 @@ Partial Class MainPage
         '
         Me.Panel2.Controls.Add(Me.btnOldMethod)
         Me.Panel2.Controls.Add(Me.btnNewMethodBypass)
+        Me.Panel2.Controls.Add(Me.btnHome)
         Me.Panel2.Controls.Add(Me.Panel5)
         Me.Panel2.Controls.Add(Me.btnAbout)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
@@ -67,7 +69,7 @@ Partial Class MainPage
         Me.btnOldMethod.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnOldMethod.Enabled = False
         Me.btnOldMethod.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnOldMethod.Location = New System.Drawing.Point(0, 70)
+        Me.btnOldMethod.Location = New System.Drawing.Point(0, 110)
         Me.btnOldMethod.Name = "btnOldMethod"
         Me.btnOldMethod.Size = New System.Drawing.Size(236, 40)
         Me.btnOldMethod.TabIndex = 1
@@ -79,13 +81,25 @@ Partial Class MainPage
         '
         Me.btnNewMethodBypass.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnNewMethodBypass.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnNewMethodBypass.Location = New System.Drawing.Point(0, 30)
+        Me.btnNewMethodBypass.Location = New System.Drawing.Point(0, 70)
         Me.btnNewMethodBypass.Name = "btnNewMethodBypass"
         Me.btnNewMethodBypass.Size = New System.Drawing.Size(236, 40)
         Me.btnNewMethodBypass.TabIndex = 0
         Me.btnNewMethodBypass.Text = "New Method Bypass"
         Me.btnNewMethodBypass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnNewMethodBypass.UseVisualStyleBackColor = True
+        '
+        'btnHome
+        '
+        Me.btnHome.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnHome.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnHome.Location = New System.Drawing.Point(0, 30)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(236, 40)
+        Me.btnHome.TabIndex = 3
+        Me.btnHome.Text = "Home"
+        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnHome.UseVisualStyleBackColor = True
         '
         'Panel5
         '
@@ -130,4 +144,5 @@ Partial Class MainPage
     Friend WithEvents btnNewMethodBypass As Button
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
+    Friend WithEvents btnHome As Button
 End Class
