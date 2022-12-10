@@ -67,7 +67,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnHowToUseLauncher.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
+    <value>Segoe UI, 16pt</value>
   </data>
   <data name="btnHowToUseLauncher.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 0</value>
@@ -315,7 +315,7 @@
     <value>Right</value>
   </data>
   <data name="btnLatestUpdateCheck.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 13pt</value>
+    <value>Segoe UI, 16pt</value>
   </data>
   <data name="btnLatestUpdateCheck.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 0</value>
