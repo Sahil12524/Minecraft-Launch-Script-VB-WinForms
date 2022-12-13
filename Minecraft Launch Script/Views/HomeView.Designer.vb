@@ -491,6 +491,7 @@ Partial Class HomeView
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1234, 654)
         Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
         Me.Name = "HomeView"
         Me.Text = "HomeView"
         Me.Panel1.ResumeLayout(False)
