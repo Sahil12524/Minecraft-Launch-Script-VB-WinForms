@@ -132,6 +132,7 @@ Partial Class MainPage
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MainPage"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Minecraft Bedrock Edition Launcher"
         Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)

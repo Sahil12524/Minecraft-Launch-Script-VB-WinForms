@@ -14,6 +14,7 @@
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
+        HomeView.Close()
     End Sub
 
     Private Sub New_Method_Bypass_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
@@ -52,4 +53,5 @@
             Shell("logoff")
         End If
     End Sub
+
 End Class
