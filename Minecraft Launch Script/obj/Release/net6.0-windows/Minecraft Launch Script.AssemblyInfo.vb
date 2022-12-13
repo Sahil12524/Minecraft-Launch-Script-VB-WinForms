@@ -17,11 +17,11 @@ Imports System.Reflection
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Release"),  _
  Assembly: System.Reflection.AssemblyCopyrightAttribute("Sahil Bhandari"),  _
  Assembly: System.Reflection.AssemblyDescriptionAttribute("Minecraft For Windows Trial Bypass."),  _
- Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyFileVersionAttribute("1.9"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.9"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Minecraft Launch Script"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Minecraft Launch Script"),  _
- Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
+ Assembly: System.Reflection.AssemblyVersionAttribute("1.9"),  _
  Assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0"),  _
  Assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")> 
 

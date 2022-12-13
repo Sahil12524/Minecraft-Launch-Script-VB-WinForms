@@ -5,7 +5,7 @@
   },
   "projects": {
     "E:\\Users\\sahil\\source\\repos\\Minecraft Launch Script\\Minecraft Launch Script\\Minecraft Launch Script.vbproj": {
-      "version": "1.0.0",
+      "version": "1.9.0",
       "restore": {
         "projectUniqueName": "E:\\Users\\sahil\\source\\repos\\Minecraft Launch Script\\Minecraft Launch Script\\Minecraft Launch Script.vbproj",
         "projectName": "Minecraft Launch Script",
@@ -68,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

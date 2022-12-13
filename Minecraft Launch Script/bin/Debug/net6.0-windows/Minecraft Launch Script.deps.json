@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Minecraft Launch Script/1.0.0": {
+      "Minecraft Launch Script/1.9": {
         "dependencies": {
           "System.Management": "6.0.0"
         },
@@ -42,7 +42,7 @@
     }
   },
   "libraries": {
-    "Minecraft Launch Script/1.0.0": {
+    "Minecraft Launch Script/1.9": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

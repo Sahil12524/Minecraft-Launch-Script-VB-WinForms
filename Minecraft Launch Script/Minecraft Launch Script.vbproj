@@ -11,12 +11,14 @@
     <ApplicationIcon>minecraft_94415.ico</ApplicationIcon>
     <SignAssembly>true</SignAssembly>
     
-    <Version>1.0.0</Version>
+    <Version>1.9</Version>
     <Authors>Sahil Bhandari</Authors>
     <Description>Minecraft For Windows Trial Bypass.</Description>
     <Copyright>Sahil Bhandari</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <AssemblyVersion>1.9</AssemblyVersion>
+    <FileVersion>1.9</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
