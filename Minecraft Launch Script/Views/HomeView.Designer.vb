@@ -27,8 +27,8 @@ Partial Class HomeView
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblHackSysWOW64DllVersion = New System.Windows.Forms.Label()
+        Me.lblHackSystem32DllVersion = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -57,6 +57,14 @@ Partial Class HomeView
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.lblBypassStatus = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel10.SuspendLayout()
@@ -75,6 +83,11 @@ Partial Class HomeView
         Me.Panel5.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel13.SuspendLayout()
+        Me.Panel14.SuspendLayout()
+        Me.TableLayoutPanel7.SuspendLayout()
+        Me.Panel15.SuspendLayout()
+        Me.TableLayoutPanel8.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -89,6 +102,7 @@ Partial Class HomeView
         '
         'Panel3
         '
+        Me.Panel3.Controls.Add(Me.Panel13)
         Me.Panel3.Controls.Add(Me.Panel10)
         Me.Panel3.Controls.Add(Me.Panel7)
         Me.Panel3.Controls.Add(Me.Panel4)
@@ -122,8 +136,8 @@ Partial Class HomeView
         '
         Me.TableLayoutPanel5.ColumnCount = 1
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel5.Controls.Add(Me.Label3, 0, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.Label4, 0, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblHackSysWOW64DllVersion, 0, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.lblHackSystem32DllVersion, 0, 1)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Right
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(48, 0)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
@@ -134,27 +148,27 @@ Partial Class HomeView
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(370, 123)
         Me.TableLayoutPanel5.TabIndex = 4
         '
-        'Label3
+        'lblHackSysWOW64DllVersion
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(240, 80)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(127, 43)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "10.0.18362.1110"
+        Me.lblHackSysWOW64DllVersion.AutoSize = True
+        Me.lblHackSysWOW64DllVersion.Dock = System.Windows.Forms.DockStyle.Right
+        Me.lblHackSysWOW64DllVersion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblHackSysWOW64DllVersion.Location = New System.Drawing.Point(240, 80)
+        Me.lblHackSysWOW64DllVersion.Name = "lblHackSysWOW64DllVersion"
+        Me.lblHackSysWOW64DllVersion.Size = New System.Drawing.Size(127, 43)
+        Me.lblHackSysWOW64DllVersion.TabIndex = 4
+        Me.lblHackSysWOW64DllVersion.Text = "10.0.18362.1110"
         '
-        'Label4
+        'lblHackSystem32DllVersion
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(240, 37)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(127, 43)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "10.0.18362.1110"
+        Me.lblHackSystem32DllVersion.AutoSize = True
+        Me.lblHackSystem32DllVersion.Dock = System.Windows.Forms.DockStyle.Right
+        Me.lblHackSystem32DllVersion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblHackSystem32DllVersion.Location = New System.Drawing.Point(240, 37)
+        Me.lblHackSystem32DllVersion.Name = "lblHackSystem32DllVersion"
+        Me.lblHackSystem32DllVersion.Size = New System.Drawing.Size(127, 43)
+        Me.lblHackSystem32DllVersion.TabIndex = 4
+        Me.lblHackSystem32DllVersion.Text = "10.0.18362.1110"
         '
         'Panel12
         '
@@ -485,6 +499,101 @@ Partial Class HomeView
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Home"
         '
+        'Panel13
+        '
+        Me.Panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel13.Controls.Add(Me.Panel14)
+        Me.Panel13.Controls.Add(Me.Panel15)
+        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel13.Location = New System.Drawing.Point(0, 375)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(1234, 125)
+        Me.Panel13.TabIndex = 5
+        '
+        'Panel14
+        '
+        Me.Panel14.Controls.Add(Me.TableLayoutPanel7)
+        Me.Panel14.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel14.Location = New System.Drawing.Point(814, 0)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(418, 123)
+        Me.Panel14.TabIndex = 3
+        '
+        'TableLayoutPanel7
+        '
+        Me.TableLayoutPanel7.ColumnCount = 1
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel7.Controls.Add(Me.lblBypassStatus, 0, 1)
+        Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Right
+        Me.TableLayoutPanel7.Location = New System.Drawing.Point(48, 0)
+        Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
+        Me.TableLayoutPanel7.RowCount = 2
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 83.0!))
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(370, 123)
+        Me.TableLayoutPanel7.TabIndex = 4
+        '
+        'Panel15
+        '
+        Me.Panel15.Controls.Add(Me.TableLayoutPanel8)
+        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel15.Location = New System.Drawing.Point(0, 0)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(426, 123)
+        Me.Panel15.TabIndex = 2
+        '
+        'TableLayoutPanel8
+        '
+        Me.TableLayoutPanel8.ColumnCount = 1
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel8.Controls.Add(Me.Label11, 0, 0)
+        Me.TableLayoutPanel8.Controls.Add(Me.Label13, 0, 1)
+        Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Left
+        Me.TableLayoutPanel8.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
+        Me.TableLayoutPanel8.RowCount = 2
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(370, 123)
+        Me.TableLayoutPanel8.TabIndex = 3
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label11.Location = New System.Drawing.Point(3, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(70, 41)
+        Me.Label11.TabIndex = 2
+        Me.Label11.Text = "Status"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(3, 41)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(171, 82)
+        Me.Label13.TabIndex = 4
+        Me.Label13.Text = "Bypass Loaded"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBypassStatus
+        '
+        Me.lblBypassStatus.AutoSize = True
+        Me.lblBypassStatus.Dock = System.Windows.Forms.DockStyle.Right
+        Me.lblBypassStatus.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblBypassStatus.Location = New System.Drawing.Point(182, 40)
+        Me.lblBypassStatus.Name = "lblBypassStatus"
+        Me.lblBypassStatus.Size = New System.Drawing.Size(185, 83)
+        Me.lblBypassStatus.TabIndex = 4
+        Me.lblBypassStatus.Text = "10.0.18362.1110"
+        Me.lblBypassStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'HomeView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -519,6 +628,13 @@ Partial Class HomeView
         Me.TableLayoutPanel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel14.ResumeLayout(False)
+        Me.TableLayoutPanel7.ResumeLayout(False)
+        Me.TableLayoutPanel7.PerformLayout()
+        Me.Panel15.ResumeLayout(False)
+        Me.TableLayoutPanel8.ResumeLayout(False)
+        Me.TableLayoutPanel8.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -551,11 +667,19 @@ Partial Class HomeView
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Panel11 As Panel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblHackSysWOW64DllVersion As Label
+    Friend WithEvents lblHackSystem32DllVersion As Label
     Friend WithEvents Panel12 As Panel
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents Panel14 As Panel
+    Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
+    Friend WithEvents lblBypassStatus As Label
+    Friend WithEvents Panel15 As Panel
+    Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label13 As Label
 End Class

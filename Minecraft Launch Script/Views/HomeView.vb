@@ -25,6 +25,14 @@ Public Class HomeView
             lblBackupSystem32DllVersion.Text = "Backup not found"
             lblBackupSysWOW64DllVersion.Text = "Backup not found"
         End Try
+
+        If lblCurrentSystem32DllVersion.Text = lblHackSystem32DllVersion.Text And lblCurrentSysWOW64DllVersion.Text = lblHackSysWOW64DllVersion.Text Then
+            lblBypassStatus.ForeColor = Color.Lime
+            lblBypassStatus.Text = "True"
+        Else
+            lblBypassStatus.ForeColor = Color.Red
+            lblBypassStatus.Text = "False"
+        End If
     End Sub
 
     Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click

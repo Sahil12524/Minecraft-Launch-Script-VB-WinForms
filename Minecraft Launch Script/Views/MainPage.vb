@@ -45,7 +45,7 @@ Public Class MainPage
         switchPanel(HomeView)
         Dim fileReader As String
         Shell("cmd.exe /c wmic datafile where name=""C:\\Windows\\System32\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSystem32Ver.txt"" && wmic datafile where name=""C:\\Windows\\SysWOW64\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSysWOW64Ver.txt"" ")
-        Threading.Thread.Sleep(800)
+        Threading.Thread.Sleep(1000)
         Try
             fileReader = My.Computer.FileSystem.ReadAllText("CurSystem32Ver.txt").Replace("Version=", "")
             HomeView.lblCurrentSystem32DllVersion.Text = fileReader.Trim
@@ -64,6 +64,13 @@ Public Class MainPage
             HomeView.lblBackupSystem32DllVersion.Text = "Backup not found"
             HomeView.lblBackupSysWOW64DllVersion.Text = "Backup not found"
         End Try
+        If HomeView.lblCurrentSystem32DllVersion.Text = HomeView.lblHackSystem32DllVersion.Text And HomeView.lblCurrentSysWOW64DllVersion.Text = HomeView.lblHackSysWOW64DllVersion.Text Then
+            HomeView.lblBypassStatus.ForeColor = Color.Lime
+            HomeView.lblBypassStatus.Text = "True"
+        Else
+            HomeView.lblBypassStatus.ForeColor = Color.Red
+            HomeView.lblBypassStatus.Text = "False"
+        End If
     End Sub
 
     Private Sub MainPage_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
