@@ -63,6 +63,9 @@ Public Class MainPage
         Catch ex As FileNotFoundException
             HomeView.lblBackupSystem32DllVersion.Text = "Backup not found"
             HomeView.lblBackupSysWOW64DllVersion.Text = "Backup not found"
+            If HomeView.lblBackupSystem32DllVersion.Text = "Backup not found" And HomeView.lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
+                Dim result As DialogResult = MessageBox.Show("Backup DLLs in both the folder not found, please make a backup of DLLs to avoid Windows Corruptions", "Backup Not Found!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
         End Try
         If HomeView.lblCurrentSystem32DllVersion.Text = HomeView.lblHackSystem32DllVersion.Text And HomeView.lblCurrentSysWOW64DllVersion.Text = HomeView.lblHackSysWOW64DllVersion.Text Then
             HomeView.lblBypassStatus.ForeColor = Color.Lime
