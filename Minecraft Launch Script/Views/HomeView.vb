@@ -5,7 +5,7 @@ Public Class HomeView
 
         Dim fileReader As String
         Shell("cmd.exe /c wmic datafile where name=""C:\\Windows\\System32\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSystem32Ver.txt"" && wmic datafile where name=""C:\\Windows\\SysWOW64\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSysWOW64Ver.txt"" ")
-        Threading.Thread.Sleep(800)
+        Threading.Thread.Sleep(1000)
         Try
             fileReader = My.Computer.FileSystem.ReadAllText("CurSystem32Ver.txt").Replace("Version=", "")
             lblCurrentSystem32DllVersion.Text = fileReader.Trim
@@ -36,6 +36,26 @@ Public Class HomeView
             lblBypassStatus.ForeColor = Color.Red
             lblBypassStatus.Text = "False"
         End If
+
+        If lblCurrentSystem32DllVersion.Text = lblBackupSystem32DllVersion.Text And lblCurrentSysWOW64DllVersion.Text = lblBackupSysWOW64DllVersion.Text Then
+            lblBackupReqStatus.ForeColor = Color.Lime
+            lblBackupReqStatus.Text = "No"
+        ElseIf lblCurrentSystem32DllVersion.Text <> lblBackupSystem32DllVersion.Text And lblCurrentSysWOW64DllVersion.Text <> lblBackupSysWOW64DllVersion.Text And lblBypassStatus.Text = "True" Then
+            lblBackupReqStatus.ForeColor = Color.Lime
+            lblBackupReqStatus.Text = "No"
+        Else
+            lblBackupReqStatus.ForeColor = Color.Red
+            lblBackupReqStatus.Text = "Yes"
+        End If
+
+        If lblBackupSystem32DllVersion.Text = "Backup not found" And lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
+            lblBackupReqStatus.Text = "N/A"
+        End If
+
+        If lblBackupReqStatus.Text = "Yes" Then
+            Dim result As DialogResult = MessageBox.Show("Backup of the DLLs Needs to be Updated because the original DLLs are either updated via Windows Update or by Microsoft Store Update. Note: Update of Backup DLLs is compulsory to avoid Windows Corruptions or Microsoft Store not working issue!", "Backup Needs To Be Updated!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+
     End Sub
 
     Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click

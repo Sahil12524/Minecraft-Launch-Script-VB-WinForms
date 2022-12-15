@@ -22,6 +22,13 @@ Public Class MainPage
         GC.Collect()
         switchPanel(NewMethodBypassView)
         Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
+        Threading.Thread.Sleep(1000)
+
+        If HomeView.lblBackupReqStatus.Text = "Yes" Or HomeView.lblBackupReqStatus.Text = "N/A" Or HomeView.lblBackupSystem32DllVersion.Text = "Backup not found" And HomeView.lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
+            NewMethodBypassView.Panel13.Show()
+        Else
+            NewMethodBypassView.Panel13.Hide()
+        End If
     End Sub
 
     Private Sub btnOldMethod_Click(sender As Object, e As EventArgs) Handles btnOldMethod.Click
@@ -46,6 +53,7 @@ Public Class MainPage
         Dim fileReader As String
         Shell("cmd.exe /c wmic datafile where name=""C:\\Windows\\System32\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSystem32Ver.txt"" && wmic datafile where name=""C:\\Windows\\SysWOW64\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSysWOW64Ver.txt"" ")
         Threading.Thread.Sleep(1000)
+
         Try
             fileReader = My.Computer.FileSystem.ReadAllText("CurSystem32Ver.txt").Replace("Version=", "")
             HomeView.lblCurrentSystem32DllVersion.Text = fileReader.Trim
@@ -55,6 +63,7 @@ Public Class MainPage
             MsgBox(ex.ToString)
             Shell("Cmd.exe /c type nul > CurSystem32Ver.txt && type nul > CurSysWOW64Ver.txt")
         End Try
+
         Try
             Dim backupSystem32Dll As FileVersionInfo = FileVersionInfo.GetVersionInfo("bin\dlls\Original Dlls Backup\System32\Windows.ApplicationModel.Store.dll")
             HomeView.lblBackupSystem32DllVersion.Text = backupSystem32Dll.ProductVersion.ToString
@@ -67,6 +76,7 @@ Public Class MainPage
                 Dim result As DialogResult = MessageBox.Show("Backup DLLs in both the folder not found, please make a backup of DLLs to avoid Windows Corruptions", "Backup Not Found!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
         End Try
+
         If HomeView.lblCurrentSystem32DllVersion.Text = HomeView.lblHackSystem32DllVersion.Text And HomeView.lblCurrentSysWOW64DllVersion.Text = HomeView.lblHackSysWOW64DllVersion.Text Then
             HomeView.lblBypassStatus.ForeColor = Color.Lime
             HomeView.lblBypassStatus.Text = "True"
@@ -74,6 +84,34 @@ Public Class MainPage
             HomeView.lblBypassStatus.ForeColor = Color.Red
             HomeView.lblBypassStatus.Text = "False"
         End If
+
+        If HomeView.lblCurrentSystem32DllVersion.Text = HomeView.lblHackSystem32DllVersion.Text And HomeView.lblCurrentSysWOW64DllVersion.Text = HomeView.lblHackSysWOW64DllVersion.Text Then
+            HomeView.lblBypassStatus.ForeColor = Color.Lime
+            HomeView.lblBypassStatus.Text = "True"
+        Else
+            HomeView.lblBypassStatus.ForeColor = Color.Red
+            HomeView.lblBypassStatus.Text = "False"
+        End If
+
+        If HomeView.lblCurrentSystem32DllVersion.Text = HomeView.lblBackupSystem32DllVersion.Text And HomeView.lblCurrentSysWOW64DllVersion.Text = HomeView.lblBackupSysWOW64DllVersion.Text Then
+            HomeView.lblBackupReqStatus.ForeColor = Color.Lime
+            HomeView.lblBackupReqStatus.Text = "No"
+        ElseIf HomeView.lblCurrentSystem32DllVersion.Text <> HomeView.lblBackupSystem32DllVersion.Text And HomeView.lblCurrentSysWOW64DllVersion.Text <> HomeView.lblBackupSysWOW64DllVersion.Text And HomeView.lblBypassStatus.Text = "True" Then
+            HomeView.lblBackupReqStatus.ForeColor = Color.Lime
+            HomeView.lblBackupReqStatus.Text = "No"
+        Else
+            HomeView.lblBackupReqStatus.ForeColor = Color.Red
+            HomeView.lblBackupReqStatus.Text = "Yes"
+        End If
+
+        If HomeView.lblBackupSystem32DllVersion.Text = "Backup not found" And HomeView.lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
+            HomeView.lblBackupReqStatus.Text = "N/A"
+        End If
+
+        If HomeView.lblBackupReqStatus.Text = "Yes" Then
+            Dim result As DialogResult = MessageBox.Show("Backup of the DLLs Needs to be Updated because the original DLLs are either updated via Windows Update or by Microsoft Store Update. Note: Update of Backup DLLs is compulsory to avoid Windows Corruptions or Microsoft Store not working issue!", "Backup Needs To Be Updated!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+
     End Sub
 
     Private Sub MainPage_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed

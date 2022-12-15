@@ -14,7 +14,13 @@
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
-        HomeView.Close()
+        'HomeView.Close()
+        Threading.Thread.Sleep(1000)
+        If HomeView.lblBackupReqStatus.Text = "Yes" Or HomeView.lblBackupReqStatus.Text = "N/A" Or HomeView.lblBackupSystem32DllVersion.Text = "Backup not found" And HomeView.lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
+            Panel13.Show()
+        Else
+            Panel13.Hide()
+        End If
     End Sub
 
     Private Sub New_Method_Bypass_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
