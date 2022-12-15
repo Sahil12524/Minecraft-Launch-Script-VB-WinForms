@@ -37,6 +37,8 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App")
+        Threading.Thread.Sleep(4000)
+        Shell("taskkill /F /IM ""RuntimeBroker.exe""")
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
