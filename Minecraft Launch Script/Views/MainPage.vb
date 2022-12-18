@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports System.Net.Security
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
 Public Class MainPage
     Sub switchPanel(ByVal panel As Form)
@@ -119,6 +120,19 @@ Public Class MainPage
     End Sub
 
     Private Sub MainPage_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
+        If HomeView.lblBypassStatus.Text = "True" Then
+            Dim result As DialogResult = MessageBox.Show("Are you sure that you want to close the launcher without stopping the Bypass?", "Bypass Still Running!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+            If result = DialogResult.Yes Then
+                Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
+                Me.Dispose() '<- First MainPage Should be stopped then it will stop the whole app 
+                Application.Exit()
+                'MsgBox(result) <- used only for debug
+            ElseIf result = DialogResult.No Then
+                e.Cancel = True
+                'MsgBox(result) <- used only for debug
+            End If
+        ElseIf HomeView.lblBypassStatus.Text = "False" Then
+
+        End If
     End Sub
 End Class
