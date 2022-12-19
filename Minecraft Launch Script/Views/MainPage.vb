@@ -27,8 +27,16 @@ Public Class MainPage
 
         If HomeView.lblBackupReqStatus.Text = "Yes" Or HomeView.lblBackupReqStatus.Text = "N/A" Or HomeView.lblBackupSystem32DllVersion.Text = "Backup not found" And HomeView.lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
             NewMethodBypassView.Panel13.Show()
+            NewMethodBypassView.Panel10.Hide()
+            NewMethodBypassView.Panel16.Hide()
+            NewMethodBypassView.Panel6.Hide()
+            NewMethodBypassView.Panel19.Hide()
         ElseIf HomeView.lblBackupReqStatus.Text = "No" Then
             NewMethodBypassView.Panel13.Hide()
+            NewMethodBypassView.Panel10.Show()
+            NewMethodBypassView.Panel16.Show()
+            NewMethodBypassView.Panel6.Show()
+            NewMethodBypassView.Panel19.Show()
         End If
     End Sub
 
