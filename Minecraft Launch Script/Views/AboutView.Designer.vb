@@ -163,11 +163,11 @@ Partial Class AboutView
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.Lime
-        Me.Label1.Location = New System.Drawing.Point(966, 461)
+        Me.Label1.Location = New System.Drawing.Point(956, 461)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 28)
+        Me.Label1.Size = New System.Drawing.Size(118, 28)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Version 1.9"
+        Me.Label1.Text = "Version 1.10"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel5
