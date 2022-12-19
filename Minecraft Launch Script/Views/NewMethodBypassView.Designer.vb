@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class NewMethodBypassView
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class NewMethodBypassView
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NewMethodBypassView))
         Me.Label4 = New System.Windows.Forms.Label()
@@ -62,7 +62,6 @@ Partial Class NewMethodBypassView
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.RichTextBox4 = New System.Windows.Forms.RichTextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.btnRefresh = New System.Windows.Forms.Button()
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel9.SuspendLayout()
@@ -163,7 +162,6 @@ Partial Class NewMethodBypassView
         '
         'Panel5
         '
-        Me.Panel5.Controls.Add(Me.btnRefresh)
         Me.Panel5.Controls.Add(Me.Label4)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
@@ -532,17 +530,6 @@ Partial Class NewMethodBypassView
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Backup Stock DLL"
         '
-        'btnRefresh
-        '
-        Me.btnRefresh.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRefresh.Location = New System.Drawing.Point(1124, 12)
-        Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(75, 23)
-        Me.btnRefresh.TabIndex = 22
-        Me.btnRefresh.Text = "refreshBtn"
-        Me.btnRefresh.UseVisualStyleBackColor = True
-        '
         'NewMethodBypassView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -625,5 +612,4 @@ Partial Class NewMethodBypassView
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
     Friend WithEvents RichTextBox4 As RichTextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents btnRefresh As Button
 End Class

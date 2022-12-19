@@ -15,7 +15,7 @@ Public Class NewMethodBypassView
     Public Async Sub updateForm()
         Dim taskStop = True
         While taskStop
-            Await Task.Delay(3000)
+            Await Task.Delay(100)
             updateLbl()
             HomeView.Invalidate()
             HomeView.Update()

@@ -4,8 +4,8 @@ Public Class HomeView
 
     Public Sub conditChk()
         Dim fileReader As String
-        Shell("cmd.exe /c wmic datafile where name=""C:\\Windows\\System32\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSystem32Ver.txt"" && wmic datafile where name=""C:\\Windows\\SysWOW64\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSysWOW64Ver.txt"" ")
-        Threading.Thread.Sleep(1000)
+        Shell("cmd.exe /c wmic datafile where name=""C:\\Windows\\System32\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSystem32Ver.txt"" && wmic datafile where name=""C:\\Windows\\SysWOW64\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSysWOW64Ver.txt"" ", AppWinStyle.Hide, Wait:=100)
+        'Threading.Thread.Sleep(1000)
         Try
             fileReader = My.Computer.FileSystem.ReadAllText("CurSystem32Ver.txt").Replace("Version=", "")
             lblCurrentSystem32DllVersion.Text = fileReader.Trim
