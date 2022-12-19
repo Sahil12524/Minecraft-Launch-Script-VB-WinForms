@@ -62,6 +62,7 @@ Partial Class NewMethodBypassView
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.RichTextBox4 = New System.Windows.Forms.RichTextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.btnRefresh = New System.Windows.Forms.Button()
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel9.SuspendLayout()
@@ -110,7 +111,6 @@ Partial Class NewMethodBypassView
         Me.Button2.Size = New System.Drawing.Size(360, 123)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Run Minecraft"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -123,11 +123,11 @@ Partial Class NewMethodBypassView
         Me.Button1.Size = New System.Drawing.Size(360, 123)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Load Bypass"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button5
         '
+        Me.Button5.AutoEllipsis = True
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button5.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button5.Location = New System.Drawing.Point(11, 0)
@@ -135,7 +135,6 @@ Partial Class NewMethodBypassView
         Me.Button5.Size = New System.Drawing.Size(360, 123)
         Me.Button5.TabIndex = 3
         Me.Button5.Text = "Backup Stock DLL (Warning: Use One Time Only)"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button3
@@ -148,11 +147,11 @@ Partial Class NewMethodBypassView
         Me.Button3.Size = New System.Drawing.Size(360, 123)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Stop Bypass"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button6
         '
+        Me.Button6.AutoEllipsis = True
         Me.Button6.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button6.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button6.Location = New System.Drawing.Point(11, 0)
@@ -160,11 +159,11 @@ Partial Class NewMethodBypassView
         Me.Button6.Size = New System.Drawing.Size(360, 123)
         Me.Button6.TabIndex = 4
         Me.Button6.Text = "Quick Restart PC"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Panel5
         '
+        Me.Panel5.Controls.Add(Me.btnRefresh)
         Me.Panel5.Controls.Add(Me.Label4)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
@@ -533,6 +532,17 @@ Partial Class NewMethodBypassView
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Backup Stock DLL"
         '
+        'btnRefresh
+        '
+        Me.btnRefresh.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRefresh.Location = New System.Drawing.Point(1124, 12)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(75, 23)
+        Me.btnRefresh.TabIndex = 22
+        Me.btnRefresh.Text = "refreshBtn"
+        Me.btnRefresh.UseVisualStyleBackColor = True
+        '
         'NewMethodBypassView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -615,4 +625,5 @@ Partial Class NewMethodBypassView
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
     Friend WithEvents RichTextBox4 As RichTextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents btnRefresh As Button
 End Class
