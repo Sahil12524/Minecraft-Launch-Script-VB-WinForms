@@ -13,8 +13,8 @@ Public Class NewMethodBypassView
                             ByVal nShowCmd As Long) _
                             As Long
     Public Async Sub updateForm()
-        Dim taskStop = True
-        While taskStop
+        Dim taskRunning = True
+        While taskRunning
             Await Task.Delay(100)
             updateLbl()
             HomeView.Invalidate()
@@ -32,12 +32,17 @@ Public Class NewMethodBypassView
             Me.Update()
             Application.DoEvents()
             If HomeView.lblBackupReqStatus.Text = "No" Then
-                taskStop = False
+                taskRunning = False
                 Panel13.Hide()
                 Panel10.Show()
                 Panel16.Show()
                 Panel6.Show()
                 Panel19.Show()
+            End If
+            If HomeView.lblBypassStatus.Text = "True" Then
+                taskRunning = True
+            ElseIf HomeView.lblBypassStatus.Text = "False" Then
+                taskRunning = False
             End If
         End While
     End Sub
@@ -77,7 +82,10 @@ Public Class NewMethodBypassView
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Process.Start("bin/new_Start.bat")
+        Dim startProc As Process
+        startProc = Process.Start("bin/new_Start.bat")
+        startProc.WaitForExit()
+        updateForm()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -88,6 +96,7 @@ Public Class NewMethodBypassView
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Process.Start("bin/new_Stop.bat")
+        updateForm()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click

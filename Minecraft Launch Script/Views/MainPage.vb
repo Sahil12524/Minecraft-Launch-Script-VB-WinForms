@@ -22,8 +22,8 @@ Public Class MainPage
         GC.WaitForPendingFinalizers()
         GC.Collect()
         switchPanel(NewMethodBypassView)
-        Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
-        Threading.Thread.Sleep(1000)
+        Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt", AppWinStyle.Hide, Wait:=100)
+        'Threading.Thread.Sleep(1000)
 
         If HomeView.lblBackupReqStatus.Text = "Yes" Or HomeView.lblBackupReqStatus.Text = "N/A" Or HomeView.lblBackupSystem32DllVersion.Text = "Backup not found" And HomeView.lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
             NewMethodBypassView.Panel13.Show()
