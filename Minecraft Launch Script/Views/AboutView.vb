@@ -32,6 +32,6 @@
 
     Private Sub btnHowToUseLauncher_Click(sender As Object, e As EventArgs) Handles btnHowToUseLauncher.Click
         Dim r As Long
-        r = ShellExecute(0, "open", "https://www.youtube.com/watch?v=CXnCLjqvqGI", 0, 0, 1)
+        r = ShellExecute(0, "open", "https://www.youtube.com/watch?v=zzo-wzSFweY", 0, 0, 1)
     End Sub
 End Class

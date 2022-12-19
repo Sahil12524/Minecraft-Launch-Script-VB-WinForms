@@ -32,6 +32,12 @@ E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\bin\Release\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.vbproj.AssemblyReference.cache
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.Resources.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.AboutView.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.HomeView.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.MainPage.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.NewMethodBypassView.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.OldMethodView.resources
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.AboutView.ar.resources
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.vbproj.GenerateResource.cache
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.GeneratedMSBuildEditorConfig.editorconfig
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.AssemblyInfoInputs.cache
@@ -44,9 +50,3 @@ E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.pdb
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft Launch Script.genruntimeconfig.cache
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\ref\Minecraft Launch Script.dll
-E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.AboutView.resources
-E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.HomeView.resources
-E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.MainPage.resources
-E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.NewMethodBypassView.resources
-E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.OldMethodView.resources
-E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Release\net6.0-windows\Minecraft_Launch_Script.AboutView.ar.resources

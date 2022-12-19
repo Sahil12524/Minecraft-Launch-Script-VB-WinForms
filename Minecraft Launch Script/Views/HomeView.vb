@@ -60,10 +60,10 @@ Public Class HomeView
     Private Sub HomeView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conditChk() ' <- Function!
         If lblBackupReqStatus.Text = "Yes" Then
-            Dim result As DialogResult = MessageBox.Show("Backup of the DLLs Needs to be Updated because the original DLLs are either updated via Windows Update or by Microsoft Store Update. Note: Update of Backup DLLs is compulsory to avoid Windows Corruptions or Microsoft Store not working issue!", "Backup Needs To Be Updated!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Dim result As DialogResult = MessageBox.Show("Backup of the DLLs Needs to be Updated because the original DLLs are either got updated via Windows Update or by Microsoft Store Update. Note: Update of Backup DLLs is compulsory to avoid Windows Corruptions or Microsoft Store not working like issues!", "Backup of DLLs Needs To Be Updated!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
         If lblBackupSystem32DllVersion.Text = "Backup not found" And lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
-            Dim result As DialogResult = MessageBox.Show("Backup DLLs in both the folder not found, please make a backup of DLLs to avoid Windows Corruptions", "Backup Not Found!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Dim result As DialogResult = MessageBox.Show("Backup DLLs in both the folder are not found, please make a backup of DLLs to avoid Windows Corruptions", "Backup DLLs Not Found!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
     End Sub
 
