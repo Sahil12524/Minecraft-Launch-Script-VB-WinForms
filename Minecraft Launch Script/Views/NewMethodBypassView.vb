@@ -125,8 +125,10 @@ Public Class NewMethodBypassView
         Dim backupDLL As Process
         Dim result As DialogResult = MessageBox.Show("Are You Sure That You Never Used This Button Before, Note: Backup Should Be Done Only One Time If You Are A New User?, Press Yes to Make a Backup If Not Made Before Or Press No To Cancel The Backup Process", "Backup DLL Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
+            updateForm()
             backupDLL = Process.Start("bin/backup_DLL.bat")
             backupDLL.WaitForExit()
+            updateForm()
             Update()
         ElseIf result = DialogResult.No Then
             Button5.Enabled = False
