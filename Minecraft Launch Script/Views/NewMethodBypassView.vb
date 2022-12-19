@@ -41,9 +41,14 @@ Public Class NewMethodBypassView
             End If
             If HomeView.lblBypassStatus.Text = "True" Then
                 taskRunning = True
+                taskRunning = False
+
+
             ElseIf HomeView.lblBypassStatus.Text = "False" Then
                 taskRunning = False
             End If
+
+
         End While
     End Sub
 
@@ -70,7 +75,7 @@ Public Class NewMethodBypassView
             Panel6.Show()
             Panel19.Show()
         End If
-        updateForm()
+        'updateForm()
     End Sub
 
     Private Sub New_Method_Bypass_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
@@ -83,20 +88,37 @@ Public Class NewMethodBypassView
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim startProc As Process
+        updateForm()
         startProc = Process.Start("bin/new_Start.bat")
         startProc.WaitForExit()
         updateForm()
+        'taskRunning = False
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App")
+        Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App", AppWinStyle.Hide)
         Threading.Thread.Sleep(4000)
-        Shell("taskkill /F /IM ""RuntimeBroker.exe""")
+        Shell("taskkill /F /IM ""RuntimeBroker.exe""", AppWinStyle.Hide)
+        Dim proc() As Process
+        proc = Process.GetProcessesByName("Minecraft.Windows".ToLower) ' <- Do not use .exe in process name
+        If proc.Count > 0 Then
+
+        Else
+            Dim result As DialogResult = MessageBox.Show("Minecraft Bedrock Edition is not installed in this computer, please make sure that you have to install the game first and then use this launcher.", "Minecraft Not Installed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        End If
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Process.Start("bin/new_Stop.bat")
+        'taskRunning = True
+        'taskRunning = False
+
+        Dim startProc As Process
         updateForm()
+        startProc = Process.Start("bin/new_Stop.bat")
+        startProc.WaitForExit()
+        updateForm()
+        'taskRunning = True
+        'taskRunning = False
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
