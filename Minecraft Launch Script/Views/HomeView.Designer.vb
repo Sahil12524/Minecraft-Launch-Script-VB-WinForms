@@ -104,6 +104,7 @@ Partial Class HomeView
         '
         'Panel3
         '
+        Me.Panel3.AutoScroll = True
         Me.Panel3.Controls.Add(Me.Panel13)
         Me.Panel3.Controls.Add(Me.Panel10)
         Me.Panel3.Controls.Add(Me.Panel7)

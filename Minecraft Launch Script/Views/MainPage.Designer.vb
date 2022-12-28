@@ -53,6 +53,7 @@ Partial Class MainPage
         '
         'Panel2
         '
+        Me.Panel2.AutoScroll = True
         Me.Panel2.Controls.Add(Me.btnOldMethod)
         Me.Panel2.Controls.Add(Me.btnNewMethodBypass)
         Me.Panel2.Controls.Add(Me.btnHome)
