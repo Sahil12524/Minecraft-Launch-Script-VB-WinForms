@@ -15,6 +15,7 @@ Public Class MainPage
         GC.WaitForPendingFinalizers()
         GC.Collect()
         switchPanel(HomeView)
+        rbDarkTheme.Select()
     End Sub
 
     Private Sub btnNewMethodBypass_Click(sender As Object, e As EventArgs) Handles btnNewMethodBypass.Click
@@ -81,5 +82,55 @@ Public Class MainPage
         ElseIf HomeView.lblBypassStatus.Text = "False" Then
 
         End If
+    End Sub
+
+    Private Sub rbDarkTheme_CheckedChanged(sender As Object, e As EventArgs) Handles rbDarkTheme.CheckedChanged
+        Me.BackColor = SystemColors.Desktop
+        Me.ForeColor = SystemColors.Control
+        HomeView.BackColor = SystemColors.Desktop
+        HomeView.ForeColor = SystemColors.Control
+        NewMethodBypassView.BackColor = SystemColors.Desktop
+        NewMethodBypassView.ForeColor = SystemColors.Control
+        NewMethodBypassView.RichTextBox4.BackColor = SystemColors.Desktop
+        NewMethodBypassView.RichTextBox4.ForeColor = SystemColors.Control
+        NewMethodBypassView.RichTextBox3.BackColor = SystemColors.Desktop
+        NewMethodBypassView.RichTextBox3.ForeColor = SystemColors.Control
+        NewMethodBypassView.RichTextBox5.BackColor = SystemColors.Desktop
+        NewMethodBypassView.RichTextBox5.ForeColor = SystemColors.Control
+        NewMethodBypassView.RichTextBox2.BackColor = SystemColors.Desktop
+        NewMethodBypassView.RichTextBox2.ForeColor = SystemColors.Control
+        NewMethodBypassView.RichTextBox6.BackColor = SystemColors.Desktop
+        NewMethodBypassView.RichTextBox6.ForeColor = SystemColors.Control
+        AboutView.BackColor = SystemColors.Desktop
+        AboutView.ForeColor = SystemColors.Control
+        AboutView.RichTextBox3.BackColor = SystemColors.Desktop
+        AboutView.RichTextBox3.ForeColor = SystemColors.Control
+        AboutView.RichTextBox4.BackColor = SystemColors.Desktop
+        AboutView.RichTextBox4.ForeColor = SystemColors.Control
+    End Sub
+
+    Private Sub rbLightTheme_CheckedChanged(sender As Object, e As EventArgs) Handles rbLightTheme.CheckedChanged
+        Me.BackColor = SystemColors.Control
+        Me.ForeColor = SystemColors.ControlText
+        HomeView.BackColor = SystemColors.Control
+        HomeView.ForeColor = SystemColors.ControlText
+        NewMethodBypassView.BackColor = SystemColors.Control
+        NewMethodBypassView.ForeColor = SystemColors.ControlText
+        NewMethodBypassView.RichTextBox4.BackColor = SystemColors.Control
+        NewMethodBypassView.RichTextBox4.ForeColor = SystemColors.ControlText
+        NewMethodBypassView.RichTextBox3.BackColor = SystemColors.Control
+        NewMethodBypassView.RichTextBox3.ForeColor = SystemColors.ControlText
+        NewMethodBypassView.RichTextBox5.BackColor = SystemColors.Control
+        NewMethodBypassView.RichTextBox5.ForeColor = SystemColors.ControlText
+        NewMethodBypassView.RichTextBox2.BackColor = SystemColors.Control
+        NewMethodBypassView.RichTextBox2.ForeColor = SystemColors.ControlText
+        NewMethodBypassView.RichTextBox6.BackColor = SystemColors.Control
+        NewMethodBypassView.RichTextBox6.ForeColor = SystemColors.ControlText
+        AboutView.BackColor = SystemColors.Control
+        AboutView.ForeColor = SystemColors.ControlText
+        AboutView.RichTextBox3.BackColor = SystemColors.Control
+        AboutView.RichTextBox3.ForeColor = SystemColors.ControlText
+        AboutView.RichTextBox4.BackColor = SystemColors.Control
+        AboutView.RichTextBox4.ForeColor = SystemColors.ControlText
     End Sub
 End Class

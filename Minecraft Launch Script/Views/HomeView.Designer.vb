@@ -619,6 +619,7 @@ Partial Class HomeView
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnRefresh.AutoSize = True
         Me.btnRefresh.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnRefresh.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnRefresh.Location = New System.Drawing.Point(1147, 12)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(75, 31)

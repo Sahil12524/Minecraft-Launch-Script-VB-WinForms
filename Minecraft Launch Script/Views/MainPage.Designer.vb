@@ -25,12 +25,15 @@ Partial Class MainPage
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainPage))
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.rbDarkTheme = New System.Windows.Forms.RadioButton()
+        Me.rbLightTheme = New System.Windows.Forms.RadioButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnOldMethod = New System.Windows.Forms.Button()
         Me.btnNewMethodBypass = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.btnAbout = New System.Windows.Forms.Button()
+        Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,11 +48,37 @@ Partial Class MainPage
         '
         'Panel4
         '
+        Me.Panel4.Controls.Add(Me.rbDarkTheme)
+        Me.Panel4.Controls.Add(Me.rbLightTheme)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(236, 0)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(851, 30)
         Me.Panel4.TabIndex = 2
+        '
+        'rbDarkTheme
+        '
+        Me.rbDarkTheme.AutoSize = True
+        Me.rbDarkTheme.Dock = System.Windows.Forms.DockStyle.Right
+        Me.rbDarkTheme.Location = New System.Drawing.Point(750, 0)
+        Me.rbDarkTheme.Name = "rbDarkTheme"
+        Me.rbDarkTheme.Size = New System.Drawing.Size(49, 30)
+        Me.rbDarkTheme.TabIndex = 1
+        Me.rbDarkTheme.TabStop = True
+        Me.rbDarkTheme.Text = "Dark"
+        Me.rbDarkTheme.UseVisualStyleBackColor = True
+        '
+        'rbLightTheme
+        '
+        Me.rbLightTheme.AutoSize = True
+        Me.rbLightTheme.Dock = System.Windows.Forms.DockStyle.Right
+        Me.rbLightTheme.Location = New System.Drawing.Point(799, 0)
+        Me.rbLightTheme.Name = "rbLightTheme"
+        Me.rbLightTheme.Size = New System.Drawing.Size(52, 30)
+        Me.rbLightTheme.TabIndex = 0
+        Me.rbLightTheme.TabStop = True
+        Me.rbLightTheme.Text = "Light"
+        Me.rbLightTheme.UseVisualStyleBackColor = True
         '
         'Panel2
         '
@@ -67,21 +96,24 @@ Partial Class MainPage
         '
         'btnOldMethod
         '
+        Me.btnOldMethod.BackColor = System.Drawing.SystemColors.Control
         Me.btnOldMethod.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnOldMethod.Enabled = False
         Me.btnOldMethod.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnOldMethod.ForeColor = System.Drawing.SystemColors.GrayText
         Me.btnOldMethod.Location = New System.Drawing.Point(0, 110)
         Me.btnOldMethod.Name = "btnOldMethod"
         Me.btnOldMethod.Size = New System.Drawing.Size(236, 40)
         Me.btnOldMethod.TabIndex = 1
         Me.btnOldMethod.Text = "Old Method"
         Me.btnOldMethod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnOldMethod.UseVisualStyleBackColor = True
+        Me.btnOldMethod.UseVisualStyleBackColor = False
         '
         'btnNewMethodBypass
         '
         Me.btnNewMethodBypass.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnNewMethodBypass.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnNewMethodBypass.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnNewMethodBypass.Location = New System.Drawing.Point(0, 70)
         Me.btnNewMethodBypass.Name = "btnNewMethodBypass"
         Me.btnNewMethodBypass.Size = New System.Drawing.Size(236, 40)
@@ -94,6 +126,7 @@ Partial Class MainPage
         '
         Me.btnHome.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnHome.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnHome.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnHome.Location = New System.Drawing.Point(0, 30)
         Me.btnHome.Name = "btnHome"
         Me.btnHome.Size = New System.Drawing.Size(236, 40)
@@ -114,6 +147,7 @@ Partial Class MainPage
         '
         Me.btnAbout.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnAbout.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnAbout.Location = New System.Drawing.Point(0, 700)
         Me.btnAbout.Name = "btnAbout"
         Me.btnAbout.Size = New System.Drawing.Size(236, 50)
@@ -135,6 +169,8 @@ Partial Class MainPage
         Me.Name = "MainPage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Minecraft Bedrock Edition Launcher"
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -147,4 +183,6 @@ Partial Class MainPage
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents btnHome As Button
+    Friend WithEvents rbDarkTheme As RadioButton
+    Friend WithEvents rbLightTheme As RadioButton
 End Class

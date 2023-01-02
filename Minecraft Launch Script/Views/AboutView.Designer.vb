@@ -101,6 +101,7 @@ Partial Class AboutView
         '
         Me.btnHowToUseLauncher.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnHowToUseLauncher.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnHowToUseLauncher.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnHowToUseLauncher.Location = New System.Drawing.Point(11, 0)
         Me.btnHowToUseLauncher.Name = "btnHowToUseLauncher"
         Me.btnHowToUseLauncher.Size = New System.Drawing.Size(360, 123)
@@ -194,6 +195,7 @@ Partial Class AboutView
         '
         Me.btnLatestUpdateCheck.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnLatestUpdateCheck.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnLatestUpdateCheck.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnLatestUpdateCheck.Location = New System.Drawing.Point(11, 0)
         Me.btnLatestUpdateCheck.Name = "btnLatestUpdateCheck"
         Me.btnLatestUpdateCheck.Size = New System.Drawing.Size(360, 123)
@@ -263,7 +265,6 @@ Partial Class AboutView
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label4.Location = New System.Drawing.Point(3, 9)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(103, 42)
@@ -275,11 +276,9 @@ Partial Class AboutView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1074, 544)
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
-        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AboutView"

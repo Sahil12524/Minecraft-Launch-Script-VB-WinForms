@@ -92,7 +92,6 @@ Partial Class NewMethodBypassView
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label4.Location = New System.Drawing.Point(3, 9)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(196, 42)
@@ -105,6 +104,7 @@ Partial Class NewMethodBypassView
         Me.Button2.AutoSize = True
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Button2.Location = New System.Drawing.Point(11, 0)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(360, 123)
@@ -117,6 +117,7 @@ Partial Class NewMethodBypassView
         Me.Button1.AutoSize = True
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Button1.Location = New System.Drawing.Point(11, 0)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(360, 123)
@@ -129,6 +130,7 @@ Partial Class NewMethodBypassView
         Me.Button5.AutoEllipsis = True
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button5.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button5.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Button5.Location = New System.Drawing.Point(11, 0)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(360, 123)
@@ -141,6 +143,7 @@ Partial Class NewMethodBypassView
         Me.Button3.AutoSize = True
         Me.Button3.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Button3.Location = New System.Drawing.Point(11, 0)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(360, 123)
@@ -153,6 +156,7 @@ Partial Class NewMethodBypassView
         Me.Button6.AutoEllipsis = True
         Me.Button6.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button6.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button6.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Button6.Location = New System.Drawing.Point(11, 0)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(360, 123)
