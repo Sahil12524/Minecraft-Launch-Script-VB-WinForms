@@ -67,6 +67,7 @@ Partial Class MainPage
         Me.rbDarkTheme.TabStop = True
         Me.rbDarkTheme.Text = "Dark"
         Me.rbDarkTheme.UseVisualStyleBackColor = True
+        Me.rbDarkTheme.Visible = False
         '
         'rbLightTheme
         '
@@ -79,6 +80,7 @@ Partial Class MainPage
         Me.rbLightTheme.TabStop = True
         Me.rbLightTheme.Text = "Light"
         Me.rbLightTheme.UseVisualStyleBackColor = True
+        Me.rbLightTheme.Visible = False
         '
         'Panel2
         '
@@ -108,6 +110,7 @@ Partial Class MainPage
         Me.btnOldMethod.Text = "Old Method"
         Me.btnOldMethod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnOldMethod.UseVisualStyleBackColor = False
+        Me.btnOldMethod.Visible = False
         '
         'btnNewMethodBypass
         '

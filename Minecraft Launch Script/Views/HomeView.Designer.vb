@@ -626,6 +626,7 @@ Partial Class HomeView
         Me.btnRefresh.TabIndex = 1
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
+        Me.btnRefresh.Visible = False
         '
         'Label1
         '
