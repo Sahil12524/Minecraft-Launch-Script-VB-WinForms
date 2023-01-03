@@ -108,6 +108,7 @@ Partial Class MainPage
         Me.btnOldMethod.Text = "Old Method"
         Me.btnOldMethod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnOldMethod.UseVisualStyleBackColor = False
+        Me.btnOldMethod.Visible = False
         '
         'btnNewMethodBypass
         '

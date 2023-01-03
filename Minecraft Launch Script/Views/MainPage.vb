@@ -1,7 +1,36 @@
 ﻿Imports System.IO
 Imports System.Net.Security
+Imports System.Runtime.InteropServices
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
+Imports Microsoft.Win32
+
 Public Class MainPage
+
+    <DllImport("DwmApi")>
+    Private Shared Function DwmSetWindowAttribute(ByVal hwnd As IntPtr, ByVal attr As Integer, ByVal attrValue As Integer(), ByVal attrSize As Integer) As Integer
+    End Function
+
+    Sub colorTheme()
+        Dim lightmode = CInt(Registry.GetValue("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "AppsUseLightTheme", "1"))
+        If lightmode <> 1 Then 'its a dark mode
+            If DwmSetWindowAttribute(Handle, 19, {1}, 4) <> 0 Then DwmSetWindowAttribute(Handle, 20, {1}, 4)
+            rbDarkTheme.Select()
+        ElseIf lightmode <> 0 Then 'its a light mode
+            DwmSetWindowAttribute(Handle, 20, {0}, 4)
+            rbLightTheme.Select()
+        End If
+    End Sub
+
+    Public Async Sub updateTheme()
+        Dim taskRunning = True
+        While taskRunning
+            Await Task.Delay(500)
+            colorTheme()
+            Application.DoEvents()
+            Me.Invalidate()
+            Me.Update()
+        End While
+    End Sub
     Sub switchPanel(ByVal panel As Form)
         Panel3.Controls.Clear()
         panel.TopLevel = False
@@ -15,7 +44,8 @@ Public Class MainPage
         GC.WaitForPendingFinalizers()
         GC.Collect()
         switchPanel(HomeView)
-        rbDarkTheme.Select()
+        colorTheme()
+        updateTheme()
     End Sub
 
     Private Sub btnNewMethodBypass_Click(sender As Object, e As EventArgs) Handles btnNewMethodBypass.Click
@@ -85,27 +115,27 @@ Public Class MainPage
     End Sub
 
     Private Sub rbDarkTheme_CheckedChanged(sender As Object, e As EventArgs) Handles rbDarkTheme.CheckedChanged
-        Me.BackColor = SystemColors.Desktop
+        Me.BackColor = Color.FromArgb(15, 15, 15)
         Me.ForeColor = SystemColors.Control
-        HomeView.BackColor = SystemColors.Desktop
+        HomeView.BackColor = Color.FromArgb(15, 15, 15)
         HomeView.ForeColor = SystemColors.Control
-        NewMethodBypassView.BackColor = SystemColors.Desktop
+        NewMethodBypassView.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.ForeColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox4.BackColor = SystemColors.Desktop
+        NewMethodBypassView.RichTextBox4.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.RichTextBox4.ForeColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox3.BackColor = SystemColors.Desktop
+        NewMethodBypassView.RichTextBox3.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.RichTextBox3.ForeColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox5.BackColor = SystemColors.Desktop
+        NewMethodBypassView.RichTextBox5.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.RichTextBox5.ForeColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox2.BackColor = SystemColors.Desktop
+        NewMethodBypassView.RichTextBox2.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.RichTextBox2.ForeColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox6.BackColor = SystemColors.Desktop
+        NewMethodBypassView.RichTextBox6.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.RichTextBox6.ForeColor = SystemColors.Control
-        AboutView.BackColor = SystemColors.Desktop
+        AboutView.BackColor = Color.FromArgb(15, 15, 15)
         AboutView.ForeColor = SystemColors.Control
-        AboutView.RichTextBox3.BackColor = SystemColors.Desktop
+        AboutView.RichTextBox3.BackColor = Color.FromArgb(15, 15, 15)
         AboutView.RichTextBox3.ForeColor = SystemColors.Control
-        AboutView.RichTextBox4.BackColor = SystemColors.Desktop
+        AboutView.RichTextBox4.BackColor = Color.FromArgb(15, 15, 15)
         AboutView.RichTextBox4.ForeColor = SystemColors.Control
     End Sub
 
