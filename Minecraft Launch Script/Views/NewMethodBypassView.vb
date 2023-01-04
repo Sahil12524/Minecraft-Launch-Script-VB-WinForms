@@ -61,7 +61,7 @@ Public Class NewMethodBypassView
         GC.WaitForPendingFinalizers()
         GC.Collect()
         'HomeView.Close()
-        Threading.Thread.Sleep(1000)
+        'Threading.Thread.Sleep(1000)
         If HomeView.lblBackupReqStatus.Text = "Yes" Or HomeView.lblBackupReqStatus.Text = "N/A" Or HomeView.lblBackupSystem32DllVersion.Text = "Backup not found" And HomeView.lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
             Panel13.Show()
             Panel10.Hide()
