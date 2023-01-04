@@ -10,25 +10,33 @@ Public Class MainPage
     Private Shared Function DwmSetWindowAttribute(ByVal hwnd As IntPtr, ByVal attr As Integer, ByVal attrValue As Integer(), ByVal attrSize As Integer) As Integer
     End Function
 
+    Dim isLightTheme
+    Dim taskRunning = True
+
     Sub colorTheme()
         Dim lightmode = CInt(Registry.GetValue("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "AppsUseLightTheme", "1"))
-        If lightmode <> 1 Then 'its a dark mode
-            If DwmSetWindowAttribute(Handle, 19, {1}, 4) <> 0 Then DwmSetWindowAttribute(Handle, 20, {1}, 4)
-            rbDarkTheme.Select()
-        ElseIf lightmode <> 0 Then 'its a light mode
-            DwmSetWindowAttribute(Handle, 20, {0}, 4)
-            rbLightTheme.Select()
-        End If
+        Try
+            If lightmode <> 1 Then 'its a dark mode
+                If DwmSetWindowAttribute(Handle, 19, {1}, 4) <> 0 Then DwmSetWindowAttribute(Handle, 20, {1}, 4)
+                ThemeHelper.DarkThemeButtons()
+                isLightTheme = False
+                rbDarkTheme.Select()
+            ElseIf lightmode <> 0 Then 'its a light mode
+                DwmSetWindowAttribute(Handle, 20, {0}, 4)
+                ThemeHelper.LightThemeButtons()
+                isLightTheme = True
+                rbLightTheme.Select()
+            End If
+
+        Catch ex As System.ObjectDisposedException
+            Application.Exit()
+        End Try
     End Sub
 
     Public Async Sub updateTheme()
-        Dim taskRunning = True
         While taskRunning
             Await Task.Delay(500)
             colorTheme()
-            Application.DoEvents()
-            Me.Invalidate()
-            Me.Update()
         End While
     End Sub
     Sub switchPanel(ByVal panel As Form)
@@ -45,7 +53,13 @@ Public Class MainPage
         GC.Collect()
         switchPanel(HomeView)
         colorTheme()
-        updateTheme()
+        If isLightTheme = True Then
+            rbLightTheme.Select()
+            taskRunning = False
+        ElseIf isLightTheme <> True Then
+            rbDarkTheme.Select()
+            taskRunning = False
+        End If
     End Sub
 
     Private Sub btnNewMethodBypass_Click(sender As Object, e As EventArgs) Handles btnNewMethodBypass.Click
@@ -115,52 +129,18 @@ Public Class MainPage
     End Sub
 
     Private Sub rbDarkTheme_CheckedChanged(sender As Object, e As EventArgs) Handles rbDarkTheme.CheckedChanged
-        Me.BackColor = Color.FromArgb(15, 15, 15)
-        Me.ForeColor = SystemColors.Control
-        HomeView.BackColor = Color.FromArgb(15, 15, 15)
-        HomeView.ForeColor = SystemColors.Control
-        NewMethodBypassView.BackColor = Color.FromArgb(15, 15, 15)
-        NewMethodBypassView.ForeColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox4.BackColor = Color.FromArgb(15, 15, 15)
-        NewMethodBypassView.RichTextBox4.ForeColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox3.BackColor = Color.FromArgb(15, 15, 15)
-        NewMethodBypassView.RichTextBox3.ForeColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox5.BackColor = Color.FromArgb(15, 15, 15)
-        NewMethodBypassView.RichTextBox5.ForeColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox2.BackColor = Color.FromArgb(15, 15, 15)
-        NewMethodBypassView.RichTextBox2.ForeColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox6.BackColor = Color.FromArgb(15, 15, 15)
-        NewMethodBypassView.RichTextBox6.ForeColor = SystemColors.Control
-        AboutView.BackColor = Color.FromArgb(15, 15, 15)
-        AboutView.ForeColor = SystemColors.Control
-        AboutView.RichTextBox3.BackColor = Color.FromArgb(15, 15, 15)
-        AboutView.RichTextBox3.ForeColor = SystemColors.Control
-        AboutView.RichTextBox4.BackColor = Color.FromArgb(15, 15, 15)
-        AboutView.RichTextBox4.ForeColor = SystemColors.Control
+        ThemeHelper.DarkTheme()
     End Sub
 
     Private Sub rbLightTheme_CheckedChanged(sender As Object, e As EventArgs) Handles rbLightTheme.CheckedChanged
-        Me.BackColor = SystemColors.Control
-        Me.ForeColor = SystemColors.ControlText
-        HomeView.BackColor = SystemColors.Control
-        HomeView.ForeColor = SystemColors.ControlText
-        NewMethodBypassView.BackColor = SystemColors.Control
-        NewMethodBypassView.ForeColor = SystemColors.ControlText
-        NewMethodBypassView.RichTextBox4.BackColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox4.ForeColor = SystemColors.ControlText
-        NewMethodBypassView.RichTextBox3.BackColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox3.ForeColor = SystemColors.ControlText
-        NewMethodBypassView.RichTextBox5.BackColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox5.ForeColor = SystemColors.ControlText
-        NewMethodBypassView.RichTextBox2.BackColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox2.ForeColor = SystemColors.ControlText
-        NewMethodBypassView.RichTextBox6.BackColor = SystemColors.Control
-        NewMethodBypassView.RichTextBox6.ForeColor = SystemColors.ControlText
-        AboutView.BackColor = SystemColors.Control
-        AboutView.ForeColor = SystemColors.ControlText
-        AboutView.RichTextBox3.BackColor = SystemColors.Control
-        AboutView.RichTextBox3.ForeColor = SystemColors.ControlText
-        AboutView.RichTextBox4.BackColor = SystemColors.Control
-        AboutView.RichTextBox4.ForeColor = SystemColors.ControlText
+        ThemeHelper.LightTheme()
+    End Sub
+    Private Sub MainPage_Deactivate(sender As Object, e As EventArgs) Handles MyBase.Deactivate
+        taskRunning = True
+        updateTheme()
+    End Sub
+
+    Private Sub MainPage_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
+        taskRunning = False
     End Sub
 End Class
