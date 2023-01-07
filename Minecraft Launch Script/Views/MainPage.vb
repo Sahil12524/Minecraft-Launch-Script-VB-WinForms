@@ -83,6 +83,32 @@ Public Class MainPage
             NewMethodBypassView.Panel6.Show()
             NewMethodBypassView.Panel19.Show()
         End If
+
+        If HomeView.lblBypassStatus.Text = "True" Then
+            taskRunning = True
+            taskRunning = False
+            NewMethodBypassView.Panel19.Show()
+            NewMethodBypassView.Panel10.Hide()
+            NewMethodBypassView.Panel16.Show()
+            NewMethodBypassView.Panel6.Show()
+            taskRunning = True
+            taskRunning = False
+        ElseIf HomeView.lblBypassStatus.Text = "False" Or HomeView.lblBypassStatus.Text = "N/A" Then
+            taskRunning = True
+            taskRunning = False
+            NewMethodBypassView.Panel19.Hide()
+            taskRunning = True
+            taskRunning = False
+        End If
+        If HomeView.lblBypassStatus.Text = "False" And HomeView.lblBackupReqStatus.Text = "No" Then
+            taskRunning = True
+            taskRunning = False
+            NewMethodBypassView.Panel10.Show()
+            NewMethodBypassView.Panel16.Hide()
+            NewMethodBypassView.Panel6.Hide()
+            taskRunning = True
+            taskRunning = False
+        End If
     End Sub
 
     Private Sub btnOldMethod_Click(sender As Object, e As EventArgs) Handles btnOldMethod.Click

@@ -48,7 +48,31 @@ Public Class NewMethodBypassView
                 taskRunning = False
             End If
 
-
+            If HomeView.lblBypassStatus.Text = "True" Then
+                taskRunning = True
+                taskRunning = False
+                Panel19.Show()
+                Panel10.Hide()
+                Panel16.Show()
+                Panel6.Show()
+                taskRunning = True
+                taskRunning = False
+            ElseIf HomeView.lblBypassStatus.Text = "False" Or HomeView.lblBypassStatus.Text = "N/A" Then
+                taskRunning = True
+                taskRunning = False
+                Panel19.Hide()
+                taskRunning = True
+                taskRunning = False
+            End If
+            If HomeView.lblBypassStatus.Text = "False" And HomeView.lblBackupReqStatus.Text = "No" Then
+                taskRunning = True
+                taskRunning = False
+                Panel10.Show()
+                Panel16.Hide()
+                Panel6.Hide()
+                taskRunning = True
+                taskRunning = False
+            End If
         End While
     End Sub
 
@@ -74,6 +98,31 @@ Public Class NewMethodBypassView
             Panel16.Show()
             Panel6.Show()
             Panel19.Show()
+        End If
+
+        If HomeView.lblBypassStatus.Text = "True" Then
+            Panel19.Show()
+        ElseIf HomeView.lblBypassStatus.Text = "False" Or HomeView.lblBypassStatus.Text = "N/A" Then
+            Panel19.Hide()
+        End If
+
+        If HomeView.lblBypassStatus.Text = "True" Then
+
+            Panel19.Show()
+            Panel10.Hide()
+            Panel16.Show()
+            Panel6.Show()
+
+        ElseIf HomeView.lblBypassStatus.Text = "False" Or HomeView.lblBypassStatus.Text = "N/A" Then
+
+            Panel19.Hide()
+
+        End If
+        If HomeView.lblBypassStatus.Text = "False" And HomeView.lblBackupReqStatus.Text = "No" Then
+
+            Panel10.Show()
+            Panel16.Hide()
+            Panel6.Hide()
         End If
         'updateForm()
     End Sub
