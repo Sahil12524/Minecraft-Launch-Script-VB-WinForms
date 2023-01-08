@@ -27,3 +27,4 @@ E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net6.0-windows\Minecraft Launch Script.pdb
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net6.0-windows\Minecraft Launch Script.genruntimeconfig.cache
 E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net6.0-windows\ref\Minecraft Launch Script.dll
+E:\Users\sahil\source\repos\Minecraft Launch Script\Minecraft Launch Script\obj\Debug\net6.0-windows\Minecraft_Launch_Script.PerformanceTweakView.resources

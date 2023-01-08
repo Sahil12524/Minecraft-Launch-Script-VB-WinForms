@@ -4,6 +4,7 @@ color 0a
 title New Stop
 set curdir=%~dp0
 echo %curdir%
+taskkill /F /IM "WinStore.App.exe"
 taskkill /F /IM "Minecraft.Windows.exe"
 taskkill /F /IM "GameBar.exe"
 taskkill /F /IM "GameBarFTServer.exe"

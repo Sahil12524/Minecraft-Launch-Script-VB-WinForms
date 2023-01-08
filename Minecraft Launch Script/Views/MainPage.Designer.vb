@@ -28,6 +28,7 @@ Partial Class MainPage
         Me.rbDarkTheme = New System.Windows.Forms.RadioButton()
         Me.rbLightTheme = New System.Windows.Forms.RadioButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnPerformanceTweak = New System.Windows.Forms.Button()
         Me.btnOldMethod = New System.Windows.Forms.Button()
         Me.btnNewMethodBypass = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
@@ -85,6 +86,7 @@ Partial Class MainPage
         'Panel2
         '
         Me.Panel2.AutoScroll = True
+        Me.Panel2.Controls.Add(Me.btnPerformanceTweak)
         Me.Panel2.Controls.Add(Me.btnOldMethod)
         Me.Panel2.Controls.Add(Me.btnNewMethodBypass)
         Me.Panel2.Controls.Add(Me.btnHome)
@@ -95,6 +97,18 @@ Partial Class MainPage
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(236, 750)
         Me.Panel2.TabIndex = 0
+        '
+        'btnPerformanceTweak
+        '
+        Me.btnPerformanceTweak.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnPerformanceTweak.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnPerformanceTweak.Location = New System.Drawing.Point(0, 150)
+        Me.btnPerformanceTweak.Name = "btnPerformanceTweak"
+        Me.btnPerformanceTweak.Size = New System.Drawing.Size(236, 40)
+        Me.btnPerformanceTweak.TabIndex = 4
+        Me.btnPerformanceTweak.Text = "Performance Tweak"
+        Me.btnPerformanceTweak.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPerformanceTweak.UseVisualStyleBackColor = True
         '
         'btnOldMethod
         '
@@ -163,6 +177,7 @@ Partial Class MainPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1087, 750)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
@@ -188,4 +203,5 @@ Partial Class MainPage
     Friend WithEvents btnHome As Button
     Friend WithEvents rbDarkTheme As RadioButton
     Friend WithEvents rbLightTheme As RadioButton
+    Friend WithEvents btnPerformanceTweak As Button
 End Class

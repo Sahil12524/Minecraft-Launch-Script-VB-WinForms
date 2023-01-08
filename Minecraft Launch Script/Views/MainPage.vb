@@ -62,6 +62,10 @@ Public Class MainPage
         End If
     End Sub
 
+    Dim fileReader As String = Environ$("USERPROFILE") & "\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftpe\options.txt"
+    Dim root As String = "C:\"
+    Dim appDefLoc = My.Application.Info.DirectoryPath
+
     Private Sub btnNewMethodBypass_Click(sender As Object, e As EventArgs) Handles btnNewMethodBypass.Click
         GC.Collect()
         GC.WaitForPendingFinalizers()
@@ -168,5 +172,22 @@ Public Class MainPage
 
     Private Sub MainPage_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         taskRunning = False
+    End Sub
+
+    Private Sub btnPerformanceTweak_Click(sender As Object, e As EventArgs) Handles btnPerformanceTweak.Click
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
+        switchPanel(PerformanceTweakView)
+        Dim fileWrite As String = My.Computer.FileSystem.ReadAllText(fileReader)
+        If fileWrite.Contains("gfx_vsync:0") Then
+            PerformanceTweakView.lblVsyncStatus.Text = "OFF"
+            PerformanceTweakView.lblVsyncStatus.ForeColor = Color.Lime
+            Directory.SetCurrentDirectory(appDefLoc)
+        ElseIf fileWrite.Contains("gfx_vsync:1") Then
+            PerformanceTweakView.lblVsyncStatus.Text = "ON"
+            PerformanceTweakView.lblVsyncStatus.ForeColor = Color.Red
+            Directory.SetCurrentDirectory(appDefLoc)
+        End If
     End Sub
 End Class

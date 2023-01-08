@@ -6,6 +6,7 @@ set curdir=%~dp0
 echo %curdir%
 ::del "%curdir%\dlls\Original Dlls Backup\System32\Windows.ApplicationModel.Store.dll"
 ::del "%curdir%dlls\Original Dlls Backup\sysWOW64\Windows.ApplicationModel.Store.dll"
+taskkill /F /IM "WinStore.App.exe"
 taskkill /F /IM "Minecraft.Windows.exe"
 taskkill /F /IM "GameBar.exe"
 taskkill /F /IM "GameBarFTServer.exe"

@@ -22,6 +22,10 @@
         AboutView.RichTextBox3.ForeColor = SystemColors.Control
         AboutView.RichTextBox4.BackColor = Color.FromArgb(15, 15, 15)
         AboutView.RichTextBox4.ForeColor = SystemColors.Control
+        PerformanceTweakView.BackColor = Color.FromArgb(15, 15, 15)
+        PerformanceTweakView.ForeColor = SystemColors.Control
+        PerformanceTweakView.RichTextBox1.BackColor = Color.FromArgb(15, 15, 15)
+        PerformanceTweakView.RichTextBox1.ForeColor = SystemColors.Control
     End Sub
     Public Shared Sub DarkThemeButtons()
         MainPage.btnHome.FlatStyle = FlatStyle.Flat
@@ -47,6 +51,12 @@
         MainPage.btnOldMethod.FlatAppearance.MouseDownBackColor = Color.DarkGray
         MainPage.btnOldMethod.FlatAppearance.BorderColor = Color.Gray
         MainPage.btnOldMethod.ForeColor = Color.White
+
+        MainPage.btnPerformanceTweak.FlatStyle = FlatStyle.Flat
+        MainPage.btnPerformanceTweak.FlatAppearance.MouseOverBackColor = Color.Gray
+        MainPage.btnPerformanceTweak.FlatAppearance.MouseDownBackColor = Color.DarkGray
+        MainPage.btnPerformanceTweak.FlatAppearance.BorderColor = Color.Gray
+        MainPage.btnPerformanceTweak.ForeColor = Color.White
 
         NewMethodBypassView.Button1.FlatStyle = FlatStyle.Flat
         NewMethodBypassView.Button1.FlatAppearance.MouseOverBackColor = Color.Gray
@@ -90,6 +100,18 @@
         AboutView.btnLatestUpdateCheck.FlatAppearance.BorderColor = Color.Gray
         AboutView.btnLatestUpdateCheck.ForeColor = Color.White
 
+        PerformanceTweakView.btnVsyncOn.FlatStyle = FlatStyle.Flat
+        PerformanceTweakView.btnVsyncOn.FlatAppearance.MouseOverBackColor = Color.Gray
+        PerformanceTweakView.btnVsyncOn.FlatAppearance.MouseDownBackColor = Color.Red
+        PerformanceTweakView.btnVsyncOn.FlatAppearance.BorderColor = Color.Gray
+        PerformanceTweakView.btnVsyncOn.ForeColor = Color.White
+
+        PerformanceTweakView.btnVsyncOff.FlatStyle = FlatStyle.Flat
+        PerformanceTweakView.btnVsyncOff.FlatAppearance.MouseOverBackColor = Color.Gray
+        PerformanceTweakView.btnVsyncOff.FlatAppearance.MouseDownBackColor = Color.LimeGreen
+        PerformanceTweakView.btnVsyncOff.FlatAppearance.BorderColor = Color.Gray
+        PerformanceTweakView.btnVsyncOff.ForeColor = Color.White
+
     End Sub
     Public Shared Sub LightTheme()
         MainPage.BackColor = SystemColors.Control
@@ -114,6 +136,10 @@
         AboutView.RichTextBox3.ForeColor = SystemColors.ControlText
         AboutView.RichTextBox4.BackColor = SystemColors.Control
         AboutView.RichTextBox4.ForeColor = SystemColors.ControlText
+        PerformanceTweakView.BackColor = SystemColors.Control
+        PerformanceTweakView.ForeColor = SystemColors.ControlText
+        PerformanceTweakView.RichTextBox1.BackColor = SystemColors.Control
+        PerformanceTweakView.RichTextBox1.ForeColor = SystemColors.ControlText
     End Sub
 
     Public Shared Sub LightThemeButtons()
@@ -140,6 +166,12 @@
         MainPage.btnOldMethod.FlatAppearance.MouseDownBackColor = Color.DarkGray
         MainPage.btnOldMethod.FlatAppearance.BorderColor = Color.Gray
         MainPage.btnOldMethod.ForeColor = Color.Black
+
+        MainPage.btnPerformanceTweak.FlatStyle = FlatStyle.Flat
+        MainPage.btnPerformanceTweak.FlatAppearance.MouseOverBackColor = Color.Gray
+        MainPage.btnPerformanceTweak.FlatAppearance.MouseDownBackColor = Color.DarkGray
+        MainPage.btnPerformanceTweak.FlatAppearance.BorderColor = Color.Gray
+        MainPage.btnPerformanceTweak.ForeColor = Color.Black
 
         NewMethodBypassView.Button1.FlatStyle = FlatStyle.Flat
         NewMethodBypassView.Button1.FlatAppearance.MouseOverBackColor = Color.Gray
@@ -183,5 +215,16 @@
         AboutView.btnLatestUpdateCheck.FlatAppearance.BorderColor = Color.Gray
         AboutView.btnLatestUpdateCheck.ForeColor = Color.Black
 
+        PerformanceTweakView.btnVsyncOn.FlatStyle = FlatStyle.Flat
+        PerformanceTweakView.btnVsyncOn.FlatAppearance.MouseOverBackColor = Color.Gray
+        PerformanceTweakView.btnVsyncOn.FlatAppearance.MouseDownBackColor = Color.Red
+        PerformanceTweakView.btnVsyncOn.FlatAppearance.BorderColor = Color.Gray
+        PerformanceTweakView.btnVsyncOn.ForeColor = Color.Black
+
+        PerformanceTweakView.btnVsyncOff.FlatStyle = FlatStyle.Flat
+        PerformanceTweakView.btnVsyncOff.FlatAppearance.MouseOverBackColor = Color.Gray
+        PerformanceTweakView.btnVsyncOff.FlatAppearance.MouseDownBackColor = Color.LimeGreen
+        PerformanceTweakView.btnVsyncOff.FlatAppearance.BorderColor = Color.Gray
+        PerformanceTweakView.btnVsyncOff.ForeColor = Color.Black
     End Sub
 End Class
