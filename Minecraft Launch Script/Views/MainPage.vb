@@ -48,6 +48,7 @@ Public Class MainPage
         panel.Show()
     End Sub
     Private Sub MainPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.MinimumSize = New Size(863, 789)
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
@@ -60,6 +61,9 @@ Public Class MainPage
             rbDarkTheme.Select()
             taskRunning = False
         End If
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 
     Dim fileReader As String = Environ$("USERPROFILE") & "\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftpe\options.txt"
@@ -188,6 +192,13 @@ Public Class MainPage
             PerformanceTweakView.lblVsyncStatus.Text = "ON"
             PerformanceTweakView.lblVsyncStatus.ForeColor = Color.Red
             Directory.SetCurrentDirectory(appDefLoc)
+        End If
+    End Sub
+    Private Sub MainPage_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
+        If Me.Size = New Size(863, 789) Then
+            Me.Panel2.Hide()
+        Else
+            Me.Panel2.Show()
         End If
     End Sub
 End Class
