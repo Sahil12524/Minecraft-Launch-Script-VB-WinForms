@@ -34,4 +34,14 @@
         Dim r As Long
         r = ShellExecute(0, "open", "https://www.youtube.com/watch?v=zzo-wzSFweY", 0, 0, 1)
     End Sub
+
+    Private Sub btnReportIssue_Click(sender As Object, e As EventArgs) Handles btnReportIssue.Click
+        Dim r As Long
+        r = ShellExecute(0, "open", "https://github.com/Sahil12524/Minecraft-Launch-Script/issues", 0, 0, 1)
+    End Sub
+
+    Private Sub btnDCJoinNow_Click(sender As Object, e As EventArgs) Handles btnDCJoinNow.Click
+        Dim r As Long
+        r = ShellExecute(0, "open", "https://discord.gg/nEPzChHKjx", 0, 0, 1)
+    End Sub
 End Class

@@ -2,30 +2,47 @@
     Public Shared Sub DarkTheme()
         MainPage.BackColor = Color.FromArgb(15, 15, 15)
         MainPage.ForeColor = SystemColors.Control
+
         HomeView.BackColor = Color.FromArgb(15, 15, 15)
         HomeView.ForeColor = SystemColors.Control
+
         NewMethodBypassView.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.ForeColor = SystemColors.Control
+
         NewMethodBypassView.RichTextBox4.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.RichTextBox4.ForeColor = SystemColors.Control
+
         NewMethodBypassView.RichTextBox3.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.RichTextBox3.ForeColor = SystemColors.Control
+
         NewMethodBypassView.RichTextBox5.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.RichTextBox5.ForeColor = SystemColors.Control
+
         NewMethodBypassView.RichTextBox2.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.RichTextBox2.ForeColor = SystemColors.Control
+
         NewMethodBypassView.RichTextBox6.BackColor = Color.FromArgb(15, 15, 15)
         NewMethodBypassView.RichTextBox6.ForeColor = SystemColors.Control
+
         AboutView.BackColor = Color.FromArgb(15, 15, 15)
         AboutView.ForeColor = SystemColors.Control
+
         AboutView.RichTextBox3.BackColor = Color.FromArgb(15, 15, 15)
         AboutView.RichTextBox3.ForeColor = SystemColors.Control
+
         AboutView.RichTextBox4.BackColor = Color.FromArgb(15, 15, 15)
         AboutView.RichTextBox4.ForeColor = SystemColors.Control
+
+        AboutView.RichTextBox1.BackColor = Color.FromArgb(15, 15, 15)
+        AboutView.RichTextBox1.ForeColor = SystemColors.Control
+
         PerformanceTweakView.BackColor = Color.FromArgb(15, 15, 15)
         PerformanceTweakView.ForeColor = SystemColors.Control
+
         PerformanceTweakView.RichTextBox1.BackColor = Color.FromArgb(15, 15, 15)
         PerformanceTweakView.RichTextBox1.ForeColor = SystemColors.Control
+
+
     End Sub
     Public Shared Sub DarkThemeButtons()
         MainPage.btnHome.FlatStyle = FlatStyle.Flat
@@ -100,6 +117,18 @@
         AboutView.btnLatestUpdateCheck.FlatAppearance.BorderColor = Color.Gray
         AboutView.btnLatestUpdateCheck.ForeColor = Color.White
 
+        AboutView.btnReportIssue.FlatStyle = FlatStyle.Flat
+        AboutView.btnReportIssue.FlatAppearance.MouseOverBackColor = Color.Gray
+        AboutView.btnReportIssue.FlatAppearance.MouseDownBackColor = Color.Red
+        AboutView.btnReportIssue.FlatAppearance.BorderColor = Color.Gray
+        AboutView.btnReportIssue.ForeColor = Color.White
+
+        AboutView.btnDCJoinNow.FlatStyle = FlatStyle.Flat
+        AboutView.btnDCJoinNow.FlatAppearance.MouseOverBackColor = Color.Gray
+        AboutView.btnDCJoinNow.FlatAppearance.MouseDownBackColor = Color.LimeGreen
+        AboutView.btnDCJoinNow.FlatAppearance.BorderColor = Color.Gray
+        AboutView.btnDCJoinNow.ForeColor = Color.White
+
         PerformanceTweakView.btnVsyncOn.FlatStyle = FlatStyle.Flat
         PerformanceTweakView.btnVsyncOn.FlatAppearance.MouseOverBackColor = Color.Gray
         PerformanceTweakView.btnVsyncOn.FlatAppearance.MouseDownBackColor = Color.Red
@@ -116,30 +145,49 @@
     Public Shared Sub LightTheme()
         MainPage.BackColor = SystemColors.Control
         MainPage.ForeColor = SystemColors.ControlText
+
         HomeView.BackColor = SystemColors.Control
         HomeView.ForeColor = SystemColors.ControlText
+
         NewMethodBypassView.BackColor = SystemColors.Control
         NewMethodBypassView.ForeColor = SystemColors.ControlText
+
         NewMethodBypassView.RichTextBox4.BackColor = SystemColors.Control
         NewMethodBypassView.RichTextBox4.ForeColor = SystemColors.ControlText
+
         NewMethodBypassView.RichTextBox3.BackColor = SystemColors.Control
         NewMethodBypassView.RichTextBox3.ForeColor = SystemColors.ControlText
+
         NewMethodBypassView.RichTextBox5.BackColor = SystemColors.Control
         NewMethodBypassView.RichTextBox5.ForeColor = SystemColors.ControlText
+
         NewMethodBypassView.RichTextBox2.BackColor = SystemColors.Control
         NewMethodBypassView.RichTextBox2.ForeColor = SystemColors.ControlText
+
         NewMethodBypassView.RichTextBox6.BackColor = SystemColors.Control
         NewMethodBypassView.RichTextBox6.ForeColor = SystemColors.ControlText
+
         AboutView.BackColor = SystemColors.Control
         AboutView.ForeColor = SystemColors.ControlText
+
         AboutView.RichTextBox3.BackColor = SystemColors.Control
         AboutView.RichTextBox3.ForeColor = SystemColors.ControlText
+
         AboutView.RichTextBox4.BackColor = SystemColors.Control
         AboutView.RichTextBox4.ForeColor = SystemColors.ControlText
+
+        AboutView.RichTextBox1.BackColor = SystemColors.Control
+        AboutView.RichTextBox1.ForeColor = SystemColors.ControlText
+
         PerformanceTweakView.BackColor = SystemColors.Control
         PerformanceTweakView.ForeColor = SystemColors.ControlText
+
         PerformanceTweakView.RichTextBox1.BackColor = SystemColors.Control
         PerformanceTweakView.RichTextBox1.ForeColor = SystemColors.ControlText
+
+        PerformanceTweakView.RichTextBox1.BackColor = SystemColors.Control
+        PerformanceTweakView.RichTextBox1.ForeColor = SystemColors.ControlText
+
     End Sub
 
     Public Shared Sub LightThemeButtons()
@@ -214,6 +262,19 @@
         AboutView.btnLatestUpdateCheck.FlatAppearance.MouseDownBackColor = Color.DarkGray
         AboutView.btnLatestUpdateCheck.FlatAppearance.BorderColor = Color.Gray
         AboutView.btnLatestUpdateCheck.ForeColor = Color.Black
+
+        AboutView.btnReportIssue.FlatStyle = FlatStyle.Flat
+        AboutView.btnReportIssue.FlatAppearance.MouseOverBackColor = Color.Gray
+        AboutView.btnReportIssue.FlatAppearance.MouseDownBackColor = Color.Red
+        AboutView.btnReportIssue.FlatAppearance.BorderColor = Color.Gray
+        AboutView.btnReportIssue.ForeColor = Color.Black
+
+        AboutView.btnDCJoinNow.FlatStyle = FlatStyle.Flat
+        AboutView.btnDCJoinNow.FlatAppearance.MouseOverBackColor = Color.Gray
+        AboutView.btnDCJoinNow.FlatAppearance.MouseDownBackColor = Color.LimeGreen
+        AboutView.btnDCJoinNow.FlatAppearance.BorderColor = Color.Gray
+        AboutView.btnDCJoinNow.ForeColor = Color.Black
+
 
         PerformanceTweakView.btnVsyncOn.FlatStyle = FlatStyle.Flat
         PerformanceTweakView.btnVsyncOn.FlatAppearance.MouseOverBackColor = Color.Gray

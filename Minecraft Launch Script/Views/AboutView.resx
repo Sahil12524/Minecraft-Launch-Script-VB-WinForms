@@ -57,6 +57,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>If there is any bugs, glitchs you found in the app or some thing is not working as expected, feel free to report those problems.
+I will try my best to solve it as soon as possible!
+Before Filing your issue please make sure that you are searching for your issue first, if you didn't found any issue you found then only add your issue.
+
+Use the below format to file an issue:
+
+Windows Version: eg. 11 22H2
+Launcher Version:
+Status at home page: eg. Backup need = Yes, Bypassloaded = False, currrent DLL and backup DLL versions.
+Issue:</value>
+  </data>
   <data name="RichTextBox4.Text" xml:space="preserve">
     <value>Hello there,
 

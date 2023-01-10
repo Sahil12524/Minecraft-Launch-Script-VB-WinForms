@@ -36,6 +36,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="bin\Debug\net6.0-windows\icon\dc_ikon.png" />
+    <Content Include="bin\Release\net6.0-windows\icon\dc_ikon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
