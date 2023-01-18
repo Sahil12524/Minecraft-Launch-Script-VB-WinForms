@@ -205,15 +205,15 @@ Partial Class NewMethodBypassView
         'TableLayoutPanel5
         '
         Me.TableLayoutPanel5.ColumnCount = 1
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.RichTextBox2, 0, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Left
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 2
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.20325!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.79675!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(436, 123)
         Me.TableLayoutPanel5.TabIndex = 0
         '
@@ -247,7 +247,7 @@ Partial Class NewMethodBypassView
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1211, 596)
+        Me.Panel7.Size = New System.Drawing.Size(1211, 625)
         Me.Panel7.TabIndex = 4
         '
         'Panel22
@@ -261,7 +261,7 @@ Partial Class NewMethodBypassView
         Me.Panel22.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel22.Location = New System.Drawing.Point(0, 55)
         Me.Panel22.Name = "Panel22"
-        Me.Panel22.Size = New System.Drawing.Size(1211, 541)
+        Me.Panel22.Size = New System.Drawing.Size(1211, 570)
         Me.Panel22.TabIndex = 8
         '
         'Panel19
@@ -296,15 +296,15 @@ Partial Class NewMethodBypassView
         'TableLayoutPanel9
         '
         Me.TableLayoutPanel9.ColumnCount = 1
-        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel9.Controls.Add(Me.RichTextBox6, 0, 1)
         Me.TableLayoutPanel9.Controls.Add(Me.Label7, 0, 0)
         Me.TableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Left
         Me.TableLayoutPanel9.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
         Me.TableLayoutPanel9.RowCount = 2
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.20325!))
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.79675!))
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel9.Size = New System.Drawing.Size(436, 123)
         Me.TableLayoutPanel9.TabIndex = 0
         '
@@ -365,15 +365,15 @@ Partial Class NewMethodBypassView
         'TableLayoutPanel8
         '
         Me.TableLayoutPanel8.ColumnCount = 1
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.RichTextBox5, 0, 1)
         Me.TableLayoutPanel8.Controls.Add(Me.Label6, 0, 0)
         Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Left
         Me.TableLayoutPanel8.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 2
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.20325!))
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.79675!))
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel8.Size = New System.Drawing.Size(436, 123)
         Me.TableLayoutPanel8.TabIndex = 0
         '
@@ -432,15 +432,15 @@ Partial Class NewMethodBypassView
         'TableLayoutPanel6
         '
         Me.TableLayoutPanel6.ColumnCount = 1
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel6.Controls.Add(Me.RichTextBox3, 0, 1)
         Me.TableLayoutPanel6.Controls.Add(Me.Label3, 0, 0)
         Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Left
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 2
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.20325!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.79675!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel6.Size = New System.Drawing.Size(436, 123)
         Me.TableLayoutPanel6.TabIndex = 0
         '
@@ -499,15 +499,15 @@ Partial Class NewMethodBypassView
         'TableLayoutPanel7
         '
         Me.TableLayoutPanel7.ColumnCount = 1
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel7.Controls.Add(Me.RichTextBox4, 0, 1)
         Me.TableLayoutPanel7.Controls.Add(Me.Label5, 0, 0)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Left
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 2
-        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.20325!))
-        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.79675!))
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel7.Size = New System.Drawing.Size(436, 123)
         Me.TableLayoutPanel7.TabIndex = 0
         '
@@ -538,7 +538,7 @@ Partial Class NewMethodBypassView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1211, 596)
+        Me.ClientSize = New System.Drawing.Size(1211, 625)
         Me.Controls.Add(Me.Panel7)
         Me.Name = "NewMethodBypassView"
         Me.Text = "New Method"

@@ -260,16 +260,16 @@ Partial Class HomeView
         'TableLayoutPanel5
         '
         Me.TableLayoutPanel5.ColumnCount = 1
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.lblHackSysWOW64DllVersion, 0, 2)
         Me.TableLayoutPanel5.Controls.Add(Me.lblHackSystem32DllVersion, 0, 1)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Right
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(48, 0)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 3
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.03175!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.96825!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(370, 123)
         Me.TableLayoutPanel5.TabIndex = 4
         '
@@ -278,9 +278,9 @@ Partial Class HomeView
         Me.lblHackSysWOW64DllVersion.AutoSize = True
         Me.lblHackSysWOW64DllVersion.Dock = System.Windows.Forms.DockStyle.Right
         Me.lblHackSysWOW64DllVersion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblHackSysWOW64DllVersion.Location = New System.Drawing.Point(240, 80)
+        Me.lblHackSysWOW64DllVersion.Location = New System.Drawing.Point(240, 82)
         Me.lblHackSysWOW64DllVersion.Name = "lblHackSysWOW64DllVersion"
-        Me.lblHackSysWOW64DllVersion.Size = New System.Drawing.Size(127, 43)
+        Me.lblHackSysWOW64DllVersion.Size = New System.Drawing.Size(127, 41)
         Me.lblHackSysWOW64DllVersion.TabIndex = 4
         Me.lblHackSysWOW64DllVersion.Text = "10.0.18362.1110"
         Me.lblHackSysWOW64DllVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -290,9 +290,9 @@ Partial Class HomeView
         Me.lblHackSystem32DllVersion.AutoSize = True
         Me.lblHackSystem32DllVersion.Dock = System.Windows.Forms.DockStyle.Right
         Me.lblHackSystem32DllVersion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblHackSystem32DllVersion.Location = New System.Drawing.Point(240, 37)
+        Me.lblHackSystem32DllVersion.Location = New System.Drawing.Point(240, 41)
         Me.lblHackSystem32DllVersion.Name = "lblHackSystem32DllVersion"
-        Me.lblHackSystem32DllVersion.Size = New System.Drawing.Size(127, 43)
+        Me.lblHackSystem32DllVersion.Size = New System.Drawing.Size(127, 41)
         Me.lblHackSystem32DllVersion.TabIndex = 4
         Me.lblHackSystem32DllVersion.Text = "10.0.18362.1110"
         Me.lblHackSystem32DllVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -309,7 +309,7 @@ Partial Class HomeView
         'TableLayoutPanel6
         '
         Me.TableLayoutPanel6.ColumnCount = 1
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel6.Controls.Add(Me.Label5, 0, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.Label6, 0, 1)
         Me.TableLayoutPanel6.Controls.Add(Me.Label7, 0, 2)
@@ -317,9 +317,9 @@ Partial Class HomeView
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 3
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.03175!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.96825!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel6.Size = New System.Drawing.Size(370, 123)
         Me.TableLayoutPanel6.TabIndex = 3
         '
@@ -330,7 +330,7 @@ Partial Class HomeView
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label5.Location = New System.Drawing.Point(3, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(180, 37)
+        Me.Label5.Size = New System.Drawing.Size(180, 41)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Hack DLL Version"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -340,9 +340,9 @@ Partial Class HomeView
         Me.Label6.AutoSize = True
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(3, 37)
+        Me.Label6.Location = New System.Drawing.Point(3, 41)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(332, 43)
+        Me.Label6.Size = New System.Drawing.Size(332, 41)
         Me.Label6.TabIndex = 3
         Me.Label6.Text = "System32 Windows.ApplicationModel.Store.dll"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -352,9 +352,9 @@ Partial Class HomeView
         Me.Label7.AutoSize = True
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(3, 80)
+        Me.Label7.Location = New System.Drawing.Point(3, 82)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(347, 43)
+        Me.Label7.Size = New System.Drawing.Size(347, 41)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "SysWOW64 Windows.ApplicationModel.Store.dll"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -382,16 +382,16 @@ Partial Class HomeView
         'TableLayoutPanel3
         '
         Me.TableLayoutPanel3.ColumnCount = 1
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.lblBackupSysWOW64DllVersion, 0, 2)
         Me.TableLayoutPanel3.Controls.Add(Me.lblBackupSystem32DllVersion, 0, 1)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Right
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(48, 0)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 3
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.03175!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.96825!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(370, 123)
         Me.TableLayoutPanel3.TabIndex = 4
         '
@@ -400,9 +400,9 @@ Partial Class HomeView
         Me.lblBackupSysWOW64DllVersion.AutoSize = True
         Me.lblBackupSysWOW64DllVersion.Dock = System.Windows.Forms.DockStyle.Right
         Me.lblBackupSysWOW64DllVersion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblBackupSysWOW64DllVersion.Location = New System.Drawing.Point(273, 80)
+        Me.lblBackupSysWOW64DllVersion.Location = New System.Drawing.Point(273, 82)
         Me.lblBackupSysWOW64DllVersion.Name = "lblBackupSysWOW64DllVersion"
-        Me.lblBackupSysWOW64DllVersion.Size = New System.Drawing.Size(94, 43)
+        Me.lblBackupSysWOW64DllVersion.Size = New System.Drawing.Size(94, 41)
         Me.lblBackupSysWOW64DllVersion.TabIndex = 4
         Me.lblBackupSysWOW64DllVersion.Text = "SysWOW64"
         Me.lblBackupSysWOW64DllVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -412,9 +412,9 @@ Partial Class HomeView
         Me.lblBackupSystem32DllVersion.AutoSize = True
         Me.lblBackupSystem32DllVersion.Dock = System.Windows.Forms.DockStyle.Right
         Me.lblBackupSystem32DllVersion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblBackupSystem32DllVersion.Location = New System.Drawing.Point(288, 37)
+        Me.lblBackupSystem32DllVersion.Location = New System.Drawing.Point(288, 41)
         Me.lblBackupSystem32DllVersion.Name = "lblBackupSystem32DllVersion"
-        Me.lblBackupSystem32DllVersion.Size = New System.Drawing.Size(79, 43)
+        Me.lblBackupSystem32DllVersion.Size = New System.Drawing.Size(79, 41)
         Me.lblBackupSystem32DllVersion.TabIndex = 4
         Me.lblBackupSystem32DllVersion.Text = "System32"
         Me.lblBackupSystem32DllVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -431,7 +431,7 @@ Partial Class HomeView
         'TableLayoutPanel4
         '
         Me.TableLayoutPanel4.ColumnCount = 1
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel4.Controls.Add(Me.Label9, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.lblBackupSystem32DllName, 0, 1)
         Me.TableLayoutPanel4.Controls.Add(Me.lblBackupSysWOW64DllName, 0, 2)
@@ -439,9 +439,9 @@ Partial Class HomeView
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 3
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.03175!))
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.96825!))
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42.0!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel4.Size = New System.Drawing.Size(370, 123)
         Me.TableLayoutPanel4.TabIndex = 3
         '
@@ -452,7 +452,7 @@ Partial Class HomeView
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label9.Location = New System.Drawing.Point(3, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(202, 37)
+        Me.Label9.Size = New System.Drawing.Size(202, 41)
         Me.Label9.TabIndex = 2
         Me.Label9.Text = "Backup DLL Version"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -462,9 +462,9 @@ Partial Class HomeView
         Me.lblBackupSystem32DllName.AutoSize = True
         Me.lblBackupSystem32DllName.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblBackupSystem32DllName.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblBackupSystem32DllName.Location = New System.Drawing.Point(3, 37)
+        Me.lblBackupSystem32DllName.Location = New System.Drawing.Point(3, 41)
         Me.lblBackupSystem32DllName.Name = "lblBackupSystem32DllName"
-        Me.lblBackupSystem32DllName.Size = New System.Drawing.Size(332, 43)
+        Me.lblBackupSystem32DllName.Size = New System.Drawing.Size(332, 41)
         Me.lblBackupSystem32DllName.TabIndex = 3
         Me.lblBackupSystem32DllName.Text = "System32 Windows.ApplicationModel.Store.dll"
         Me.lblBackupSystem32DllName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -474,9 +474,9 @@ Partial Class HomeView
         Me.lblBackupSysWOW64DllName.AutoSize = True
         Me.lblBackupSysWOW64DllName.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblBackupSysWOW64DllName.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblBackupSysWOW64DllName.Location = New System.Drawing.Point(3, 80)
+        Me.lblBackupSysWOW64DllName.Location = New System.Drawing.Point(3, 82)
         Me.lblBackupSysWOW64DllName.Name = "lblBackupSysWOW64DllName"
-        Me.lblBackupSysWOW64DllName.Size = New System.Drawing.Size(347, 43)
+        Me.lblBackupSysWOW64DllName.Size = New System.Drawing.Size(347, 41)
         Me.lblBackupSysWOW64DllName.TabIndex = 4
         Me.lblBackupSysWOW64DllName.Text = "SysWOW64 Windows.ApplicationModel.Store.dll"
         Me.lblBackupSysWOW64DllName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -504,16 +504,16 @@ Partial Class HomeView
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 1
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.lblCurrentSysWOW64DllVersion, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.lblCurrentSystem32DllVersion, 0, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(48, 0)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 3
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.03175!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.96825!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(370, 123)
         Me.TableLayoutPanel2.TabIndex = 4
         '
@@ -522,9 +522,9 @@ Partial Class HomeView
         Me.lblCurrentSysWOW64DllVersion.AutoSize = True
         Me.lblCurrentSysWOW64DllVersion.Dock = System.Windows.Forms.DockStyle.Right
         Me.lblCurrentSysWOW64DllVersion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblCurrentSysWOW64DllVersion.Location = New System.Drawing.Point(273, 80)
+        Me.lblCurrentSysWOW64DllVersion.Location = New System.Drawing.Point(273, 82)
         Me.lblCurrentSysWOW64DllVersion.Name = "lblCurrentSysWOW64DllVersion"
-        Me.lblCurrentSysWOW64DllVersion.Size = New System.Drawing.Size(94, 43)
+        Me.lblCurrentSysWOW64DllVersion.Size = New System.Drawing.Size(94, 41)
         Me.lblCurrentSysWOW64DllVersion.TabIndex = 4
         Me.lblCurrentSysWOW64DllVersion.Text = "SysWOW64"
         Me.lblCurrentSysWOW64DllVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -534,9 +534,9 @@ Partial Class HomeView
         Me.lblCurrentSystem32DllVersion.AutoSize = True
         Me.lblCurrentSystem32DllVersion.Dock = System.Windows.Forms.DockStyle.Right
         Me.lblCurrentSystem32DllVersion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblCurrentSystem32DllVersion.Location = New System.Drawing.Point(288, 37)
+        Me.lblCurrentSystem32DllVersion.Location = New System.Drawing.Point(288, 41)
         Me.lblCurrentSystem32DllVersion.Name = "lblCurrentSystem32DllVersion"
-        Me.lblCurrentSystem32DllVersion.Size = New System.Drawing.Size(79, 43)
+        Me.lblCurrentSystem32DllVersion.Size = New System.Drawing.Size(79, 41)
         Me.lblCurrentSystem32DllVersion.TabIndex = 4
         Me.lblCurrentSystem32DllVersion.Text = "System32"
         Me.lblCurrentSystem32DllVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -553,7 +553,7 @@ Partial Class HomeView
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 1
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.lblCurrentSystem32DllName, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.lblCurrentSysWOW64DllName, 0, 2)
@@ -561,9 +561,9 @@ Partial Class HomeView
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.03175!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.96825!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(370, 123)
         Me.TableLayoutPanel1.TabIndex = 3
         '
@@ -574,7 +574,7 @@ Partial Class HomeView
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label2.Location = New System.Drawing.Point(3, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(205, 37)
+        Me.Label2.Size = New System.Drawing.Size(205, 41)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Current DLL Version"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -584,9 +584,9 @@ Partial Class HomeView
         Me.lblCurrentSystem32DllName.AutoSize = True
         Me.lblCurrentSystem32DllName.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblCurrentSystem32DllName.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblCurrentSystem32DllName.Location = New System.Drawing.Point(3, 37)
+        Me.lblCurrentSystem32DllName.Location = New System.Drawing.Point(3, 41)
         Me.lblCurrentSystem32DllName.Name = "lblCurrentSystem32DllName"
-        Me.lblCurrentSystem32DllName.Size = New System.Drawing.Size(332, 43)
+        Me.lblCurrentSystem32DllName.Size = New System.Drawing.Size(332, 41)
         Me.lblCurrentSystem32DllName.TabIndex = 3
         Me.lblCurrentSystem32DllName.Text = "System32 Windows.ApplicationModel.Store.dll"
         Me.lblCurrentSystem32DllName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -596,9 +596,9 @@ Partial Class HomeView
         Me.lblCurrentSysWOW64DllName.AutoSize = True
         Me.lblCurrentSysWOW64DllName.Dock = System.Windows.Forms.DockStyle.Left
         Me.lblCurrentSysWOW64DllName.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblCurrentSysWOW64DllName.Location = New System.Drawing.Point(3, 80)
+        Me.lblCurrentSysWOW64DllName.Location = New System.Drawing.Point(3, 82)
         Me.lblCurrentSysWOW64DllName.Name = "lblCurrentSysWOW64DllName"
-        Me.lblCurrentSysWOW64DllName.Size = New System.Drawing.Size(347, 43)
+        Me.lblCurrentSysWOW64DllName.Size = New System.Drawing.Size(347, 41)
         Me.lblCurrentSysWOW64DllName.TabIndex = 4
         Me.lblCurrentSysWOW64DllName.Text = "SysWOW64 Windows.ApplicationModel.Store.dll"
         Me.lblCurrentSysWOW64DllName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter

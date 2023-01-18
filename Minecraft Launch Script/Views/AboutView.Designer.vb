@@ -144,15 +144,15 @@ Partial Class AboutView
         'TableLayoutPanel4
         '
         Me.TableLayoutPanel4.ColumnCount = 1
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel4.Controls.Add(Me.Label6, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.PictureBox1, 0, 1)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Left
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 2
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.76423!))
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.23577!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel4.Size = New System.Drawing.Size(436, 123)
         Me.TableLayoutPanel4.TabIndex = 2
         '
@@ -164,7 +164,7 @@ Partial Class AboutView
         Me.Label6.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label6.Location = New System.Drawing.Point(3, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(234, 28)
+        Me.Label6.Size = New System.Drawing.Size(234, 30)
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "Join with us on Discord"
         '
@@ -172,7 +172,7 @@ Partial Class AboutView
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
         Me.PictureBox1.Image = Global.Minecraft_Launch_Script.My.Resources.Resources.dc_ikon
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 31)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 33)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(94, 89)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -222,15 +222,15 @@ Partial Class AboutView
         'TableLayoutPanel3
         '
         Me.TableLayoutPanel3.ColumnCount = 1
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Label5, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.RichTextBox1, 0, 1)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Left
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.76423!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.23577!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(436, 123)
         Me.TableLayoutPanel3.TabIndex = 1
         '
@@ -242,7 +242,7 @@ Partial Class AboutView
         Me.Label5.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label5.Location = New System.Drawing.Point(3, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(167, 28)
+        Me.Label5.Size = New System.Drawing.Size(167, 30)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Report an Issue!"
         '
@@ -250,7 +250,7 @@ Partial Class AboutView
         '
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RichTextBox1.Location = New System.Drawing.Point(3, 31)
+        Me.RichTextBox1.Location = New System.Drawing.Point(3, 33)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.Size = New System.Drawing.Size(430, 89)
@@ -301,15 +301,15 @@ Partial Class AboutView
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 1
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label3, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.RichTextBox4, 0, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.76423!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.23577!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(436, 123)
         Me.TableLayoutPanel2.TabIndex = 0
         '
@@ -321,7 +321,7 @@ Partial Class AboutView
         Me.Label3.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label3.Location = New System.Drawing.Point(3, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(273, 28)
+        Me.Label3.Size = New System.Drawing.Size(273, 30)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "How to Use This Launcher?"
         '
@@ -329,10 +329,10 @@ Partial Class AboutView
         '
         Me.RichTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RichTextBox4.Location = New System.Drawing.Point(3, 31)
+        Me.RichTextBox4.Location = New System.Drawing.Point(3, 33)
         Me.RichTextBox4.Name = "RichTextBox4"
         Me.RichTextBox4.ReadOnly = True
-        Me.RichTextBox4.Size = New System.Drawing.Size(430, 89)
+        Me.RichTextBox4.Size = New System.Drawing.Size(430, 87)
         Me.RichTextBox4.TabIndex = 1
         Me.RichTextBox4.Text = resources.GetString("RichTextBox4.Text")
         '
@@ -380,15 +380,15 @@ Partial Class AboutView
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 1
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.RichTextBox3, 0, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 2
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.57724!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.42277!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(436, 123)
         Me.TableLayoutPanel1.TabIndex = 0
         '
@@ -399,7 +399,7 @@ Partial Class AboutView
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label2.Location = New System.Drawing.Point(3, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(211, 29)
+        Me.Label2.Size = New System.Drawing.Size(211, 30)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Latest Update Check"
         '
@@ -407,7 +407,7 @@ Partial Class AboutView
         '
         Me.RichTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RichTextBox3.Location = New System.Drawing.Point(3, 32)
+        Me.RichTextBox3.Location = New System.Drawing.Point(3, 33)
         Me.RichTextBox3.Name = "RichTextBox3"
         Me.RichTextBox3.ReadOnly = True
         Me.RichTextBox3.Size = New System.Drawing.Size(430, 88)
