@@ -48,7 +48,7 @@ Public Class MainPage
         panel.Show()
     End Sub
     Private Sub MainPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.MinimumSize = New Size(863, 789)
+        'Me.MinimumSize = New Size(863, 789)
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
@@ -194,11 +194,11 @@ Public Class MainPage
             Directory.SetCurrentDirectory(appDefLoc)
         End If
     End Sub
-    Private Sub MainPage_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
-        If Me.Size = New Size(863, 789) Then
-            Me.Panel2.Hide()
-        Else
-            Me.Panel2.Show()
-        End If
-    End Sub
+    'Private Sub MainPage_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
+    '    If Me.Size = New Size(863, 789) Then
+    '        Me.Panel2.Hide()
+    '    Else
+    '        Me.Panel2.Show()
+    '    End If
+    'End Sub
 End Class

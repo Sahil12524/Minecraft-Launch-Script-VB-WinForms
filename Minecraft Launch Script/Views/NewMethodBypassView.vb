@@ -80,6 +80,47 @@ Public Class NewMethodBypassView
         HomeView.conditChk()
     End Sub
 
+    Public Async Sub BypassStopStatus()
+        Dim taskRunning = True
+        Await Task.Delay(100)
+        updateLbl()
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
+        HomeView.Activate()
+        HomeView.Refresh()
+        If HomeView.lblCurrentSystem32DllVersion.Text = HomeView.lblBackupSystem32DllVersion.Text And HomeView.lblCurrentSysWOW64DllVersion.Text = HomeView.lblBackupSysWOW64DllVersion.Text Then
+            MessageBox.Show("Bypass Stopped Successfully ✔️")
+            taskRunning = False
+        Else
+            MessageBox.Show("Bypass Stop Error ✖️")
+            Panel19.Show()
+            Panel6.Show()
+            taskRunning = False
+        End If
+    End Sub
+
+    Public Async Sub BypassLoadStatus()
+        Dim taskRunning = True
+        Await Task.Delay(100)
+        updateLbl()
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
+        HomeView.Activate()
+        HomeView.Refresh()
+        If HomeView.lblCurrentSystem32DllVersion.Text = HomeView.lblHackSystem32DllVersion.Text And HomeView.lblCurrentSysWOW64DllVersion.Text = HomeView.lblHackSysWOW64DllVersion.Text Then
+            MessageBox.Show("Bypass Loaded Successfully ✔️")
+            taskRunning = False
+        Else
+            MessageBox.Show("Bypass Load Error ✖️")
+            Panel16.Hide()
+            Panel6.Hide()
+            Panel19.Hide()
+            taskRunning = False
+        End If
+    End Sub
+
     Private Sub New_Method_Bypass_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GC.Collect()
         GC.WaitForPendingFinalizers()
@@ -141,6 +182,7 @@ Public Class NewMethodBypassView
         startProc = Process.Start("bin/new_Start.bat")
         startProc.WaitForExit()
         updateForm()
+        BypassLoadStatus()
         'taskRunning = False
     End Sub
 
@@ -166,6 +208,7 @@ Public Class NewMethodBypassView
         startProc = Process.Start("bin/new_Stop.bat")
         startProc.WaitForExit()
         updateForm()
+        BypassStopStatus()
         'taskRunning = True
         'taskRunning = False
     End Sub

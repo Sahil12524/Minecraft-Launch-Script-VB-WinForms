@@ -43,7 +43,7 @@ Partial Class MainPage
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(236, 30)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Padding = New System.Windows.Forms.Padding(20)
+        Me.Panel3.Padding = New System.Windows.Forms.Padding(20, 20, 0, 20)
         Me.Panel3.Size = New System.Drawing.Size(851, 720)
         Me.Panel3.TabIndex = 1
         '
