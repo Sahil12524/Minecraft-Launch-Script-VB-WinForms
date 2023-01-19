@@ -29,7 +29,7 @@ Public Class HomeView
             'End If
         End Try
 
-        If lblCurrentSystem32DllVersion.Text = lblHackSystem32DllVersion.Text And lblCurrentSysWOW64DllVersion.Text = lblHackSysWOW64DllVersion.Text Then
+        If lblCurrentSystem32DllVersion.Text = lblHackSystem32DllVersion.Text And lblCurrentSysWOW64DllVersion.Text = lblHackSysWOW64DllVersion.Text Or lblCurrentSystem32DllVersion.Text = lblHackSystem32DllVersion.Text Or lblCurrentSysWOW64DllVersion.Text = lblHackSysWOW64DllVersion.Text Then
             lblBypassStatus.ForeColor = Color.Lime
             lblBypassStatus.Text = "True"
         Else
@@ -43,6 +43,9 @@ Public Class HomeView
         ElseIf lblCurrentSystem32DllVersion.Text <> lblBackupSystem32DllVersion.Text And lblCurrentSysWOW64DllVersion.Text <> lblBackupSysWOW64DllVersion.Text And lblBypassStatus.Text = "True" Then
             lblBackupReqStatus.ForeColor = Color.Lime
             lblBackupReqStatus.Text = "No"
+        ElseIf lblBypassStatus.Text = "True" Then
+            lblBackupReqStatus.ForeColor = Color.Lime
+            lblBackupReqStatus.Text = "No"
         Else
             lblBackupReqStatus.ForeColor = Color.Red
             lblBackupReqStatus.Text = "Yes"
@@ -50,6 +53,9 @@ Public Class HomeView
 
         If lblBackupSystem32DllVersion.Text = "Backup not found" And lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
             lblBackupReqStatus.Text = "N/A"
+            lblBypassStatus.ForeColor = Color.Red
+            lblBypassStatus.Text = "False"
+            lblLauncherHealthStatus.Text = "N/A"
         End If
 
         'If lblBackupReqStatus.Text = "Yes" Then
