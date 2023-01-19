@@ -62,6 +62,8 @@ Public Class HomeView
         ElseIf lblBypassStatus.Text = "True" And lblCurrentSystem32DllVersion.Text = lblHackSystem32DllVersion.Text And lblCurrentSysWOW64DllVersion.Text = lblHackSysWOW64DllVersion.Text Then
             lblLauncherHealthStatus.ForeColor = Color.Lime
             lblLauncherHealthStatus.Text = "Good"
+        ElseIf lblBackupSystem32DllVersion.Text = "Backup not found" And lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
+            lblLauncherHealthStatus.Text = "N/A"
         Else
             lblLauncherHealthStatus.ForeColor = Color.Red
             lblLauncherHealthStatus.Text = "Bad"
@@ -75,6 +77,9 @@ Public Class HomeView
         End If
         If lblBackupSystem32DllVersion.Text = "Backup not found" And lblBackupSysWOW64DllVersion.Text = "Backup not found" Then
             Dim result As DialogResult = MessageBox.Show("Backup DLLs in both the folder are not found, please make a backup of DLLs to avoid Windows Corruptions", "Backup DLLs Not Found!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+        If lblLauncherHealthStatus.Text = "Bad" Then
+            Dim result As DialogResult = MessageBox.Show("The Launcher has a Bad Health, Make sure that you fix the health first before you use the launcher.", "Launcher Bad Health Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
     End Sub
 
