@@ -56,6 +56,7 @@ Partial Class AboutView
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel13.SuspendLayout()
@@ -76,6 +77,7 @@ Partial Class AboutView
         Me.Panel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel6.SuspendLayout()
+        Me.TableLayoutPanel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -85,20 +87,17 @@ Partial Class AboutView
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1074, 544)
+        Me.Panel1.Size = New System.Drawing.Size(1074, 1061)
         Me.Panel1.TabIndex = 1
         '
         'Panel2
         '
         Me.Panel2.AutoScroll = True
-        Me.Panel2.Controls.Add(Me.Panel13)
-        Me.Panel2.Controls.Add(Me.Panel10)
-        Me.Panel2.Controls.Add(Me.Panel7)
-        Me.Panel2.Controls.Add(Me.Panel5)
+        Me.Panel2.Controls.Add(Me.TableLayoutPanel5)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 55)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1074, 489)
+        Me.Panel2.Size = New System.Drawing.Size(1074, 1006)
         Me.Panel2.TabIndex = 3
         '
         'Panel13
@@ -106,17 +105,17 @@ Partial Class AboutView
         Me.Panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel13.Controls.Add(Me.Panel15)
         Me.Panel13.Controls.Add(Me.Panel14)
-        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel13.Location = New System.Drawing.Point(0, 375)
+        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel13.Location = New System.Drawing.Point(3, 396)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(1057, 125)
+        Me.Panel13.Size = New System.Drawing.Size(1068, 125)
         Me.Panel13.TabIndex = 10
         '
         'Panel15
         '
         Me.Panel15.Controls.Add(Me.btnDCJoinNow)
         Me.Panel15.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel15.Location = New System.Drawing.Point(684, 0)
+        Me.Panel15.Location = New System.Drawing.Point(695, 0)
         Me.Panel15.Name = "Panel15"
         Me.Panel15.Size = New System.Drawing.Size(371, 123)
         Me.Panel15.TabIndex = 1
@@ -184,17 +183,17 @@ Partial Class AboutView
         Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel10.Controls.Add(Me.Panel12)
         Me.Panel10.Controls.Add(Me.Panel11)
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel10.Location = New System.Drawing.Point(0, 250)
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel10.Location = New System.Drawing.Point(3, 265)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(1057, 125)
+        Me.Panel10.Size = New System.Drawing.Size(1068, 125)
         Me.Panel10.TabIndex = 9
         '
         'Panel12
         '
         Me.Panel12.Controls.Add(Me.btnReportIssue)
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel12.Location = New System.Drawing.Point(684, 0)
+        Me.Panel12.Location = New System.Drawing.Point(695, 0)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(371, 123)
         Me.Panel12.TabIndex = 1
@@ -262,17 +261,17 @@ Partial Class AboutView
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel7.Controls.Add(Me.Panel9)
         Me.Panel7.Controls.Add(Me.Panel8)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel7.Location = New System.Drawing.Point(0, 125)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel7.Location = New System.Drawing.Point(3, 134)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1057, 125)
+        Me.Panel7.Size = New System.Drawing.Size(1068, 125)
         Me.Panel7.TabIndex = 8
         '
         'Panel9
         '
         Me.Panel9.Controls.Add(Me.btnHowToUseLauncher)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel9.Location = New System.Drawing.Point(684, 0)
+        Me.Panel9.Location = New System.Drawing.Point(695, 0)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(371, 123)
         Me.Panel9.TabIndex = 9
@@ -341,17 +340,17 @@ Partial Class AboutView
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.Panel4)
         Me.Panel5.Controls.Add(Me.Panel3)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel5.Location = New System.Drawing.Point(3, 3)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1057, 125)
+        Me.Panel5.Size = New System.Drawing.Size(1068, 125)
         Me.Panel5.TabIndex = 2
         '
         'Panel4
         '
         Me.Panel4.Controls.Add(Me.btnLatestUpdateCheck)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(684, 0)
+        Me.Panel4.Location = New System.Drawing.Point(695, 0)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(371, 123)
         Me.Panel4.TabIndex = 9
@@ -452,11 +451,32 @@ Partial Class AboutView
         Me.Label1.Text = "Version 1.11"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'TableLayoutPanel5
+        '
+        Me.TableLayoutPanel5.AutoSize = True
+        Me.TableLayoutPanel5.ColumnCount = 1
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel5.Controls.Add(Me.Panel10, 0, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.Panel5, 0, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.Panel7, 0, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.Panel13, 0, 3)
+        Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
+        Me.TableLayoutPanel5.RowCount = 5
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1074, 524)
+        Me.TableLayoutPanel5.TabIndex = 11
+        '
         'AboutView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1074, 544)
+        Me.ClientSize = New System.Drawing.Size(1074, 1061)
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -466,6 +486,7 @@ Partial Class AboutView
         Me.Text = "About"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.Panel13.ResumeLayout(False)
         Me.Panel15.ResumeLayout(False)
         Me.Panel14.ResumeLayout(False)
@@ -489,6 +510,7 @@ Partial Class AboutView
         Me.TableLayoutPanel1.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
+        Me.TableLayoutPanel5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -525,4 +547,5 @@ Partial Class AboutView
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnDCJoinNow As Button
+    Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
 End Class

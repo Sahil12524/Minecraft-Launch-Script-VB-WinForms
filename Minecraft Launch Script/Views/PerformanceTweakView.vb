@@ -1,5 +1,4 @@
 ﻿Imports System.IO
-Imports System.IO.Packaging
 
 Public Class PerformanceTweakView
     Dim root As String = "C:\"

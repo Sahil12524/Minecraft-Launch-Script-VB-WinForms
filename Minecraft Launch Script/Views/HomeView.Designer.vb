@@ -24,6 +24,7 @@ Partial Class HomeView
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel9 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
@@ -69,6 +70,7 @@ Partial Class HomeView
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        Me.TableLayoutPanel9.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel14.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
@@ -99,38 +101,56 @@ Partial Class HomeView
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1234, 654)
+        Me.Panel1.Size = New System.Drawing.Size(1234, 1061)
         Me.Panel1.TabIndex = 0
         '
         'Panel3
         '
         Me.Panel3.AutoScroll = True
-        Me.Panel3.Controls.Add(Me.Panel13)
-        Me.Panel3.Controls.Add(Me.Panel10)
-        Me.Panel3.Controls.Add(Me.Panel7)
-        Me.Panel3.Controls.Add(Me.Panel4)
+        Me.Panel3.Controls.Add(Me.TableLayoutPanel9)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 55)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1234, 599)
+        Me.Panel3.Size = New System.Drawing.Size(1234, 1006)
         Me.Panel3.TabIndex = 1
+        '
+        'TableLayoutPanel9
+        '
+        Me.TableLayoutPanel9.AutoSize = True
+        Me.TableLayoutPanel9.ColumnCount = 1
+        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel9.Controls.Add(Me.Panel13, 0, 3)
+        Me.TableLayoutPanel9.Controls.Add(Me.Panel10, 0, 2)
+        Me.TableLayoutPanel9.Controls.Add(Me.Panel4, 0, 0)
+        Me.TableLayoutPanel9.Controls.Add(Me.Panel7, 0, 1)
+        Me.TableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel9.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
+        Me.TableLayoutPanel9.RowCount = 5
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel9.Size = New System.Drawing.Size(1234, 524)
+        Me.TableLayoutPanel9.TabIndex = 6
         '
         'Panel13
         '
         Me.Panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel13.Controls.Add(Me.Panel14)
         Me.Panel13.Controls.Add(Me.Panel15)
-        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel13.Location = New System.Drawing.Point(0, 375)
+        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel13.Location = New System.Drawing.Point(3, 396)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(1234, 125)
+        Me.Panel13.Size = New System.Drawing.Size(1228, 125)
         Me.Panel13.TabIndex = 5
         '
         'Panel14
         '
         Me.Panel14.Controls.Add(Me.TableLayoutPanel7)
         Me.Panel14.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel14.Location = New System.Drawing.Point(814, 0)
+        Me.Panel14.Location = New System.Drawing.Point(808, 0)
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(418, 123)
         Me.Panel14.TabIndex = 3
@@ -242,17 +262,17 @@ Partial Class HomeView
         Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel10.Controls.Add(Me.Panel11)
         Me.Panel10.Controls.Add(Me.Panel12)
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel10.Location = New System.Drawing.Point(0, 250)
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel10.Location = New System.Drawing.Point(3, 265)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(1234, 125)
+        Me.Panel10.Size = New System.Drawing.Size(1228, 125)
         Me.Panel10.TabIndex = 4
         '
         'Panel11
         '
         Me.Panel11.Controls.Add(Me.TableLayoutPanel5)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel11.Location = New System.Drawing.Point(814, 0)
+        Me.Panel11.Location = New System.Drawing.Point(808, 0)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(418, 123)
         Me.Panel11.TabIndex = 3
@@ -364,17 +384,17 @@ Partial Class HomeView
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel7.Controls.Add(Me.Panel8)
         Me.Panel7.Controls.Add(Me.Panel9)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel7.Location = New System.Drawing.Point(0, 125)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel7.Location = New System.Drawing.Point(3, 134)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1234, 125)
+        Me.Panel7.Size = New System.Drawing.Size(1228, 125)
         Me.Panel7.TabIndex = 3
         '
         'Panel8
         '
         Me.Panel8.Controls.Add(Me.TableLayoutPanel3)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel8.Location = New System.Drawing.Point(814, 0)
+        Me.Panel8.Location = New System.Drawing.Point(808, 0)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(418, 123)
         Me.Panel8.TabIndex = 1
@@ -486,17 +506,17 @@ Partial Class HomeView
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Panel6)
         Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel4.Location = New System.Drawing.Point(3, 3)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1234, 125)
+        Me.Panel4.Size = New System.Drawing.Size(1228, 125)
         Me.Panel4.TabIndex = 2
         '
         'Panel6
         '
         Me.Panel6.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel6.Location = New System.Drawing.Point(814, 0)
+        Me.Panel6.Location = New System.Drawing.Point(808, 0)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(418, 123)
         Me.Panel6.TabIndex = 1
@@ -642,13 +662,15 @@ Partial Class HomeView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1234, 654)
+        Me.ClientSize = New System.Drawing.Size(1234, 1061)
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
         Me.Name = "HomeView"
         Me.Text = "HomeView"
         Me.Panel1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.TableLayoutPanel9.ResumeLayout(False)
         Me.Panel13.ResumeLayout(False)
         Me.Panel14.ResumeLayout(False)
         Me.TableLayoutPanel7.ResumeLayout(False)
@@ -728,4 +750,5 @@ Partial Class HomeView
     Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
     Friend WithEvents Label13 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents TableLayoutPanel9 As TableLayoutPanel
 End Class

@@ -63,23 +63,6 @@ Error: Sharing Violation or some other possible errors.
 
 Most of the time it is not required to restart the Windows, but if you required then you may!</value>
   </data>
-  <data name="RichTextBox3.Text" xml:space="preserve">
-    <value>This button will replace the modified DLL with stock DLL, after which your minecraft will work.
-
-Note: Do not use this button without doing stock DLL backup, if already done at the beginning do not touch the Backup button.
-
-How to know if the Bypass loaded successfully?:
-If your cmd outputs you:
-System32\Windows.ApplicationModel.Store.dll
-1 File(s) copied
-sysWOW64\Windows.ApplicationModel.Store.dll
-1 File(s) copied
-This means that the Bypass loaded successfully!
-
-Else it will outputs you: Sharing violation or Other possible Error!
-
-</value>
-  </data>
   <data name="RichTextBox4.Text" xml:space="preserve">
     <value>Note: Backup should be done only one time if you are a new user! 
 Do not use this button more than once!
@@ -97,5 +80,22 @@ Fix: Only a full Windows RE Install.
 4. Wait for 5 seconds
 5. Press y 2 times.
 6. Close the Cmd or it will close automatically.</value>
+  </data>
+  <data name="RichTextBox3.Text" xml:space="preserve">
+    <value>This button will replace the modified DLL with stock DLL, after which your minecraft will work.
+
+Note: Do not use this button without doing stock DLL backup, if already done at the beginning do not touch the Backup button.
+
+How to know if the Bypass loaded successfully?:
+If your cmd outputs you:
+System32\Windows.ApplicationModel.Store.dll
+1 File(s) copied
+sysWOW64\Windows.ApplicationModel.Store.dll
+1 File(s) copied
+This means that the Bypass loaded successfully!
+
+Else it will outputs you: Sharing violation or Other possible Error!
+
+</value>
   </data>
 </root>

@@ -1,7 +1,5 @@
 ﻿Imports System.IO
-Imports System.Net.Security
 Imports System.Runtime.InteropServices
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
 Imports Microsoft.Win32
 
 Public Class MainPage
@@ -20,12 +18,14 @@ Public Class MainPage
                 If DwmSetWindowAttribute(Handle, 19, {1}, 4) <> 0 Then DwmSetWindowAttribute(Handle, 20, {1}, 4)
                 ThemeHelper.DarkThemeButtons()
                 isLightTheme = False
-                rbDarkTheme.Select()
+                'rbDarkTheme.Select()
+                ThemeHelper.DarkTheme()
             ElseIf lightmode <> 0 Then 'its a light mode
                 DwmSetWindowAttribute(Handle, 20, {0}, 4)
                 ThemeHelper.LightThemeButtons()
                 isLightTheme = True
-                rbLightTheme.Select()
+                'rbLightTheme.Select()
+                ThemeHelper.LightTheme()
             End If
 
         Catch ex As System.ObjectDisposedException
@@ -55,10 +55,12 @@ Public Class MainPage
         switchPanel(HomeView)
         colorTheme()
         If isLightTheme = True Then
-            rbLightTheme.Select()
+            'rbLightTheme.Select()
+            ThemeHelper.LightTheme()
             taskRunning = False
         ElseIf isLightTheme <> True Then
-            rbDarkTheme.Select()
+            'rbDarkTheme.Select()
+            ThemeHelper.DarkTheme()
             taskRunning = False
         End If
         GC.Collect()

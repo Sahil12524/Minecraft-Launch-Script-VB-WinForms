@@ -62,6 +62,7 @@ Partial Class NewMethodBypassView
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.RichTextBox4 = New System.Windows.Forms.RichTextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel9.SuspendLayout()
@@ -85,6 +86,7 @@ Partial Class NewMethodBypassView
         Me.Panel14.SuspendLayout()
         Me.Panel15.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label4
@@ -178,17 +180,17 @@ Partial Class NewMethodBypassView
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel6.Controls.Add(Me.Panel9)
         Me.Panel6.Controls.Add(Me.Panel8)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel6.Location = New System.Drawing.Point(0, 375)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel6.Location = New System.Drawing.Point(3, 396)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1194, 125)
+        Me.Panel6.Size = New System.Drawing.Size(1205, 125)
         Me.Panel6.TabIndex = 3
         '
         'Panel9
         '
         Me.Panel9.Controls.Add(Me.Button6)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel9.Location = New System.Drawing.Point(821, 0)
+        Me.Panel9.Location = New System.Drawing.Point(832, 0)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(371, 123)
         Me.Panel9.TabIndex = 1
@@ -247,21 +249,17 @@ Partial Class NewMethodBypassView
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1211, 625)
+        Me.Panel7.Size = New System.Drawing.Size(1211, 1061)
         Me.Panel7.TabIndex = 4
         '
         'Panel22
         '
         Me.Panel22.AutoScroll = True
-        Me.Panel22.Controls.Add(Me.Panel19)
-        Me.Panel22.Controls.Add(Me.Panel6)
-        Me.Panel22.Controls.Add(Me.Panel16)
-        Me.Panel22.Controls.Add(Me.Panel10)
-        Me.Panel22.Controls.Add(Me.Panel13)
+        Me.Panel22.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel22.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel22.Location = New System.Drawing.Point(0, 55)
         Me.Panel22.Name = "Panel22"
-        Me.Panel22.Size = New System.Drawing.Size(1211, 570)
+        Me.Panel22.Size = New System.Drawing.Size(1211, 1006)
         Me.Panel22.TabIndex = 8
         '
         'Panel19
@@ -269,17 +267,17 @@ Partial Class NewMethodBypassView
         Me.Panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel19.Controls.Add(Me.Panel20)
         Me.Panel19.Controls.Add(Me.Panel21)
-        Me.Panel19.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel19.Location = New System.Drawing.Point(0, 500)
+        Me.Panel19.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel19.Location = New System.Drawing.Point(3, 527)
         Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(1194, 125)
+        Me.Panel19.Size = New System.Drawing.Size(1205, 125)
         Me.Panel19.TabIndex = 7
         '
         'Panel20
         '
         Me.Panel20.Controls.Add(Me.Button3)
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel20.Location = New System.Drawing.Point(821, 0)
+        Me.Panel20.Location = New System.Drawing.Point(832, 0)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(371, 123)
         Me.Panel20.TabIndex = 1
@@ -338,17 +336,17 @@ Partial Class NewMethodBypassView
         Me.Panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel16.Controls.Add(Me.Panel17)
         Me.Panel16.Controls.Add(Me.Panel18)
-        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel16.Location = New System.Drawing.Point(0, 250)
+        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel16.Location = New System.Drawing.Point(3, 265)
         Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(1194, 125)
+        Me.Panel16.Size = New System.Drawing.Size(1205, 125)
         Me.Panel16.TabIndex = 6
         '
         'Panel17
         '
         Me.Panel17.Controls.Add(Me.Button2)
         Me.Panel17.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel17.Location = New System.Drawing.Point(821, 0)
+        Me.Panel17.Location = New System.Drawing.Point(832, 0)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(371, 123)
         Me.Panel17.TabIndex = 1
@@ -405,17 +403,17 @@ Partial Class NewMethodBypassView
         Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel10.Controls.Add(Me.Panel11)
         Me.Panel10.Controls.Add(Me.Panel12)
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel10.Location = New System.Drawing.Point(0, 125)
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel10.Location = New System.Drawing.Point(3, 134)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(1194, 125)
+        Me.Panel10.Size = New System.Drawing.Size(1205, 125)
         Me.Panel10.TabIndex = 4
         '
         'Panel11
         '
         Me.Panel11.Controls.Add(Me.Button1)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel11.Location = New System.Drawing.Point(821, 0)
+        Me.Panel11.Location = New System.Drawing.Point(832, 0)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(371, 123)
         Me.Panel11.TabIndex = 1
@@ -472,17 +470,17 @@ Partial Class NewMethodBypassView
         Me.Panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel13.Controls.Add(Me.Panel14)
         Me.Panel13.Controls.Add(Me.Panel15)
-        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel13.Location = New System.Drawing.Point(0, 0)
+        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel13.Location = New System.Drawing.Point(3, 3)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(1194, 125)
+        Me.Panel13.Size = New System.Drawing.Size(1205, 125)
         Me.Panel13.TabIndex = 5
         '
         'Panel14
         '
         Me.Panel14.Controls.Add(Me.Button5)
         Me.Panel14.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel14.Location = New System.Drawing.Point(821, 0)
+        Me.Panel14.Location = New System.Drawing.Point(832, 0)
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(371, 123)
         Me.Panel14.TabIndex = 1
@@ -534,11 +532,34 @@ Partial Class NewMethodBypassView
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Backup Stock DLL"
         '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.AutoSize = True
+        Me.TableLayoutPanel1.ColumnCount = 1
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.Panel19, 0, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.Panel6, 0, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.Panel13, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Panel16, 0, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.Panel10, 0, 1)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 6
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1211, 655)
+        Me.TableLayoutPanel1.TabIndex = 8
+        '
         'NewMethodBypassView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1211, 625)
+        Me.ClientSize = New System.Drawing.Size(1211, 1061)
         Me.Controls.Add(Me.Panel7)
         Me.Name = "NewMethodBypassView"
         Me.Text = "New Method"
@@ -551,6 +572,7 @@ Partial Class NewMethodBypassView
         Me.TableLayoutPanel5.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.Panel22.ResumeLayout(False)
+        Me.Panel22.PerformLayout()
         Me.Panel19.ResumeLayout(False)
         Me.Panel20.ResumeLayout(False)
         Me.Panel20.PerformLayout()
@@ -574,6 +596,7 @@ Partial Class NewMethodBypassView
         Me.Panel15.ResumeLayout(False)
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel7.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -616,4 +639,5 @@ Partial Class NewMethodBypassView
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
     Friend WithEvents RichTextBox4 As RichTextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
 End Class

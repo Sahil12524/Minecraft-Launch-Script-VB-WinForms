@@ -1,6 +1,4 @@
-﻿Imports System.Runtime.CompilerServices
-
-Public Class NewMethodBypassView
+﻿Public Class NewMethodBypassView
 
     Private Declare Function ShellExecute _
                             Lib "shell32.dll" _

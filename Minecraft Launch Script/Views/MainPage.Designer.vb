@@ -28,14 +28,18 @@ Partial Class MainPage
         Me.rbDarkTheme = New System.Windows.Forms.RadioButton()
         Me.rbLightTheme = New System.Windows.Forms.RadioButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnPerformanceTweak = New System.Windows.Forms.Button()
-        Me.btnOldMethod = New System.Windows.Forms.Button()
-        Me.btnNewMethodBypass = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnPerformanceTweak = New System.Windows.Forms.Button()
+        Me.btnNewMethodBypass = New System.Windows.Forms.Button()
+        Me.btnOldMethod = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.btnAbout = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel3
@@ -86,71 +90,85 @@ Partial Class MainPage
         'Panel2
         '
         Me.Panel2.AutoScroll = True
-        Me.Panel2.Controls.Add(Me.btnPerformanceTweak)
-        Me.Panel2.Controls.Add(Me.btnOldMethod)
-        Me.Panel2.Controls.Add(Me.btnNewMethodBypass)
-        Me.Panel2.Controls.Add(Me.btnHome)
+        Me.Panel2.Controls.Add(Me.TableLayoutPanel2)
+        Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Controls.Add(Me.Panel5)
-        Me.Panel2.Controls.Add(Me.btnAbout)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(236, 750)
         Me.Panel2.TabIndex = 0
         '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.AutoSize = True
+        Me.TableLayoutPanel1.ColumnCount = 1
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.btnHome, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnPerformanceTweak, 0, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnNewMethodBypass, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnOldMethod, 0, 2)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 30)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 5
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(236, 184)
+        Me.TableLayoutPanel1.TabIndex = 5
+        '
+        'btnHome
+        '
+        Me.btnHome.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnHome.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnHome.Location = New System.Drawing.Point(3, 3)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(230, 40)
+        Me.btnHome.TabIndex = 3
+        Me.btnHome.Text = "Home"
+        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnHome.UseVisualStyleBackColor = True
+        '
         'btnPerformanceTweak
         '
-        Me.btnPerformanceTweak.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnPerformanceTweak.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnPerformanceTweak.Location = New System.Drawing.Point(0, 150)
+        Me.btnPerformanceTweak.Location = New System.Drawing.Point(3, 141)
         Me.btnPerformanceTweak.Name = "btnPerformanceTweak"
-        Me.btnPerformanceTweak.Size = New System.Drawing.Size(236, 40)
+        Me.btnPerformanceTweak.Size = New System.Drawing.Size(230, 40)
         Me.btnPerformanceTweak.TabIndex = 4
         Me.btnPerformanceTweak.Text = "Performance Tweak"
         Me.btnPerformanceTweak.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnPerformanceTweak.UseVisualStyleBackColor = True
         '
-        'btnOldMethod
-        '
-        Me.btnOldMethod.BackColor = System.Drawing.SystemColors.Control
-        Me.btnOldMethod.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnOldMethod.Enabled = False
-        Me.btnOldMethod.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnOldMethod.ForeColor = System.Drawing.SystemColors.GrayText
-        Me.btnOldMethod.Location = New System.Drawing.Point(0, 110)
-        Me.btnOldMethod.Name = "btnOldMethod"
-        Me.btnOldMethod.Size = New System.Drawing.Size(236, 40)
-        Me.btnOldMethod.TabIndex = 1
-        Me.btnOldMethod.Text = "Old Method"
-        Me.btnOldMethod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnOldMethod.UseVisualStyleBackColor = False
-        Me.btnOldMethod.Visible = False
-        '
         'btnNewMethodBypass
         '
-        Me.btnNewMethodBypass.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnNewMethodBypass.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnNewMethodBypass.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnNewMethodBypass.Location = New System.Drawing.Point(0, 70)
+        Me.btnNewMethodBypass.Location = New System.Drawing.Point(3, 49)
         Me.btnNewMethodBypass.Name = "btnNewMethodBypass"
-        Me.btnNewMethodBypass.Size = New System.Drawing.Size(236, 40)
+        Me.btnNewMethodBypass.Size = New System.Drawing.Size(230, 40)
         Me.btnNewMethodBypass.TabIndex = 0
         Me.btnNewMethodBypass.Text = "New Method Bypass"
         Me.btnNewMethodBypass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnNewMethodBypass.UseVisualStyleBackColor = True
         '
-        'btnHome
+        'btnOldMethod
         '
-        Me.btnHome.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnHome.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnHome.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnHome.Location = New System.Drawing.Point(0, 30)
-        Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(236, 40)
-        Me.btnHome.TabIndex = 3
-        Me.btnHome.Text = "Home"
-        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnHome.UseVisualStyleBackColor = True
+        Me.btnOldMethod.BackColor = System.Drawing.SystemColors.Control
+        Me.btnOldMethod.Enabled = False
+        Me.btnOldMethod.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnOldMethod.ForeColor = System.Drawing.SystemColors.GrayText
+        Me.btnOldMethod.Location = New System.Drawing.Point(3, 95)
+        Me.btnOldMethod.Name = "btnOldMethod"
+        Me.btnOldMethod.Size = New System.Drawing.Size(230, 40)
+        Me.btnOldMethod.TabIndex = 1
+        Me.btnOldMethod.Text = "Old Method"
+        Me.btnOldMethod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnOldMethod.UseVisualStyleBackColor = False
+        Me.btnOldMethod.Visible = False
         '
         'Panel5
         '
@@ -162,16 +180,30 @@ Partial Class MainPage
         '
         'btnAbout
         '
-        Me.btnAbout.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnAbout.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnAbout.Location = New System.Drawing.Point(0, 700)
+        Me.btnAbout.Location = New System.Drawing.Point(3, 3)
         Me.btnAbout.Name = "btnAbout"
-        Me.btnAbout.Size = New System.Drawing.Size(236, 50)
+        Me.btnAbout.Size = New System.Drawing.Size(230, 50)
         Me.btnAbout.TabIndex = 0
         Me.btnAbout.Text = "About"
         Me.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAbout.UseVisualStyleBackColor = True
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.AutoSize = True
+        Me.TableLayoutPanel2.ColumnCount = 1
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.btnAbout, 0, 1)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 694)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 2
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(236, 56)
+        Me.TableLayoutPanel2.TabIndex = 6
         '
         'MainPage
         '
@@ -190,6 +222,9 @@ Partial Class MainPage
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -204,4 +239,6 @@ Partial Class MainPage
     Friend WithEvents rbDarkTheme As RadioButton
     Friend WithEvents rbLightTheme As RadioButton
     Friend WithEvents btnPerformanceTweak As Button
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
 End Class
