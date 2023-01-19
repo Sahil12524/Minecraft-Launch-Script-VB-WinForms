@@ -20,7 +20,7 @@ Public Class HomeView
             Dim backupSystem32Dll As FileVersionInfo = FileVersionInfo.GetVersionInfo("bin\dlls\Original Dlls Backup\System32\Windows.ApplicationModel.Store.dll")
             lblBackupSystem32DllVersion.Text = backupSystem32Dll.ProductVersion.ToString
             Dim backupSysWOW64Dll As FileVersionInfo = FileVersionInfo.GetVersionInfo("bin\dlls\Original Dlls Backup\SysWOW64\Windows.ApplicationModel.Store.dll")
-            lblBackupSysWOW64DllVersion.Text = backupSystem32Dll.ProductVersion.ToString
+            lblBackupSysWOW64DllVersion.Text = backupSysWOW64Dll.ProductVersion.ToString
         Catch ex As FileNotFoundException
             lblBackupSystem32DllVersion.Text = "Backup not found"
             lblBackupSysWOW64DllVersion.Text = "Backup not found"
@@ -55,6 +55,17 @@ Public Class HomeView
         'If lblBackupReqStatus.Text = "Yes" Then
         '    Dim result As DialogResult = MessageBox.Show("Backup of the DLLs Needs to be Updated because the original DLLs are either updated via Windows Update or by Microsoft Store Update. Note: Update of Backup DLLs is compulsory to avoid Windows Corruptions or Microsoft Store not working issue!", "Backup Needs To Be Updated!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         'End If
+
+        If lblCurrentSystem32DllVersion.Text = lblBackupSystem32DllVersion.Text And lblCurrentSysWOW64DllVersion.Text = lblBackupSysWOW64DllVersion.Text And lblCurrentSystem32DllVersion.Text = lblCurrentSysWOW64DllVersion.Text And lblBackupSystem32DllVersion.Text = lblBackupSysWOW64DllVersion.Text And lblBackupSystem32DllVersion.Text <> lblHackSystem32DllVersion.Text And lblBackupSysWOW64DllVersion.Text <> lblHackSysWOW64DllVersion.Text Then
+            lblLauncherHealthStatus.ForeColor = Color.Lime
+            lblLauncherHealthStatus.Text = "Good"
+        ElseIf lblBypassStatus.Text = "True" And lblCurrentSystem32DllVersion.Text = lblHackSystem32DllVersion.Text And lblCurrentSysWOW64DllVersion.Text = lblHackSysWOW64DllVersion.Text Then
+            lblLauncherHealthStatus.ForeColor = Color.Lime
+            lblLauncherHealthStatus.Text = "Good"
+        Else
+            lblLauncherHealthStatus.ForeColor = Color.Red
+            lblLauncherHealthStatus.Text = "Bad"
+        End If
     End Sub
 
     Private Sub HomeView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
