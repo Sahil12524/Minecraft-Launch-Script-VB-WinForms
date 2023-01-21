@@ -12,34 +12,27 @@
                             As Long
 
     Private mediaPlayer As System.Media.SoundPlayer = New System.Media.SoundPlayer("audio/mc_klic.wav")
-
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'rs.FindAllControls(Me)
     End Sub
-
     Private Sub Form2_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         'rs.ResizeAllControls(Me)
     End Sub
-
     Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         'mediaPlayer.Play()
     End Sub
-
     Private Sub btnLatestUpdateCheck_Click(sender As Object, e As EventArgs) Handles btnLatestUpdateCheck.Click
         Dim r As Long
         r = ShellExecute(0, "open", "https://github.com/Sahil12524/Minecraft-Launch-Script/releases/latest", 0, 0, 1)
     End Sub
-
     Private Sub btnHowToUseLauncher_Click(sender As Object, e As EventArgs) Handles btnHowToUseLauncher.Click
         Dim r As Long
         r = ShellExecute(0, "open", "https://www.youtube.com/watch?v=zzo-wzSFweY", 0, 0, 1)
     End Sub
-
     Private Sub btnReportIssue_Click(sender As Object, e As EventArgs) Handles btnReportIssue.Click
         Dim r As Long
         r = ShellExecute(0, "open", "https://github.com/Sahil12524/Minecraft-Launch-Script/issues", 0, 0, 1)
     End Sub
-
     Private Sub btnDCJoinNow_Click(sender As Object, e As EventArgs) Handles btnDCJoinNow.Click
         Dim r As Long
         r = ShellExecute(0, "open", "https://discord.gg/nEPzChHKjx", 0, 0, 1)

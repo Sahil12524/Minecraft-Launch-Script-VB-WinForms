@@ -1,7 +1,6 @@
 ﻿Imports System.IO
 
 Public Class HomeView
-
     Public Sub conditChk()
         Dim fileReader As String
         Shell("cmd.exe /c wmic datafile where name=""C:\\Windows\\System32\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSystem32Ver.txt"" && wmic datafile where name=""C:\\Windows\\SysWOW64\\Windows.ApplicationModel.Store.dll"" Get Version /value > ""CurSysWOW64Ver.txt"" ", AppWinStyle.Hide, Wait:=100)
@@ -75,7 +74,6 @@ Public Class HomeView
             lblLauncherHealthStatus.Text = "Bad"
         End If
     End Sub
-
     Private Sub HomeView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conditChk() ' <- Function!
         If lblBackupReqStatus.Text = "Yes" Then
@@ -88,15 +86,12 @@ Public Class HomeView
             Dim result As DialogResult = MessageBox.Show("The Launcher has a Bad Health, Make sure that you fix the health first before you use the launcher.", "Launcher Bad Health Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
     End Sub
-
     Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
         Application.Restart()
     End Sub
-
     Private Sub HomeView_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
     End Sub
-
     Private Sub HomeView_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
     End Sub

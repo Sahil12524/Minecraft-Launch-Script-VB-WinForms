@@ -11,7 +11,6 @@ Public Class PerformanceTweakView
         updateForm()
         Directory.SetCurrentDirectory(appDefLoc)
     End Sub
-
     Private Sub btnVsyncOff_Click(sender As Object, e As EventArgs) Handles btnVsyncOff.Click
         Dim fileWrite As String = My.Computer.FileSystem.ReadAllText(fileReader).Replace("gfx_vsync:1", "gfx_vsync:0")
         File.WriteAllText(fileReader, fileWrite)
@@ -19,7 +18,6 @@ Public Class PerformanceTweakView
         Directory.SetCurrentDirectory(appDefLoc)
 
     End Sub
-
     Public Async Sub updateForm()
         Dim taskRunning = True
 
@@ -44,7 +42,6 @@ Public Class PerformanceTweakView
             End If
         End While
     End Sub
-
     Public Sub updateLbl()
         Dim fileWrite As String = My.Computer.FileSystem.ReadAllText(fileReader)
         If fileWrite.Contains("gfx_vsync:0") Then
@@ -55,7 +52,6 @@ Public Class PerformanceTweakView
             lblVsyncStatus.ForeColor = Color.Red
         End If
     End Sub
-
     Private Sub PerformanceTweakView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim fileWrite As String = My.Computer.FileSystem.ReadAllText(fileReader)
         If fileWrite.Contains("gfx_vsync:0") Then

@@ -73,11 +73,9 @@
             End If
         End While
     End Sub
-
     Private Sub updateLbl()
         HomeView.conditChk()
     End Sub
-
     Public Async Sub BypassStopStatus()
         Dim taskRunning = True
         Await Task.Delay(100)
@@ -98,7 +96,6 @@
             taskRunning = False
         End If
     End Sub
-
     Public Async Sub BypassLoadStatus()
         Dim taskRunning = True
         Await Task.Delay(100)
@@ -119,7 +116,6 @@
             taskRunning = False
         End If
     End Sub
-
     Private Sub New_Method_Bypass_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GC.Collect()
         GC.WaitForPendingFinalizers()
@@ -166,15 +162,12 @@
         End If
         'updateForm()
     End Sub
-
     Private Sub New_Method_Bypass_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         OldMethodView.Close()
     End Sub
-
     Private Sub New_Method_Bypass_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         OldMethodView.Close()
     End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim startProc As Process
         updateForm()
@@ -184,7 +177,6 @@
         BypassLoadStatus()
         'taskRunning = False
     End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Shell("explorer.exe shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App", AppWinStyle.Hide)
         Threading.Thread.Sleep(4000)
@@ -197,7 +189,6 @@
             Dim result As DialogResult = MessageBox.Show("Minecraft Bedrock Edition is not installed in this computer, please make sure that you have to install the game first and then use this launcher.", "Minecraft Not Installed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
     End Sub
-
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         'taskRunning = True
         'taskRunning = False
@@ -211,7 +202,6 @@
         'taskRunning = True
         'taskRunning = False
     End Sub
-
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim backupDLL As Process
         Dim result As DialogResult = MessageBox.Show("Are You Sure That You Never Used This Button Before, Note: Backup Should Be Done Only One Time If You Are A New User?, Press Yes to Make a Backup If Not Made Before Or Press No To Cancel The Backup Process", "Backup DLL Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -225,7 +215,6 @@
             Button5.Enabled = False
         End If
     End Sub
-
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Dim result As DialogResult = MessageBox.Show("Are You Sure That You Want To Quick Restart your PC?, Use This Button Only If The System32's DLL Says 'Sharing Violation' Error.", "Quick Restart Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then

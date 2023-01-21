@@ -189,7 +189,6 @@
         PerformanceTweakView.RichTextBox1.ForeColor = SystemColors.ControlText
 
     End Sub
-
     Public Shared Sub LightThemeButtons()
         MainPage.btnHome.FlatStyle = FlatStyle.Flat
         MainPage.btnHome.FlatAppearance.MouseOverBackColor = Color.Gray

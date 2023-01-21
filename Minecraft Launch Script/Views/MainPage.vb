@@ -3,14 +3,11 @@ Imports System.Runtime.InteropServices
 Imports Microsoft.Win32
 
 Public Class MainPage
-
     <DllImport("DwmApi")>
     Private Shared Function DwmSetWindowAttribute(ByVal hwnd As IntPtr, ByVal attr As Integer, ByVal attrValue As Integer(), ByVal attrSize As Integer) As Integer
     End Function
-
     Dim isLightTheme
     Dim taskRunning = True
-
     Sub colorTheme()
         Dim lightmode = CInt(Registry.GetValue("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "AppsUseLightTheme", "1"))
         Try
@@ -32,7 +29,6 @@ Public Class MainPage
             Application.Exit()
         End Try
     End Sub
-
     Public Async Sub updateTheme()
         While taskRunning
             Await Task.Delay(500)
@@ -48,7 +44,6 @@ Public Class MainPage
         panel.Show()
     End Sub
     Private Sub MainPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Me.MinimumSize = New Size(863, 789)
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
@@ -67,11 +62,9 @@ Public Class MainPage
         GC.WaitForPendingFinalizers()
         GC.Collect()
     End Sub
-
     Dim fileReader As String = Environ$("USERPROFILE") & "\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftpe\options.txt"
     Dim root As String = "C:\"
     Dim appDefLoc = My.Application.Info.DirectoryPath
-
     Private Sub btnNewMethodBypass_Click(sender As Object, e As EventArgs) Handles btnNewMethodBypass.Click
         GC.Collect()
         GC.WaitForPendingFinalizers()
@@ -120,21 +113,18 @@ Public Class MainPage
             taskRunning = False
         End If
     End Sub
-
     Private Sub btnOldMethod_Click(sender As Object, e As EventArgs) Handles btnOldMethod.Click
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
         switchPanel(OldMethodView)
     End Sub
-
     Private Sub btnAbout_Click(sender As Object, e As EventArgs) Handles btnAbout.Click
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
         switchPanel(AboutView)
     End Sub
-
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         GC.Collect()
         GC.WaitForPendingFinalizers()
@@ -142,11 +132,9 @@ Public Class MainPage
         switchPanel(HomeView)
         HomeView.conditChk()
     End Sub
-
     Private Sub MainPage_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
     End Sub
-
     Private Sub MainPage_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If HomeView.lblBypassStatus.Text = "True" Then
             Dim result As DialogResult = MessageBox.Show("Are you sure that you want to close the launcher without stopping the Bypass?", "Bypass Still Running!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
@@ -163,11 +151,9 @@ Public Class MainPage
 
         End If
     End Sub
-
     Private Sub rbDarkTheme_CheckedChanged(sender As Object, e As EventArgs) Handles rbDarkTheme.CheckedChanged
         ThemeHelper.DarkTheme()
     End Sub
-
     Private Sub rbLightTheme_CheckedChanged(sender As Object, e As EventArgs) Handles rbLightTheme.CheckedChanged
         ThemeHelper.LightTheme()
     End Sub
@@ -175,11 +161,9 @@ Public Class MainPage
         taskRunning = True
         updateTheme()
     End Sub
-
     Private Sub MainPage_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         taskRunning = False
     End Sub
-
     Private Sub btnPerformanceTweak_Click(sender As Object, e As EventArgs) Handles btnPerformanceTweak.Click
         GC.Collect()
         GC.WaitForPendingFinalizers()
@@ -196,11 +180,4 @@ Public Class MainPage
             Directory.SetCurrentDirectory(appDefLoc)
         End If
     End Sub
-    'Private Sub MainPage_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
-    '    If Me.Size = New Size(863, 789) Then
-    '        Me.Panel2.Hide()
-    '    Else
-    '        Me.Panel2.Show()
-    '    End If
-    'End Sub
 End Class
