@@ -169,15 +169,22 @@ Public Class MainPage
         GC.WaitForPendingFinalizers()
         GC.Collect()
         switchPanel(PerformanceTweakView)
-        Dim fileWrite As String = My.Computer.FileSystem.ReadAllText(fileReader)
-        If fileWrite.Contains("gfx_vsync:0") Then
-            PerformanceTweakView.lblVsyncStatus.Text = "OFF"
-            PerformanceTweakView.lblVsyncStatus.ForeColor = Color.Lime
-            Directory.SetCurrentDirectory(appDefLoc)
-        ElseIf fileWrite.Contains("gfx_vsync:1") Then
-            PerformanceTweakView.lblVsyncStatus.Text = "ON"
+        Try
+            Dim fileWrite As String = My.Computer.FileSystem.ReadAllText(fileReader)
+            If fileWrite.Contains("gfx_vsync:0") Then
+                PerformanceTweakView.lblVsyncStatus.Text = "OFF"
+                PerformanceTweakView.lblVsyncStatus.ForeColor = Color.Lime
+                Directory.SetCurrentDirectory(appDefLoc)
+            ElseIf fileWrite.Contains("gfx_vsync:1") Then
+                PerformanceTweakView.lblVsyncStatus.Text = "ON"
+                PerformanceTweakView.lblVsyncStatus.ForeColor = Color.Red
+                Directory.SetCurrentDirectory(appDefLoc)
+            End If
+        Catch ex As System.IO.DirectoryNotFoundException
+            PerformanceTweakView.lblVsyncStatus.Text = "Minecraft is not installed!"
             PerformanceTweakView.lblVsyncStatus.ForeColor = Color.Red
             Directory.SetCurrentDirectory(appDefLoc)
-        End If
+        End Try
+
     End Sub
 End Class
