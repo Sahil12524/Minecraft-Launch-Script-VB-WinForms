@@ -29,8 +29,8 @@ Learned many thing during the development journey.
 ## Features
 
 - Dynamic Light/dark mode
-- Backup stock DLLs
-- Restore stock DLLs
+- Backup stock DLLs (with original permissions).
+- Restore stock DLLs (with original permissions).
 - 1 click stock DLLs Backup
 - 1 click Bypass start and stop
 - 1 click start Minecraft
