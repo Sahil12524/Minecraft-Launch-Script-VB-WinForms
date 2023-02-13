@@ -173,7 +173,7 @@ Public Class MainPage
             Dim fileWrite As String = My.Computer.FileSystem.ReadAllText(fileReader)
             If fileWrite.Contains("gfx_vsync:0") Then
                 PerformanceTweakView.lblVsyncStatus.Text = "OFF"
-                PerformanceTweakView.lblVsyncStatus.ForeColor = Color.Lime
+                PerformanceTweakView.lblVsyncStatus.ForeColor = Color.Green
                 Directory.SetCurrentDirectory(appDefLoc)
             ElseIf fileWrite.Contains("gfx_vsync:1") Then
                 PerformanceTweakView.lblVsyncStatus.Text = "ON"

@@ -40,7 +40,7 @@ Public Class PerformanceTweakView
                 taskRunning = True
                 taskRunning = False
                 lblVsyncStatus.Text = "OFF"
-                lblVsyncStatus.ForeColor = Color.Lime
+                lblVsyncStatus.ForeColor = Color.Green
                 taskRunning = True
                 taskRunning = False
             ElseIf fileWrite.Contains("gfx_vsync:1") Then
@@ -57,7 +57,7 @@ Public Class PerformanceTweakView
         Dim fileWrite As String = My.Computer.FileSystem.ReadAllText(fileReader)
         If fileWrite.Contains("gfx_vsync:0") Then
             lblVsyncStatus.Text = "OFF"
-            lblVsyncStatus.ForeColor = Color.Lime
+            lblVsyncStatus.ForeColor = Color.Green
         ElseIf fileWrite.Contains("gfx_vsync:1") Then
             lblVsyncStatus.Text = "ON"
             lblVsyncStatus.ForeColor = Color.Red
@@ -69,7 +69,7 @@ Public Class PerformanceTweakView
             Dim fileWrite As String = My.Computer.FileSystem.ReadAllText(fileReader)
             If fileWrite.Contains("gfx_vsync:0") Then
                 lblVsyncStatus.Text = "OFF"
-                lblVsyncStatus.ForeColor = Color.Lime
+                lblVsyncStatus.ForeColor = Color.Green
             ElseIf fileWrite.Contains("gfx_vsync:1") Then
                 lblVsyncStatus.Text = "ON"
                 lblVsyncStatus.ForeColor = Color.Red

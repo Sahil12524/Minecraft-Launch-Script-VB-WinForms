@@ -1,45 +1,45 @@
 ﻿Public Class ThemeHelper
     Public Shared Sub DarkTheme()
-        MainPage.BackColor = Color.FromArgb(15, 15, 15)
+        MainPage.BackColor = Color.FromArgb(18, 18, 18)
         MainPage.ForeColor = SystemColors.Control
 
-        HomeView.BackColor = Color.FromArgb(15, 15, 15)
+        HomeView.BackColor = Color.FromArgb(18, 18, 18)
         HomeView.ForeColor = SystemColors.Control
 
-        NewMethodBypassView.BackColor = Color.FromArgb(15, 15, 15)
+        NewMethodBypassView.BackColor = Color.FromArgb(18, 18, 18)
         NewMethodBypassView.ForeColor = SystemColors.Control
 
-        NewMethodBypassView.RichTextBox4.BackColor = Color.FromArgb(15, 15, 15)
+        NewMethodBypassView.RichTextBox4.BackColor = Color.FromArgb(18, 18, 18)
         NewMethodBypassView.RichTextBox4.ForeColor = SystemColors.Control
 
-        NewMethodBypassView.RichTextBox3.BackColor = Color.FromArgb(15, 15, 15)
+        NewMethodBypassView.RichTextBox3.BackColor = Color.FromArgb(18, 18, 18)
         NewMethodBypassView.RichTextBox3.ForeColor = SystemColors.Control
 
-        NewMethodBypassView.RichTextBox5.BackColor = Color.FromArgb(15, 15, 15)
+        NewMethodBypassView.RichTextBox5.BackColor = Color.FromArgb(18, 18, 18)
         NewMethodBypassView.RichTextBox5.ForeColor = SystemColors.Control
 
-        NewMethodBypassView.RichTextBox2.BackColor = Color.FromArgb(15, 15, 15)
+        NewMethodBypassView.RichTextBox2.BackColor = Color.FromArgb(18, 18, 18)
         NewMethodBypassView.RichTextBox2.ForeColor = SystemColors.Control
 
-        NewMethodBypassView.RichTextBox6.BackColor = Color.FromArgb(15, 15, 15)
+        NewMethodBypassView.RichTextBox6.BackColor = Color.FromArgb(18, 18, 18)
         NewMethodBypassView.RichTextBox6.ForeColor = SystemColors.Control
 
-        AboutView.BackColor = Color.FromArgb(15, 15, 15)
+        AboutView.BackColor = Color.FromArgb(18, 18, 18)
         AboutView.ForeColor = SystemColors.Control
 
-        AboutView.RichTextBox3.BackColor = Color.FromArgb(15, 15, 15)
+        AboutView.RichTextBox3.BackColor = Color.FromArgb(18, 18, 18)
         AboutView.RichTextBox3.ForeColor = SystemColors.Control
 
-        AboutView.RichTextBox4.BackColor = Color.FromArgb(15, 15, 15)
+        AboutView.RichTextBox4.BackColor = Color.FromArgb(18, 18, 18)
         AboutView.RichTextBox4.ForeColor = SystemColors.Control
 
-        AboutView.RichTextBox1.BackColor = Color.FromArgb(15, 15, 15)
+        AboutView.RichTextBox1.BackColor = Color.FromArgb(18, 18, 18)
         AboutView.RichTextBox1.ForeColor = SystemColors.Control
 
-        PerformanceTweakView.BackColor = Color.FromArgb(15, 15, 15)
+        PerformanceTweakView.BackColor = Color.FromArgb(18, 18, 18)
         PerformanceTweakView.ForeColor = SystemColors.Control
 
-        PerformanceTweakView.RichTextBox1.BackColor = Color.FromArgb(15, 15, 15)
+        PerformanceTweakView.RichTextBox1.BackColor = Color.FromArgb(18, 18, 18)
         PerformanceTweakView.RichTextBox1.ForeColor = SystemColors.Control
 
 
