@@ -23,4 +23,3 @@ icacls c:\windows\system32\Windows.ApplicationModel.Store.dll /GRANT ADMINISTRAT
 del "C:\Windows\System32\Windows.ApplicationModel.Store.dll"
 xcopy /o /x "%curdir%\dlls\Original Dlls Backup\System32\Windows.ApplicationModel.Store.dll" "C:\Windows\System32\" /y
 xcopy /o /x "%curdir%\dlls\Original Dlls Backup\SysWOW64\Windows.ApplicationModel.Store.dll" "C:\Windows\SysWOW64\" /y
-pause

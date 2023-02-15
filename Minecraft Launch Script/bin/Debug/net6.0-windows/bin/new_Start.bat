@@ -20,7 +20,7 @@ taskkill /F /IM "StoreExperienceHost.exe"
 taskkill /F /IM "Cortana.exe"
 taskkill /F /IM "SearchHost.exe"
 taskkill /F /IM "StartMenuExperienceHost.exe"
-del /f "C:\Windows\System32\Windows.ApplicationModel.Store.dll"
+::del /f "C:\Windows\System32\Windows.ApplicationModel.Store.dll"
 ::timeout 3 /nobreak
 cd /
 takeown /f c:\windows\system32\Windows.ApplicationModel.Store.dll
@@ -29,4 +29,3 @@ del /f "C:\Windows\System32\Windows.ApplicationModel.Store.dll"
 ::timeout 3 /nobreak
 xcopy /o /x "%curdir%\dlls\x64\System32\Windows.ApplicationModel.Store.dll" "C:\Windows\System32\" /y
 xcopy /o /x "%curdir%\dlls\x64\sysWOW64\Windows.ApplicationModel.Store.dll" "C:\Windows\SysWOW64\" /y
-pause
