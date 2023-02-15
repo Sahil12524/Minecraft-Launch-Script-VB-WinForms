@@ -12,7 +12,7 @@ Public Class HomeView
             lblCurrentSysWOW64DllVersion.Text = fileReader.Trim
         Catch ex As FileNotFoundException
             MsgBox(ex.ToString)
-            Shell("Cmd.exe /c type nul > CurSystem32Ver.txt && type nul > CurSysWOW64Ver.txt")
+            Shell("Cmd.exe /c type nul > CurSystem32Ver.txt && type nul > CurSysWOW64Ver.txt", AppWinStyle.Hide, Wait:=100)
         End Try
 
         Try
@@ -90,9 +90,9 @@ Public Class HomeView
         Application.Restart()
     End Sub
     Private Sub HomeView_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
+        Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt", AppWinStyle.Hide, Wait:=100)
     End Sub
     Private Sub HomeView_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
+        Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt", AppWinStyle.Hide, Wait:=100)
     End Sub
 End Class

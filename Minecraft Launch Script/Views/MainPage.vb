@@ -133,13 +133,13 @@ Public Class MainPage
         HomeView.conditChk()
     End Sub
     Private Sub MainPage_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
+        Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt", AppWinStyle.Hide, Wait:=100)
     End Sub
     Private Sub MainPage_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If HomeView.lblBypassStatus.Text = "True" Then
             Dim result As DialogResult = MessageBox.Show("Are you sure that you want to close the launcher without stopping the Bypass?", "Bypass Still Running!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
             If result = DialogResult.Yes Then
-                Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt")
+                Shell("cmd.exe /c del /f CurSystem32Ver.txt CurSysWOW64Ver.txt", AppWinStyle.Hide, Wait:=100)
                 Me.Dispose() '<- First MainPage Should be stopped then it will stop the whole app 
                 Application.Exit()
                 'MsgBox(result) <- used only for debug
