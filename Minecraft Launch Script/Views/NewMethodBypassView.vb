@@ -186,7 +186,13 @@
         If proc.Count > 0 Then
 
         Else
+            Dim startProc As Process
             Dim result As DialogResult = MessageBox.Show("Minecraft Bedrock Edition is not installed in this computer, please make sure that you have to install the game first and then use this launcher.", "Minecraft Not Installed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            updateForm()
+            startProc = Process.Start("bin/new_Stop.bat")
+            startProc.WaitForExit()
+            updateForm()
+            BypassStopStatus()
         End If
     End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
