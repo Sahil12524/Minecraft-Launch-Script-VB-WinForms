@@ -90,7 +90,7 @@
             taskRunning = False
         Else
             MessageBox.Show("Bypass Stop Error ✖️")
-            'HomeView.lblBypassStatus.Text = "True"
+            HomeView.lblBypassStatus.Text = "True"
             Panel19.Show()
             Panel6.Show()
             taskRunning = False
@@ -110,6 +110,7 @@
             taskRunning = False
         Else
             MessageBox.Show("Bypass Load Error ✖️")
+            HomeView.lblBypassStatus.Text = "False"
             Panel16.Hide()
             Panel6.Hide()
             Panel19.Hide()
