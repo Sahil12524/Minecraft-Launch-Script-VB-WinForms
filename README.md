@@ -1,7 +1,7 @@
 
 ![Logo](https://repository-images.githubusercontent.com/506418395/fe032fa9-511f-49b8-9821-095bd0bd6876)
 
-![GitHub all releases](https://img.shields.io/github/downloads/Sahil12524/Minecraft-Launch-Script/total?color=g&style=for-the-badge)
+![GitHub all releases](https://img.shields.io/github/downloads/Sahil12524/Minecraft-Launch-Script-VB-WinForms/total?color=g&style=for-the-badge)
 # Minecraft Launch Script
 
 Hello all this is Sahil Bhandari and I have build a Minecraft Launch Script for Windows Edition Minecraft trial bypass.
